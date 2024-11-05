@@ -1,0 +1,113 @@
+# BSD 3-Clause License
+#
+# Copyright 2024 Piyush Kumar, Da Eun Shim, Azad Naeemi, or Georgia Institute of Technology
+#
+# Redistribution and use in source and binary forms, with or without 
+# modification, are permitted provided that the following conditions are met:
+#
+# 1. Redistributions of source code must retain the above copyright notice, 
+# this list of conditions and the following disclaimer.
+#
+# 2. Redistributions in binary form must reproduce the above copyright notice, 
+# this list of conditions and the following disclaimer in the documentation 
+# and/or other materials provided with the distribution.
+#
+# 3. Neither the name of the copyright holder nor the names of its contributors 
+# may be used to endorse or promote products derived from this software without 
+# specific prior written permission.
+#
+# THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” 
+# AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, 
+# THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE 
+# ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE 
+# FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES 
+# (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; 
+# LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND 
+# ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT 
+# (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS 
+# SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+# GT3 layer map file
+
+NWELL       drawing     1       0
+NWELL       label       1       20
+ACT         drawing     2       0
+ACT         label       2       20
+GATE        drawing     3       0
+GATE        label       3       20
+DUMMY       drawing     4       0
+DUMMY       label       4       20
+GCUT        drawing     5       0
+GCUT        label       5       20
+NSEL        drawing     6       0
+NSEL        label       6       20
+PSEL        drawing     8       0
+PSEL        label       8       20
+BPR         drawing     8       0
+BPR         label       8       20
+VBPR        drawing     9       0
+VBPR        label       9       20
+SDCON       drawing     10      0
+SDCON       label       10      20
+VSD         drawing     11      0
+VSD         label       11      20
+VG          drawing     12      0
+VG          label       12      20
+M0          drawing     20      0
+M0          label       20      20
+V0          drawing     22      0
+V0          label       22      20
+M1          drawing     25      0    
+M1          label       25      20
+V1          drawing     27      0
+V1          label       27      20
+M2          drawing     30      0 
+M2          label       30      20   
+V2          drawing     32      0
+V2          label       32      20  
+M3          drawing     35      0 
+M3          label       35      20   
+V3          drawing     37      0
+V3          label       37      20  
+M4          drawing     40      0
+M4          label       40      20   
+V4          drawing     42      0
+V4          label       42      20  
+M5          drawing     45      0
+M5          label       45      20   
+V5          drawing     47      0
+V5          label       47      20  
+M6          drawing     50      0
+M6          label       50      20   
+V6          drawing     52      0
+V6          label       52      20  
+M7          drawing     55      0 
+M7          label       55      20   
+V7          drawing     57      0
+V7          label       57      20  
+M8          drawing     60      0  
+M8          label       60      20   
+V8          drawing     62      0
+V8          label       62      20  
+M9          drawing     65      0 
+M9          label       65      20   
+V9          drawing     67      0
+V9          label       67      20  
+M10         drawing     70      0
+M10         label       70      20   
+V10         drawing     72      0
+V10         label       72      20  
+M11         drawing     75      0
+M11         label       75      20   
+V11         drawing     77      0
+V11         label       77      20  
+M12         drawing     80      0
+M12         label       80      20   
+V12         drawing     82      0
+V12         label       82      20  
+M13         drawing     85      0
+M13         label       85      20   
+V13         drawing     87      0
+V13         label       87      20 
+RDL         drawing     90      0
+RDL         label       90      20
