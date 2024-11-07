@@ -1,0 +1,290 @@
+* BSD 3-Clause License
+*
+* Copyright 2024 Akshata Ashoka, Nahid Shazon, Meghana Mallikarjuna, Piyush Kumar, Da Eun Shim, Azad Naeemi, or Georgia Institute of Technology
+*
+* Redistribution and use in source and binary forms, with or without 
+* modification, are permitted provided that the following conditions are met:
+*
+* 1. Redistributions of source code must retain the above copyright notice, 
+* this list of conditions and the following disclaimer.
+*
+* 2. Redistributions in binary form must reproduce the above copyright notice, 
+* this list of conditions and the following disclaimer in the documentation 
+* and/or other materials provided with the distribution.
+*
+* 3. Neither the name of the copyright holder nor the names of its contributors 
+* may be used to endorse or promote products derived from this software without 
+* specific prior written permission.
+*
+* THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” 
+* AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, 
+* THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE 
+* ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE 
+* FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES 
+* (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; 
+* LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND 
+* ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT 
+* (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS 
+* SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+*.lib nfet_typ
+.model nmos_rvt nmos
++L=1.5e-8
++DEVTYPE=1
++EASUB=4.0727
++NI0SUB=1.1055e+16
++BG0SUB=1.1242
++NC0SUB=2.9951e+25
++PHIG=4.34716
++RDSW=50
++RDSWMIN=50
++CDSCD=0.0321295
++VSAT=157689
++UA=0.25392
++PDIBL2=0.0201662
++PCLM=1e-10
++PCLMG=0
++level=72
++VERSION=111.2.1
++BULKMOD=1
++CAPMOD=1
++IGCMOD=0
++IGBMOD=0
++GIDLMOD=0
++COREMOD=0
++GEOMOD=5
++CGEOMOD=0
++IIMOD=0
++RDSMOD=0
++TNOM=25
++XL=0
++LINT=0
++LL=0
++LLC=0
++LLN=1
++DLC=0
++EOT=1e-09
+*+TFIN=2.1e-08
+*+HFIN=5e-09
++FPITCH=3e-08
++WGAA=2.1e-08
++TGAA=5e-09
++TSUS=1e-08
++FECH=1
++NF=1
++NFIN=1
++NGAA=3
++NBODY=2e+24
++NSD=2e+26
++NGATE=0
++LPHIG=0
++LRDSW=0
++ARDSW=0
++BRDSW=1e-08
++PRWG=0
++CIT=0
++CDSC=0.0839264
++LCDSC=0
++LCDSCD=0
++DVT0=0
++LDVT0=0
++DVT1=0.7
++LDVT1=0
++PHIN=0
++LPHIN=0
++ETA0=0
++LETA0=0
++DSUB=1.06
++LDSUB=0
++K1RSCE=0
++LK1RSCE=0
++LPE0=0
++LLPE0=0
++QMFACTOR=1
++qm0=0.0464194
++LVSAT=0
++AVSAT=0
++BVSAT=6e-08
++AVSAT1=0
++BVSAT1=6e-08
++KSATIV=0.986267
++LKSATIV=0
++DELTAVSAT=1
++MEXP=3.0695
++LMEXP=0
++AMEXP=0
++BMEXP=1
++PTWG=0
++LPTWG=0
++APTWG=0
++BPTWG=6e-08
++U0=0.018116
++LU0=0
++ETAMOB=6.3642
++UP=0
++LUP=0
++LPA=1
++LUA=0
++AUA=0
++BUA=6e-08
++EU=1.66404
++LEU=0
++UD=6.17595e-09
++LUD=0
++AUD=0
++BUD=5e-08
++UCS=1.0069
++LUCS=0
++PDIBL1=1e-09
++LPDIBL1=0
++LPDIBL2=0
++DROUT=1.06
++LDROUT=0
++PVAG=9.97772
++LPVAG=0
++LPCLM=0
++CFS=0
++DVTP1=1
++cgsl=9.96626e-11
++cgso=2.45293e-10
++cgdo=2.45293e-10
++cgdl=9.96626e-11
++ckappas=0.600084
++deltawcv=-1.17947e-08
++qmtcencv=0.650826
++ckappad=0.600084
+*.ends
+*.endl nfet_typ
+
+
+*.lib pfet_typ
+.model pmos_rvt pmos
++L=1.5e-8
++DEVTYPE=0
++EASUB=4.0727
++NI0SUB=1.1055e+16
++BG0SUB=1.1242
++NC0SUB=2.9951e+25
++PHIG=4.90216
++RDSW=50
++RDSWMIN=50
++CDSCD=0.0785789
++VSAT=40337.9
++UA=1.25862
++PDIBL2=0.0015979
++PCLM=1e-10
++PCLMG=0
++level=72
++VERSION=111.2.1
++BULKMOD=1
++CAPMOD=1
++IGCMOD=0
++IGBMOD=0
++GIDLMOD=0
++COREMOD=0
++GEOMOD=5
++CGEOMOD=0
++IIMOD=0
++RDSMOD=0
++TNOM=25
++XL=0
++LINT=0
++LL=0
++LLC=0
++LLN=1
++DLC=0
++EOT=1e-09
+*+TFIN=2.1e-08
+*+HFIN=5e-09
++FPITCH=3e-08
++WGAA=2.1e-08
++TGAA=5e-09
++TSUS=1e-08
++FECH=1
++NF=1
++NFIN=1
++NGAA=3
++NBODY=2e+24
++NSD=2e+26
++NGATE=0
++LPHIG=0
++LRDSW=0
++ARDSW=0
++BRDSW=1e-08
++PRWG=0
++CIT=0
++CDSC=0.0731689
++LCDSC=0
++LCDSCD=0
++DVT0=0
++LDVT0=0
++DVT1=0.7
++LDVT1=0
++PHIN=0
++LPHIN=0
++ETA0=0
++LETA0=0
++DSUB=1.06
++LDSUB=0
++K1RSCE=0
++LK1RSCE=0
++LPE0=0
++LLPE0=0
++QMFACTOR=1
++qm0=0.0682119
++LVSAT=0
++AVSAT=0
++BVSAT=6e-08
++AVSAT1=0
++BVSAT1=6e-08
++KSATIV=2.39503
++LKSATIV=0
++DELTAVSAT=1
++MEXP=2
++LMEXP=0
++AMEXP=0
++BMEXP=1
++PTWG=0
++LPTWG=0
++APTWG=0
++BPTWG=6e-08
++U0=0.0105895
++LU0=0
++ETAMOB=3.2655
++UP=0
++LUP=0
++LPA=1
++LUA=0
++AUA=0
++BUA=6e-08
++EU=1.33375
++LEU=0
++UD=0.073023
++LUD=0
++AUD=0
++BUD=5e-08
++UCS=1.30913
++LUCS=0
++PDIBL1=1e-09
++LPDIBL1=0
++LPDIBL2=0
++DROUT=1.06
++LDROUT=0
++PVAG=8.69475e-05
++LPVAG=0
++LPCLM=0
++CFS=0
++DVTP1=1
++cgsl=1.19107e-10
++cgso=2.28789e-10
++cgdo=2.28789e-10
++cgdl=1.19107e-10
++ckappas=0.6
++deltawcv=-1.22993e-08
++qmtcencv=0.625198
++ckappad=0.6
+*.ends
+*.end
+*.endl pfet_typ
+

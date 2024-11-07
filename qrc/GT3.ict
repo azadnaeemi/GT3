@@ -1,0 +1,432 @@
+# BSD 3-Clause License
+#
+# Copyright 2024 Da Eun Shim, Piyush Kumar, Azad Naeemi, or Georgia Institute of Technology
+#
+# Redistribution and use in source and binary forms, with or without 
+# modification, are permitted provided that the following conditions are met:
+#
+# 1. Redistributions of source code must retain the above copyright notice, 
+# this list of conditions and the following disclaimer.
+#
+# 2. Redistributions in binary form must reproduce the above copyright notice, 
+# this list of conditions and the following disclaimer in the documentation 
+# and/or other materials provided with the distribution.
+#
+# 3. Neither the name of the copyright holder nor the names of its contributors 
+# may be used to endorse or promote products derived from this software without 
+# specific prior written permission.
+#
+# THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” 
+# AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, 
+# THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE 
+# ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE 
+# FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES 
+# (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; 
+# LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND 
+# ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT 
+# (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS 
+# SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+process GT3 {
+background_dielectric_constant 1.0
+}
+# Well declarations
+well NWELL {}
+well PWELL {}
+
+# Diffusion Layers
+
+diffusion P_SOURCE_DRAIN {
+thickness	0.005
+resistivity	10
+}
+
+diffusion N_SOURCE_DRAIN {
+thickness	0.005
+resistivity	10
+}
+
+# Conducting Layers
+conductor GATE {
+min_spacing	0.027
+min_width	0.015
+height	0.01
+thickness	0.065
+resistivity	6.9565
+gate_forming_layer	TRUE
+}
+
+#VG thickness	0.023
+
+
+conductor M0 {
+min_spacing	0.012
+min_width	0.012
+height	0.098
+thickness	0.024
+resistivity	7.461
+gate_forming_layer	FALSE
+}
+
+conductor M1 {
+min_spacing	0.014
+min_width	0.014
+height	0.146
+thickness	0.028
+resistivity	6.125
+gate_forming_layer	FALSE
+}
+
+conductor M2 {
+min_spacing	0.012
+min_width	0.012
+height	0.202
+thickness	0.024
+resistivity	7.461
+gate_forming_layer	FALSE
+}
+
+conductor M3 {
+min_spacing	0.014
+min_width	0.014
+height	0.25
+thickness	0.028
+resistivity	6.125
+gate_forming_layer	FALSE
+}
+
+conductor M4 {
+min_spacing	0.021
+min_width	0.021
+height	0.306
+thickness	0.042
+resistivity	3.506
+gate_forming_layer	FALSE
+}
+
+conductor M5 {
+min_spacing	0.021
+min_width	0.021
+height	0.39
+thickness	0.042
+resistivity	3.506
+gate_forming_layer	FALSE
+}
+
+conductor M6 {
+min_spacing	0.038
+min_width	0.038
+height	0.474
+thickness	0.076
+resistivity	1.009
+gate_forming_layer	FALSE
+}
+
+conductor M7 {
+min_spacing	0.038
+min_width	0.038
+height	0.626
+thickness	0.076
+resistivity	1.009
+gate_forming_layer	FALSE
+}
+
+conductor M8 {
+min_spacing	0.038
+min_width	0.038
+height	0.778
+thickness	0.076
+resistivity	1.009
+gate_forming_layer	FALSE
+}
+
+conductor M9 {
+min_spacing	0.038
+min_width	0.038
+height	0.93
+thickness	0.076
+resistivity	1.009
+gate_forming_layer	FALSE
+}
+
+conductor M10 {
+min_spacing	0.056
+min_width	0.056
+height	1.082
+thickness	0.112
+resistivity	0.419
+gate_forming_layer	FALSE
+}
+
+conductor M11 {
+min_spacing	0.056
+min_width	0.056
+height	1.306
+thickness	0.112
+resistivity	0.419
+gate_forming_layer	FALSE
+}
+
+conductor M12 {
+min_spacing	0.36
+min_width	0.36
+height	1.53
+thickness	0.112
+resistivity	0.100
+gate_forming_layer	FALSE
+}
+
+conductor M13 {
+min_spacing	0.36
+min_width	0.36
+height	1.754
+thickness	0.112
+resistivity	0.100
+gate_forming_layer	FALSE
+}
+
+conductor RDL {
+min_spacing	1.6
+min_width	1.6
+height	1.978
+thickness	0.5
+resistivity	0.01
+gate_forming_layer	FALSE
+}
+
+
+
+# dielectric Layers
+dielectric   bottom_diel {
+conformal	FALSE
+height	-0.143
+depth	0.005
+dielectric_constant	3.9
+}
+
+dielectric   BOX_diel {
+conformal	FALSE
+height	0
+depth	0.023
+dielectric_constant	3.9
+}
+
+dielectric   GATE_diel {
+conformal	FALSE
+height	0
+thickness	0.098
+dielectric_constant	7
+}
+
+
+dielectric   M0_diel {
+conformal	FALSE
+height	0.098
+thickness	0.048
+dielectric_constant	2.4
+}
+
+dielectric   M1_diel {
+conformal	FALSE
+height	0.146
+thickness	0.056
+dielectric_constant	2.4
+}
+
+dielectric   M2_diel {
+conformal	FALSE
+height	0.202
+thickness	0.048
+dielectric_constant	2.4
+}
+
+dielectric   M3_diel {
+conformal	FALSE
+height	0.25
+thickness	0.056
+dielectric_constant	2.4
+}
+
+dielectric   M4_diel {
+conformal	FALSE
+height	0.306
+thickness	0.084
+dielectric_constant	2.5
+}
+
+dielectric   M5_diel {
+conformal	FALSE
+height	0.39
+thickness	0.084
+dielectric_constant	2.5
+}
+
+dielectric   M6_diel {
+conformal	FALSE
+height	0.474
+thickness	0.152
+dielectric_constant	2.5
+}
+
+dielectric   M7_diel {
+conformal	FALSE
+height	0.626
+thickness	0.152
+dielectric_constant	2.5
+}
+
+dielectric   M8_diel {
+conformal	FALSE
+height	0.778
+thickness	0.152
+dielectric_constant	2.5
+}
+
+dielectric   M9_diel {
+conformal	FALSE
+height	0.93
+thickness	0.152
+dielectric_constant	2.5
+}
+
+dielectric   M10_diel {
+conformal	FALSE
+height	1.082
+thickness	0.224
+dielectric_constant	2.5
+}
+
+dielectric   M11_diel {
+conformal	FALSE
+height	1.306
+thickness	0.224
+dielectric_constant	2.5
+}
+
+dielectric   M12_diel {
+conformal	FALSE
+height	1.53
+thickness	0.224
+dielectric_constant	2.5
+}
+
+dielectric   M13_diel {
+conformal	FALSE
+height	1.754
+thickness	0.224
+dielectric_constant	2.5
+}
+
+# Connect Layers
+
+via   V13 {
+bottom_layer	M13
+top_layer	RDL
+min_spacing	0.056
+min_width	0.056
+area_resistance    	6.08	0.003136
+}
+
+via   V12 {
+bottom_layer	M12
+top_layer	M13
+min_spacing	0.056
+min_width	0.056
+area_resistance    	6.08	0.003136
+}
+
+via   V11 {
+bottom_layer	M11
+top_layer	M12
+min_spacing	0.056
+min_width	0.056
+area_resistance    	6.08	0.003136
+}
+
+via   V10 {
+bottom_layer	M10
+top_layer	M11
+min_spacing	0.056
+min_width	0.056
+area_resistance    	6.08	0.003136
+}
+
+via   V9 {
+bottom_layer	M9
+top_layer	M10
+min_spacing	0.038
+min_width	0.038
+area_resistance    	7.65	0.002128
+}
+
+via   V8 {
+bottom_layer	M8
+top_layer	M9
+min_spacing	0.038
+min_width	0.038
+area_resistance    	13.26	0.001444
+}
+
+via   V7 {
+bottom_layer	M7
+top_layer	M8
+min_spacing	0.038
+min_width	0.038
+area_resistance    	13.26	0.001444
+}
+
+via   V6 {
+bottom_layer	M6
+top_layer	M7
+min_spacing	0.038
+min_width	0.038
+area_resistance    	13.26	0.001444
+}
+
+via   V5 {
+bottom_layer	M5
+top_layer	M6
+min_spacing	0.021
+min_width	0.021
+area_resistance         14.89   0.000798
+}
+
+via   V4 {
+bottom_layer	M4
+top_layer	M5
+min_spacing	0.021
+min_width	0.021
+area_resistance    	40.52	0.000441
+}
+
+via   V3 {
+bottom_layer	M3
+top_layer	M4
+min_spacing	0.014
+min_width	0.014
+area_resistance    	45.78	0.000294
+}
+
+via   V2 {
+bottom_layer	M2
+top_layer	M3
+min_spacing	0.012
+min_width	0.012
+area_resistance    	54.99	0.000168
+}
+
+via   V1 {
+bottom_layer	M1
+top_layer	M2
+min_spacing	0.012
+min_width	0.012
+area_resistance    	54.99	0.000168
+}
+
+via   V0 {
+bottom_layer	M0
+top_layer	M1
+min_spacing	0.012
+min_width	0.012
+area_resistance    	54.99	0.000168
+}
