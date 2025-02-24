@@ -48,4 +48,5 @@ NXTGRD: https://gtvault-my.sharepoint.com/:u:/g/personal/pkumar315_gatech_edu/Ec
 The GAAFET model cards are:
 
 GT3/models/hspice/gt3_lvt.mod
+
 GT3/models/hspice/gt3_rvt.mod
