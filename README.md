@@ -32,11 +32,17 @@ LVS and DRC rulesets for icvalidator is present in "GT3/icv_runset".
 The collaterals required for synthesis and PnR are:
 
 LIB: GT3/lib/gt3_rvt_tt_0p7v25c.lib
+
 LEF: GT3/lef/gt3_std_cell_rvt.lef
+
 Techlef: GT3/techlef/gt3_tech.lef
+
 ICT: GT3/ict/GT3.ict
+
 QRCTECH: https://gtvault-my.sharepoint.com/:u:/g/personal/pkumar315_gatech_edu/EZ4sryz-jMlGr1jPIV9EEmYBbKR5gTIe_hKDcmCEy-ON_Q?e=6M3VfB
+
 ITF: GT3/nxtgrd/GT3.itf
+
 NXTGRD: https://gtvault-my.sharepoint.com/:u:/g/personal/pkumar315_gatech_edu/EcalVsKySt9Nt9z_ahGU1TcBIfOQfyYUC6A5kRABQbA3Zg?e=eEDVbN
 
 The GAAFET model cards are:
