@@ -4,7 +4,8 @@ This is the initial release for GT3 PDK with 65 standard cells. It is based on 3
 
 If you use this PDK for publishing your work, we would appreciate citation of the following paper:
 
-D.E. Shim, P. Kumar, A. Kini, M. Mallikarjuna, M. Shazon, and A. Naeemi, "GT3: an open-source 3nm GAAFET PDK and platform for end-to-end evaluation of emerging technologies", IEEE Transaction on Electron Devices, 2025. DOI: 10.1109/TED.2025.3540760
+D. E. Shim, P. Kumar, A. A. Kini, M. Mallikarjuna, M. N. H. Shazon and A. Naeemi, "GT3: An Open-Source 3-nm GAAFET PDK and Platform for End-to-End Evaluation of Emerging Technologies," in IEEE Transactions on Electron Devices, doi: 10.1109/TED.2025.3540760.
+https://ieeexplore.ieee.org/document/10906664
 
 Quick setup guide for Custom Compiler:
 
