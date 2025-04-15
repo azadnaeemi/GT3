@@ -41,30 +41,30 @@ MM1 net20 A net13 nmos_rvt WGAA=0.021u L=0.015u M=1
 
 .subckt gt3_6t_and2_x2_rvt A B Y vdd vss
 *.PININFO A:I B:I Y:O vdd:B vss:B
-MM7 Y net20 vdd pmos_rvt WGAA=0.021u L=0.015u M=1
+MM7 Y net20 vdd pmos_rvt WGAA=0.021u L=0.015u M=2
 MM2 net20 B vdd pmos_rvt WGAA=0.021u L=0.015u M=1
 MM0 net20 A vdd pmos_rvt WGAA=0.021u L=0.015u M=1
 MM3 net13 B vss nmos_rvt WGAA=0.021u L=0.015u M=1
-MM8 Y net20 vss nmos_rvt WGAA=0.021u L=0.015u M=1
+MM8 Y net20 vss nmos_rvt WGAA=0.021u L=0.015u M=2
 MM1 net20 A net13 nmos_rvt WGAA=0.021u L=0.015u M=1
 .ends gt3_6t_and2_x2_rvt
 
 .subckt gt3_6t_and2_x3_rvt A B Y vdd vss
 *.PININFO A:I B:I Y:O vdd:B vss:B
-MM7 Y net20 vdd pmos_rvt WGAA=0.021u L=0.015u M=1
+MM7 Y net20 vdd pmos_rvt WGAA=0.021u L=0.015u M=3
 MM2 net20 B vdd pmos_rvt WGAA=0.021u L=0.015u M=1
 MM0 net20 A vdd pmos_rvt WGAA=0.021u L=0.015u M=1
-MM8 Y net20 vss nmos_rvt WGAA=0.021u L=0.015u M=1
+MM8 Y net20 vss nmos_rvt WGAA=0.021u L=0.015u M=3
 MM3 net13 B vss nmos_rvt WGAA=0.021u L=0.015u M=1
 MM1 net20 A net13 nmos_rvt WGAA=0.021u L=0.015u M=1
 .ends gt3_6t_and2_x3_rvt
 
 .subckt gt3_6t_and2_x4_rvt A B Y vdd vss
 *.PININFO A:I B:I Y:O vdd:B vss:B
-MM7 Y net20 vdd pmos_rvt WGAA=0.021u L=0.015u M=1
+MM7 Y net20 vdd pmos_rvt WGAA=0.021u L=0.015u M=4
 MM2 net20 B vdd pmos_rvt WGAA=0.021u L=0.015u M=1
 MM0 net20 A vdd pmos_rvt WGAA=0.021u L=0.015u M=1
-MM8 Y net20 vss nmos_rvt WGAA=0.021u L=0.015u M=1
+MM8 Y net20 vss nmos_rvt WGAA=0.021u L=0.015u M=4
 MM3 net13 B vss nmos_rvt WGAA=0.021u L=0.015u M=1
 MM1 net20 A net13 nmos_rvt WGAA=0.021u L=0.015u M=1
 .ends gt3_6t_and2_x4_rvt
@@ -270,64 +270,64 @@ MM3 Y net13 vss nmos_rvt WGAA=0.021u L=0.015u M=1
 
 .subckt gt3_6t_buf_x2_rvt A Y vdd vss
 *.PININFO A:I Y:O vdd:B vss:B
-MM2 Y net13 vdd pmos_rvt WGAA=0.021u L=0.015u M=1
+MM2 Y net13 vdd pmos_rvt WGAA=0.021u L=0.015u M=2
 MM0 net13 A vdd pmos_rvt WGAA=0.021u L=0.015u M=1
-MM3 Y net13 vss nmos_rvt WGAA=0.021u L=0.015u M=1
+MM3 Y net13 vss nmos_rvt WGAA=0.021u L=0.015u M=2
 MM1 net13 A vss nmos_rvt WGAA=0.021u L=0.015u M=1
 .ends gt3_6t_buf_x2_rvt
 
 
 .subckt gt3_6t_buf_x3_rvt A Y vdd vss
 *.PININFO A:I Y:O vdd:B vss:B
-MM2 Y net13 vdd pmos_rvt WGAA=0.021u L=0.015u M=1
+MM2 Y net13 vdd pmos_rvt WGAA=0.021u L=0.015u M=3
 MM0 net13 A vdd pmos_rvt WGAA=0.021u L=0.015u M=1
-MM3 Y net13 vss nmos_rvt WGAA=0.021u L=0.015u M=1
+MM3 Y net13 vss nmos_rvt WGAA=0.021u L=0.015u M=3
 MM1 net13 A vss nmos_rvt WGAA=0.021u L=0.015u M=1
 .ends gt3_6t_buf_x3_rvt
 
 
 .subckt gt3_6t_buf_x4_rvt A Y vdd vss
 *.PININFO A:I Y:O vdd:B vss:B
-MM2 Y net13 vdd pmos_rvt WGAA=0.021u L=0.015u M=1
+MM2 Y net13 vdd pmos_rvt WGAA=0.021u L=0.015u M=4
 MM0 net13 A vdd pmos_rvt WGAA=0.021u L=0.015u M=1
-MM3 Y net13 vss nmos_rvt WGAA=0.021u L=0.015u M=1
+MM3 Y net13 vss nmos_rvt WGAA=0.021u L=0.015u M=4
 MM1 net13 A vss nmos_rvt WGAA=0.021u L=0.015u M=1
 .ends gt3_6t_buf_x4_rvt
 
 
 .subckt gt3_6t_buf_x6_rvt A Y vdd vss
 *.PININFO A:I Y:O vdd:B vss:B
-MM2 Y net13 vdd pmos_rvt WGAA=0.021u L=0.015u M=1
-MM0 net13 A vdd pmos_rvt WGAA=0.021u L=0.015u M=1
-MM3 Y net13 vss nmos_rvt WGAA=0.021u L=0.015u M=1
-MM1 net13 A vss nmos_rvt WGAA=0.021u L=0.015u M=1
+MM2 Y net13 vdd pmos_rvt WGAA=0.021u L=0.015u M=6
+MM0 net13 A vdd pmos_rvt WGAA=0.021u L=0.015u M=2
+MM3 Y net13 vss nmos_rvt WGAA=0.021u L=0.015u M=6
+MM1 net13 A vss nmos_rvt WGAA=0.021u L=0.015u M=2
 .ends gt3_6t_buf_x6_rvt
 
 
 .subckt gt3_6t_buf_x8_rvt A Y vdd vss
 *.PININFO A:I Y:O vdd:B vss:B
-MM2 Y net13 vdd pmos_rvt WGAA=0.021u L=0.015u M=1
-MM0 net13 A vdd pmos_rvt WGAA=0.021u L=0.015u M=1
-MM3 Y net13 vss nmos_rvt WGAA=0.021u L=0.015u M=1
-MM1 net13 A vss nmos_rvt WGAA=0.021u L=0.015u M=1
+MM2 Y net13 vdd pmos_rvt WGAA=0.021u L=0.015u M=8
+MM0 net13 A vdd pmos_rvt WGAA=0.021u L=0.015u M=2
+MM3 Y net13 vss nmos_rvt WGAA=0.021u L=0.015u M=8
+MM1 net13 A vss nmos_rvt WGAA=0.021u L=0.015u M=2
 .ends gt3_6t_buf_x8_rvt
 
 
 .subckt gt3_6t_buf_x10_rvt A Y vdd vss
 *.PININFO A:I Y:O vdd:B vss:B
-MM2 Y net13 vdd pmos_rvt WGAA=0.021u L=0.015u M=1
-MM0 net13 A vdd pmos_rvt WGAA=0.021u L=0.015u M=1
-MM3 Y net13 vss nmos_rvt WGAA=0.021u L=0.015u M=1
-MM1 net13 A vss nmos_rvt WGAA=0.021u L=0.015u M=1
+MM2 Y net13 vdd pmos_rvt WGAA=0.021u L=0.015u M=10
+MM0 net13 A vdd pmos_rvt WGAA=0.021u L=0.015u M=3
+MM3 Y net13 vss nmos_rvt WGAA=0.021u L=0.015u M=10
+MM1 net13 A vss nmos_rvt WGAA=0.021u L=0.015u M=3
 .ends gt3_6t_buf_x10_rvt
 
 
 .subckt gt3_6t_buf_x12_rvt A Y vdd vss
 *.PININFO A:I Y:O vdd:B vss:B
-MM2 Y net13 vdd pmos_rvt WGAA=0.021u L=0.015u M=1
-MM0 net13 A vdd pmos_rvt WGAA=0.021u L=0.015u M=1
-MM3 Y net13 vss nmos_rvt WGAA=0.021u L=0.015u M=1
-MM1 net13 A vss nmos_rvt WGAA=0.021u L=0.015u M=1
+MM2 Y net13 vdd pmos_rvt WGAA=0.021u L=0.015u M=12
+MM0 net13 A vdd pmos_rvt WGAA=0.021u L=0.015u M=3
+MM3 Y net13 vss nmos_rvt WGAA=0.021u L=0.015u M=12
+MM1 net13 A vss nmos_rvt WGAA=0.021u L=0.015u M=3
 .ends gt3_6t_buf_x12_rvt
 
 
@@ -377,50 +377,50 @@ MM1 Y A vss nmos_rvt WGAA=0.021u L=0.015u M=1
 
 .subckt gt3_6t_inv_x2_rvt A Y vdd vss
 *.PININFO A:I Y:O vdd:B vss:B
-MM0 Y A vdd pmos_rvt WGAA=0.021u L=0.015u M=1
-MM1 Y A vss nmos_rvt WGAA=0.021u L=0.015u M=1
+MM0 Y A vdd pmos_rvt WGAA=0.021u L=0.015u M=2
+MM1 Y A vss nmos_rvt WGAA=0.021u L=0.015u M=2
 .ends gt3_6t_inv_x2_rvt
 
 
 .subckt gt3_6t_inv_x3_rvt A Y vdd vss
 *.PININFO A:I Y:O vdd:B vss:B
-MM0 Y A vdd pmos_rvt WGAA=0.021u L=0.015u M=1
-MM1 Y A vss nmos_rvt WGAA=0.021u L=0.015u M=1
+MM0 Y A vdd pmos_rvt WGAA=0.021u L=0.015u M=3
+MM1 Y A vss nmos_rvt WGAA=0.021u L=0.015u M=3
 .ends gt3_6t_inv_x3_rvt
 
 
 .subckt gt3_6t_inv_x4_rvt A Y vdd vss
 *.PININFO A:I Y:O vdd:B vss:B
-MM0 Y A vdd pmos_rvt WGAA=0.021u L=0.015u M=1
-MM1 Y A vss nmos_rvt WGAA=0.021u L=0.015u M=1
+MM0 Y A vdd pmos_rvt WGAA=0.021u L=0.015u M=4
+MM1 Y A vss nmos_rvt WGAA=0.021u L=0.015u M=4
 .ends gt3_6t_inv_x4_rvt
 
 
 .subckt gt3_6t_inv_x6_rvt A Y vdd vss
 *.PININFO A:I Y:O vdd:B vss:B
-MM0 Y A vdd pmos_rvt WGAA=0.021u L=0.015u M=1
-MM1 Y A vss nmos_rvt WGAA=0.021u L=0.015u M=1
+MM0 Y A vdd pmos_rvt WGAA=0.021u L=0.015u M=6
+MM1 Y A vss nmos_rvt WGAA=0.021u L=0.015u M=6
 .ends gt3_6t_inv_x6_rvt
 
 
 .subckt gt3_6t_inv_x8_rvt A Y vdd vss
 *.PININFO A:I Y:O vdd:B vss:B
-MM0 Y A vdd pmos_rvt WGAA=0.021u L=0.015u M=1
-MM1 Y A vss nmos_rvt WGAA=0.021u L=0.015u M=1
+MM0 Y A vdd pmos_rvt WGAA=0.021u L=0.015u M=8
+MM1 Y A vss nmos_rvt WGAA=0.021u L=0.015u M=8
 .ends gt3_6t_inv_x8_rvt
 
 
 .subckt gt3_6t_inv_x10_rvt A Y vdd vss
 *.PININFO A:I Y:O vdd:B vss:B
-MM0 Y A vdd pmos_rvt WGAA=0.021u L=0.015u M=1
-MM1 Y A vss nmos_rvt WGAA=0.021u L=0.015u M=1
+MM0 Y A vdd pmos_rvt WGAA=0.021u L=0.015u M=10
+MM1 Y A vss nmos_rvt WGAA=0.021u L=0.015u M=10
 .ends gt3_6t_inv_x10_rvt
 
 
 .subckt gt3_6t_inv_x12_rvt A Y vdd vss
 *.PININFO A:I Y:O vdd:B vss:B
-MM0 Y A vdd pmos_rvt WGAA=0.021u L=0.015u M=1
-MM1 Y A vss nmos_rvt WGAA=0.021u L=0.015u M=1
+MM0 Y A vdd pmos_rvt WGAA=0.021u L=0.015u M=12
+MM1 Y A vss nmos_rvt WGAA=0.021u L=0.015u M=12
 .ends gt3_6t_inv_x12_rvt
 
 
@@ -439,8 +439,8 @@ MM8 net17 A vss nmos_rvt WGAA=0.021u L=0.015u M=1
 MM3 net13 A vss nmos_rvt WGAA=0.021u L=0.015u M=1
 MM7 Y B net17 nmos_rvt WGAA=0.021u L=0.015u M=1
 MM1 Y B net13 nmos_rvt WGAA=0.021u L=0.015u M=1
-MM2 Y A vdd pmos_rvt WGAA=0.021u L=0.015u M=1
-MM0 Y B vdd pmos_rvt WGAA=0.021u L=0.015u M=1
+MM2 Y A vdd pmos_rvt WGAA=0.021u L=0.015u M=2
+MM0 Y B vdd pmos_rvt WGAA=0.021u L=0.015u M=2
 .ends gt3_6t_nand2_x2_rvt
 
 
@@ -452,8 +452,8 @@ MM8 net17 A vss nmos_rvt WGAA=0.021u L=0.015u M=1
 MM7 Y B net17 nmos_rvt WGAA=0.021u L=0.015u M=1
 MM3 net13 A vss nmos_rvt WGAA=0.021u L=0.015u M=1
 MM1 Y B net13 nmos_rvt WGAA=0.021u L=0.015u M=1
-MM2 Y A vdd pmos_rvt WGAA=0.021u L=0.015u M=1
-MM0 Y B vdd pmos_rvt WGAA=0.021u L=0.015u M=1
+MM2 Y A vdd pmos_rvt WGAA=0.021u L=0.015u M=3
+MM0 Y B vdd pmos_rvt WGAA=0.021u L=0.015u M=3
 .ends gt3_6t_nand2_x3_rvt
 
 
@@ -467,8 +467,8 @@ MM7 Y B net17 nmos_rvt WGAA=0.021u L=0.015u M=1
 MM8 net17 A vss nmos_rvt WGAA=0.021u L=0.015u M=1
 MM3 net13 A vss nmos_rvt WGAA=0.021u L=0.015u M=1
 MM1 Y B net13 nmos_rvt WGAA=0.021u L=0.015u M=1
-MM2 Y A vdd pmos_rvt WGAA=0.021u L=0.015u M=1
-MM0 Y B vdd pmos_rvt WGAA=0.021u L=0.015u M=1
+MM2 Y A vdd pmos_rvt WGAA=0.021u L=0.015u M=4
+MM0 Y B vdd pmos_rvt WGAA=0.021u L=0.015u M=4
 .ends gt3_6t_nand2_x4_rvt
 
 
@@ -483,8 +483,8 @@ MM0 net22 A vdd pmos_rvt WGAA=0.021u L=0.015u M=1
 
 .subckt gt3_6t_nor2_x2_rvt A B Y vdd vss
 *.PININFO A:I B:I Y:O vdd:B vss:B
-MM3 Y B vss nmos_rvt WGAA=0.021u L=0.015u M=1
-MM1 Y A vss nmos_rvt WGAA=0.021u L=0.015u M=1
+MM3 Y B vss nmos_rvt WGAA=0.021u L=0.015u M=2
+MM1 Y A vss nmos_rvt WGAA=0.021u L=0.015u M=2
 MM8 Y B net26 pmos_rvt WGAA=0.021u L=0.015u M=1
 MM2 Y B net22 pmos_rvt WGAA=0.021u L=0.015u M=1
 MM7 net26 A vdd pmos_rvt WGAA=0.021u L=0.015u M=1
@@ -494,8 +494,8 @@ MM0 net22 A vdd pmos_rvt WGAA=0.021u L=0.015u M=1
 
 .subckt gt3_6t_nor2_x3_rvt A B Y vdd vss
 *.PININFO A:I B:I Y:O vdd:B vss:B
-MM3 Y B vss nmos_rvt WGAA=0.021u L=0.015u M=1
-MM1 Y A vss nmos_rvt WGAA=0.021u L=0.015u M=1
+MM3 Y B vss nmos_rvt WGAA=0.021u L=0.015u M=3
+MM1 Y A vss nmos_rvt WGAA=0.021u L=0.015u M=3
 MM10 Y B net32 pmos_rvt WGAA=0.021u L=0.015u M=1
 MM8 Y B net26 pmos_rvt WGAA=0.021u L=0.015u M=1
 MM2 Y B net22 pmos_rvt WGAA=0.021u L=0.015u M=1
@@ -507,8 +507,8 @@ MM0 net22 A vdd pmos_rvt WGAA=0.021u L=0.015u M=1
 
 .subckt gt3_6t_nor2_x4_rvt A B Y vdd vss
 *.PININFO A:I B:I Y:O vdd:B vss:B
-MM3 Y B vss nmos_rvt WGAA=0.021u L=0.015u M=1
-MM1 Y A vss nmos_rvt WGAA=0.021u L=0.015u M=1
+MM3 Y B vss nmos_rvt WGAA=0.021u L=0.015u M=4
+MM1 Y A vss nmos_rvt WGAA=0.021u L=0.015u M=4
 MM12 Y B net38 pmos_rvt WGAA=0.021u L=0.015u M=1
 MM10 Y B net32 pmos_rvt WGAA=0.021u L=0.015u M=1
 MM8 Y B net26 pmos_rvt WGAA=0.021u L=0.015u M=1
@@ -533,12 +533,12 @@ MM0 net22 A vdd pmos_rvt WGAA=0.021u L=0.015u M=1
 
 .subckt gt3_6t_nor3_x2_rvt A B C Y vdd vss
 *.PININFO A:I B:I C:I Y:O vdd:B vss:B
-MM12 Y C vss nmos_rvt WGAA=0.021u L=0.015u M=1
-MM11 Y B vss nmos_rvt WGAA=0.021u L=0.015u M=1
-MM10 Y A vss nmos_rvt WGAA=0.021u L=0.015u M=1
-MM9 Y C net7 pmos_rvt WGAA=0.021u L=0.015u M=1
-MM8 net7 B net5 pmos_rvt WGAA=0.021u L=0.015u M=1
-MM7 net5 A vdd pmos_rvt WGAA=0.021u L=0.015u M=1
+MM12 Y C vss nmos_rvt WGAA=0.021u L=0.015u M=2
+MM11 Y B vss nmos_rvt WGAA=0.021u L=0.015u M=2
+MM10 Y A vss nmos_rvt WGAA=0.021u L=0.015u M=2
+MM9 Y C net7 pmos_rvt WGAA=0.021u L=0.015u M=2
+MM8 net7 B net5 pmos_rvt WGAA=0.021u L=0.015u M=2
+MM7 net5 A vdd pmos_rvt WGAA=0.021u L=0.015u M=2
 .ends gt3_6t_nor3_x2_rvt
 
 
@@ -731,10 +731,10 @@ MM0 net31 B vdd pmos_rvt WGAA=0.021u L=0.015u M=1
 
 .subckt gt3_6t_or2_x2_rvt A B Y vdd vss
 *.PININFO A:I B:I Y:O vdd:B vss:B
-MM8 Y net27 vss nmos_rvt WGAA=0.021u L=0.015u M=1
+MM8 Y net27 vss nmos_rvt WGAA=0.021u L=0.015u M=2
 MM3 net27 B vss nmos_rvt WGAA=0.021u L=0.015u M=1
 MM1 net27 A vss nmos_rvt WGAA=0.021u L=0.015u M=1
-MM7 Y net27 vdd pmos_rvt WGAA=0.021u L=0.015u M=1
+MM7 Y net27 vdd pmos_rvt WGAA=0.021u L=0.015u M=2
 MM2 net27 A net31 pmos_rvt WGAA=0.021u L=0.015u M=1
 MM0 net31 B vdd pmos_rvt WGAA=0.021u L=0.015u M=1
 .ends gt3_6t_or2_x2_rvt
@@ -742,10 +742,10 @@ MM0 net31 B vdd pmos_rvt WGAA=0.021u L=0.015u M=1
 
 .subckt gt3_6t_or2_x3_rvt A B Y vdd vss
 *.PININFO A:I B:I Y:O vdd:B vss:B
-MM8 Y net27 vss nmos_rvt WGAA=0.021u L=0.015u M=1
+MM8 Y net27 vss nmos_rvt WGAA=0.021u L=0.015u M=3
 MM3 net27 B vss nmos_rvt WGAA=0.021u L=0.015u M=1
 MM1 net27 A vss nmos_rvt WGAA=0.021u L=0.015u M=1
-MM7 Y net27 vdd pmos_rvt WGAA=0.021u L=0.015u M=1
+MM7 Y net27 vdd pmos_rvt WGAA=0.021u L=0.015u M=3
 MM2 net27 A net31 pmos_rvt WGAA=0.021u L=0.015u M=1
 MM0 net31 B vdd pmos_rvt WGAA=0.021u L=0.015u M=1
 .ends gt3_6t_or2_x3_rvt
@@ -753,10 +753,10 @@ MM0 net31 B vdd pmos_rvt WGAA=0.021u L=0.015u M=1
 
 .subckt gt3_6t_or2_x4_rvt A B Y vdd vss
 *.PININFO A:I B:I Y:O vdd:B vss:B
-MM8 Y net27 vss nmos_rvt WGAA=0.021u L=0.015u M=1
+MM8 Y net27 vss nmos_rvt WGAA=0.021u L=0.015u M=4
 MM3 net27 B vss nmos_rvt WGAA=0.021u L=0.015u M=1
 MM1 net27 A vss nmos_rvt WGAA=0.021u L=0.015u M=1
-MM7 Y net27 vdd pmos_rvt WGAA=0.021u L=0.015u M=1
+MM7 Y net27 vdd pmos_rvt WGAA=0.021u L=0.015u M=4
 MM2 net27 A net31 pmos_rvt WGAA=0.021u L=0.015u M=1
 MM0 net31 B vdd pmos_rvt WGAA=0.021u L=0.015u M=1
 .ends gt3_6t_or2_x4_rvt
