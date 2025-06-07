@@ -1,0 +1,183 @@
+# BSD 3-Clause License
+#
+# Copyright 2024 Piyush Kumar, Da Eun Shim, Azad Naeemi, or Georgia Institute of Technology
+#
+# Redistribution and use in source and binary forms, with or without 
+# modification, are permitted provided that the following conditions are met:
+#
+# 1. Redistributions of source code must retain the above copyright notice, 
+# this list of conditions and the following disclaimer.
+#
+# 2. Redistributions in binary form must reproduce the above copyright notice, 
+# this list of conditions and the following disclaimer in the documentation 
+# and/or other materials provided with the distribution.
+#
+# 3. Neither the name of the copyright holder nor the names of its contributors 
+# may be used to endorse or promote products derived from this software without 
+# specific prior written permission.
+#
+# THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” 
+# AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, 
+# THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE 
+# ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE 
+# FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES 
+# (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; 
+# LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND 
+# ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT 
+# (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS 
+# SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+# GT3 layer map file from APR
+
+V0         PIN            22      251
+V0         LEFPIN         22      0
+V0         VIA            22      0
+M1         NET            25      0
+M1         SPNET          25      0
+M1         PIN            25      251
+M1         LEFPIN         25      0
+M1         VIA            25      0
+#NAME      M1/NET         25      1
+NAME       M1/SPNET       25      251
+NAME       M1/PIN         25      251
+NAME       M1/LEFPIN      25      251
+V1         PIN            27      251
+V1         LEFPIN         27      0
+V1         VIA            27      0
+M2         NET            30      0
+M2         SPNET          30      0
+M2         PIN            30      251
+M2         LEFPIN         30      0
+M2         VIA            30      0
+M2         LEFOBS         30      0
+#NAME      M2/NET         30      1
+NAME       M2/SPNET       30      251
+NAME       M2/PIN         30      251
+NAME       M2/LEFPIN      30      251
+V2         PIN            32      251
+V2         LEFPIN         32      0
+V2         VIA            32      0
+M3         NET            35      0
+M3         SPNET          35      0
+M3         PIN            35      251
+M3         LEFPIN         35      0
+M3         VIA            35      0
+M3         LEFOBS         35      0
+#NAME      M3/NET         35      1  
+NAME       M3/SPNET       35      251
+NAME       M3/PIN         35      251  
+NAME       M3/LEFPIN      35      251  
+V3         PIN            37      251
+V3         LEFPIN         37      0
+V3         FILL           37      0
+V3         FILLOPC        37      0
+V3         VIA            37      0
+M4         NET            40      0
+M4         SPNET          40      0
+M4         PIN            40      251
+M4         LEFPIN         40      0
+M4         FILL           40      0
+M4         FILLOPC        40      0
+M4         VIA            40      0
+M4         LEFOBS         40      0
+#NAME      M4/NET         40      1  
+NAME       M4/SPNET       40      251
+NAME       M4/PIN         40      251  
+NAME       M4/LEFPIN      40      251  
+V4         PIN            42      251
+V4         LEFPIN         42      0
+V4         FILL           42      0
+V4         FILLOPC        42      0
+V4         VIA            42      0
+M5         NET            45      0
+M5         SPNET          45      0
+M5         PIN            45      251
+M5         LEFPIN         45      0
+M5         FILL           45      0
+M5         FILLOPC        45      0
+M5         VIA            45      0
+M5         LEFOBS         45      0
+#NAME      M5/NET         45      1  
+NAME       M5/SPNET       45      251
+NAME       M5/PIN         45      251  
+NAME       M5/LEFPIN      45      251  
+V5         PIN            47      251
+V5         LEFPIN         47      0
+V5         FILL           47      0
+V5         FILLOPC        47      0
+V5         VIA            47      0
+M6         NET            50      0
+M6         SPNET          50      0
+M6         PIN            50      251
+M6         LEFPIN         50      0
+M6         FILL           50      0
+M6         FILLOPC        50      0
+M6         VIA            50      0
+M6         LEFOBS         50      0
+#NAME      M6/NET         50      1  
+NAME       M6/SPNET       50      251
+NAME       M6/PIN         50      251  
+NAME       M6/LEFPIN      50      251  
+V6         PIN            52      251
+V6         LEFPIN         52      0
+V6         FILL           52      0
+V6         FILLOPC        52      0
+V6         VIA            52      0
+M7         NET            55      0
+M7         SPNET          55      0
+M7         PIN            55      251
+M7         LEFPIN         55      0
+M7         FILL           55      0
+M7         FILLOPC        55      0
+M7         VIA            55      0
+M7         LEFOBS         55      0
+#NAME      M7/NET         55      1  
+NAME       M7/SPNET       55      251
+NAME       M7/PIN         55      251  
+NAME       M7/LEFPIN      55      251  
+V7         PIN            57      251
+V7         LEFPIN         57      0
+V7         FILL           57      0
+V7         FILLOPC        57      0
+V7         VIA            57      0
+M8         NET            60      0
+M8         SPNET          60      0
+M8         PIN            60      251
+M8         LEFPIN         60      0
+M8         FILL           60      0
+M8         FILLOPC        60      0
+M8         VIA            60      0
+M8         LEFOBS         60      0
+#NAME      M8/NET         60      1  
+NAME       M8/SPNET       60      251
+NAME       M8/PIN         60      251  
+NAME       M8/LEFPIN      60      251  
+V8         PIN            62      251
+V8         LEFPIN         62      0
+V8         FILL           62      0
+V8         FILLOPC        62      0
+V8         VIA            62      0
+M9         NET            65      0
+M9         SPNET          65      0
+M9         PIN            65      251
+M9         LEFPIN         65      0
+M9         FILL           65      0
+M9         FILLOPC        65      0
+M9         VIA            65      0
+M9         LEFOBS         65      0
+#NAME      M9/NET         65      1  
+NAME       M9/SPNET       65      251
+NAME       M9/PIN         65      251  
+NAME       M9/LEFPIN      65      251  
+V9         PIN            67      251
+V9         LEFPIN         67      0
+V9         FILL           67      0
+V9         FILLOPC        67      0
+V9         VIA            67      0
+#NAME      Pad/NET        67      1  
+NAME       Pad/SPNET      67      251
+NAME       Pad/PIN        67      251  
+NAME       Pad/LEFPIN     67      251  
+NAME       COMP           101     0
+COMP       ALL            101     0
+DIEAREA    ALL            235     5
