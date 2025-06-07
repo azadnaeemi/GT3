@@ -44,7 +44,7 @@ QRCTECH: GT3/qrc/qrcTechFile.tch
 
 ITF: GT3/nxtgrd/GT3.itf
 
-NXTGRD: https://gtvault-my.sharepoint.com/:u:/g/personal/pkumar315_gatech_edu/EcalVsKySt9Nt9z_ahGU1TcBIfOQfyYUC6A5kRABQbA3Zg?e=eEDVbN
+NXTGRD: GT3/nxtgrd/GT3.nxtgrd
 
 The GAAFET model cards are:
 
