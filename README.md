@@ -40,7 +40,7 @@ Techlef: GT3/techlef/gt3_tech.lef
 
 ICT: GT3/ict/GT3.ict
 
-QRCTECH: https://gtvault-my.sharepoint.com/:u:/g/personal/pkumar315_gatech_edu/EZ4sryz-jMlGr1jPIV9EEmYBbKR5gTIe_hKDcmCEy-ON_Q?e=6M3VfB
+QRCTECH: GT3/qrc/qrcTechFile.tch
 
 ITF: GT3/nxtgrd/GT3.itf
 
