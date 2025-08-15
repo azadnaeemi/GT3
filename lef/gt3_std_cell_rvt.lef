@@ -39,3864 +39,4764 @@ SITE gt3v1
 END gt3v1
 
 MACRO gt3_6t_and2_x1_rvt
-  CLASS CORE  ;
-  ORIGIN 0 0 ;
-  SYMMETRY X Y ;
-  SITE gt3v1 ;
-  FOREIGN gt3_6t_and2_x1_rvt 0 0 ;
-  SIZE 0.168 BY 0.144 ;
-  PIN A
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
+   CLASS CORE ;
+   ORIGIN 0 0 ;
+   FOREIGN gt3_6t_and2_x1_rvt ;
+   SIZE 0.168 BY 0.144 ;
+   SYMMETRY X Y ;
+   SITE gt3v1 ;
+   PIN A
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.014 0.015 0.028 0.129 ;
+      END
+   END A
+
+   PIN B
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.077 0.015 0.091 0.129 ;
+      END
+   END B
+
+   PIN Y
+      DIRECTION OUTPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.0455 0.014 0.0595 0.13 ;
+      END
+   END Y
+
+   PIN vdd
+      DIRECTION INOUT ;
+      USE POWER ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 0.128 0.168 0.16 ;
+      END
+   END vdd
+
+   PIN vss
+      DIRECTION INOUT ;
+      USE GROUND ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 -0.016 0.168 0.016 ;
+      END
+   END vss
+
+   OBS
+      LAYER M0 ;
+         RECT 0.0415 0.018 0.1595 0.03 ;
+         RECT 0.0085 0.042 0.1595 0.054 ;
+         RECT 0.0085 0.066 0.0545 0.078 ;
+         RECT 0.0715 0.066 0.0965 0.078 ;
+         RECT 0.1135 0.066 0.1595 0.078 ;
+         RECT 0.0415 0.09 0.1595 0.102 ;
+         RECT 0.0415 0.114 0.1595 0.126 ;
       LAYER M1 ;
-        RECT 0.014 0.015 0.028 0.129 ;
-    END
-  END A
-  PIN B
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.077 0.014 0.091 0.13 ;
-    END
-  END B
-  PIN vdd
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER BPR ;
-        RECT 0 0.128 0.168 0.16 ;
-    END
-  END vdd
-  PIN vss
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER BPR ;
-        RECT 0 -0.016 0.168 0.016 ;
-    END
-  END vss
-  PIN Y
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.042 0.014 0.056 0.13 ;
-    END
-  END Y
-  OBS
-    LAYER M1 ;
-      RECT 0.14 0.038 0.154 0.106 ;
-  END
+         RECT 0.14 0.038 0.154 0.106 ;
+   END
 END gt3_6t_and2_x1_rvt
 
 MACRO gt3_6t_and2_x2_rvt
-  CLASS CORE  ;
-  ORIGIN 0 0 ;
-  SYMMETRY X Y ;
-  SITE gt3v1 ;
-  FOREIGN gt3_6t_and2_x2_rvt 0 0 ;
-  SIZE 0.21 BY 0.144 ;
-  PIN A
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
+   CLASS CORE ;
+   ORIGIN 0 0 ;
+   FOREIGN gt3_6t_and2_x2_rvt ;
+   SIZE 0.21 BY 0.144 ;
+   SYMMETRY X Y ;
+   SITE gt3v1 ;
+   PIN A
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.014 0.014 0.028 0.13 ;
+      END
+   END A
+
+   PIN B
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.077 0.014 0.091 0.13 ;
+      END
+   END B
+
+   PIN Y
+      DIRECTION OUTPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.0455 0.014 0.0595 0.13 ;
+      END
+   END Y
+
+   PIN vdd
+      DIRECTION INOUT ;
+      USE POWER ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 0.128 0.21 0.16 ;
+      END
+   END vdd
+
+   PIN vss
+      DIRECTION INOUT ;
+      USE GROUND ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 -0.016 0.21 0.016 ;
+      END
+   END vss
+
+   OBS
+      LAYER M0 ;
+         RECT 0.0415 0.018 0.1595 0.03 ;
+         RECT 0.0085 0.042 0.1595 0.054 ;
+         RECT 0.0085 0.066 0.0545 0.078 ;
+         RECT 0.0715 0.066 0.0965 0.078 ;
+         RECT 0.1135 0.066 0.181 0.078 ;
+         RECT 0.0415 0.09 0.1595 0.102 ;
+         RECT 0.0415 0.114 0.1595 0.126 ;
       LAYER M1 ;
-        RECT 0.014 0.014 0.028 0.13 ;
-    END
-  END A
-  PIN B
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.077 0.014 0.091 0.13 ;
-    END
-  END B
-  PIN vdd
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER BPR ;
-        RECT 0 0.128 0.21 0.16 ;
-    END
-  END vdd
-  PIN vss
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER BPR ;
-        RECT 0 -0.016 0.21 0.016 ;
-    END
-  END vss
-  PIN Y
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.042 0.014 0.056 0.13 ;
-    END
-  END Y
-  OBS
-    LAYER M1 ;
-      RECT 0.14 0.038 0.154 0.106 ;
-  END
+         RECT 0.14 0.038 0.154 0.106 ;
+   END
 END gt3_6t_and2_x2_rvt
 
 MACRO gt3_6t_and2_x3_rvt
-  CLASS CORE  ;
-  ORIGIN 0 0 ;
-  SYMMETRY X Y ;
-  SITE gt3v1 ;
-  FOREIGN gt3_6t_and2_x3_rvt 0 0 ;
-  SIZE 0.252 BY 0.144 ;
-  PIN A
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
+   CLASS CORE ;
+   ORIGIN 0 0 ;
+   FOREIGN gt3_6t_and2_x3_rvt ;
+   SIZE 0.252 BY 0.144 ;
+   SYMMETRY X Y ;
+   SITE gt3v1 ;
+   PIN A
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.014 0.014 0.028 0.13 ;
+      END
+   END A
+
+   PIN B
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.077 0.014 0.091 0.13 ;
+      END
+   END B
+
+   PIN Y
+      DIRECTION OUTPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.0455 0.014 0.0595 0.13 ;
+      END
+   END Y
+
+   PIN vdd
+      DIRECTION INOUT ;
+      USE POWER ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 0.128 0.252 0.16 ;
+      END
+   END vdd
+
+   PIN vss
+      DIRECTION INOUT ;
+      USE GROUND ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 -0.016 0.252 0.016 ;
+      END
+   END vss
+
+   OBS
+      LAYER M0 ;
+         RECT 0.0415 0.018 0.2435 0.03 ;
+         RECT 0.0085 0.042 0.1595 0.054 ;
+         RECT 0.0085 0.066 0.0545 0.078 ;
+         RECT 0.0715 0.066 0.0965 0.078 ;
+         RECT 0.1135 0.066 0.223 0.078 ;
+         RECT 0.0415 0.09 0.1595 0.102 ;
+         RECT 0.0415 0.114 0.2435 0.126 ;
       LAYER M1 ;
-        RECT 0.014 0.014 0.028 0.13 ;
-    END
-  END A
-  PIN B
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.077 0.014 0.091 0.13 ;
-    END
-  END B
-  PIN vdd
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER BPR ;
-        RECT 0 0.128 0.252 0.16 ;
-    END
-  END vdd
-  PIN vss
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER BPR ;
-        RECT 0 -0.016 0.252 0.016 ;
-    END
-  END vss
-  PIN Y
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.042 0.014 0.056 0.13 ;
-    END
-  END Y
-  OBS
-    LAYER M1 ;
-      RECT 0.14 0.038 0.154 0.106 ;
-  END
+         RECT 0.14 0.038 0.154 0.106 ;
+   END
 END gt3_6t_and2_x3_rvt
 
 MACRO gt3_6t_and2_x4_rvt
-  CLASS CORE  ;
-  ORIGIN 0 0 ;
-  SYMMETRY X Y ;
-  SITE gt3v1 ;
-  FOREIGN gt3_6t_and2_x4_rvt 0 0 ;
-  SIZE 0.294 BY 0.144 ;
-  PIN A
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
+   CLASS CORE ;
+   ORIGIN 0 0 ;
+   FOREIGN gt3_6t_and2_x4_rvt ;
+   SIZE 0.294 BY 0.144 ;
+   SYMMETRY X Y ;
+   SITE gt3v1 ;
+   PIN A
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.014 0.014 0.028 0.13 ;
+      END
+   END A
+
+   PIN B
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.077 0.014 0.091 0.13 ;
+      END
+   END B
+
+   PIN Y
+      DIRECTION OUTPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.0455 0.014 0.0595 0.13 ;
+      END
+   END Y
+
+   PIN vdd
+      DIRECTION INOUT ;
+      USE POWER ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 0.128 0.294 0.16 ;
+      END
+   END vdd
+
+   PIN vss
+      DIRECTION INOUT ;
+      USE GROUND ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 -0.016 0.294 0.016 ;
+      END
+   END vss
+
+   OBS
+      LAYER M0 ;
+         RECT 0.0415 0.018 0.2435 0.03 ;
+         RECT 0.0085 0.042 0.1595 0.054 ;
+         RECT 0.0085 0.066 0.0545 0.078 ;
+         RECT 0.0715 0.066 0.0965 0.078 ;
+         RECT 0.1135 0.066 0.265 0.078 ;
+         RECT 0.0415 0.09 0.1595 0.102 ;
+         RECT 0.0415 0.114 0.2435 0.126 ;
       LAYER M1 ;
-        RECT 0.014 0.014 0.028 0.13 ;
-    END
-  END A
-  PIN B
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.077 0.014 0.091 0.13 ;
-    END
-  END B
-  PIN vdd
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER BPR ;
-        RECT 0 0.128 0.294 0.16 ;
-    END
-  END vdd
-  PIN vss
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER BPR ;
-        RECT 0 -0.016 0.294 0.016 ;
-    END
-  END vss
-  PIN Y
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.042 0.014 0.056 0.13 ;
-    END
-  END Y
-  OBS
-    LAYER M1 ;
-      RECT 0.14 0.038 0.154 0.106 ;
-  END
+         RECT 0.14 0.038 0.154 0.106 ;
+   END
 END gt3_6t_and2_x4_rvt
 
 MACRO gt3_6t_and3_x1_rvt
-  CLASS CORE  ;
-  ORIGIN 0 0 ;
-  SYMMETRY X Y ;
-  SITE gt3v1 ;
-  FOREIGN gt3_6t_and3_x1_rvt 0 0 ;
-  SIZE 0.21 BY 0.144 ;
-  PIN A
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
+   CLASS CORE ;
+   ORIGIN 0 0 ;
+   FOREIGN gt3_6t_and3_x1_rvt ;
+   SIZE 0.21 BY 0.144 ;
+   SYMMETRY X Y ;
+   SITE gt3v1 ;
+   PIN A
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.014 0.014 0.028 0.13 ;
+      END
+   END A
+
+   PIN B
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.077 0.014 0.091 0.13 ;
+      END
+   END B
+
+   PIN C
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.119 0.014 0.133 0.13 ;
+      END
+   END C
+
+   PIN Y
+      DIRECTION OUTPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.151 0.014 0.165 0.13 ;
+      END
+   END Y
+
+   PIN vdd
+      DIRECTION INOUT ;
+      USE POWER ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 0.128 0.21 0.16 ;
+      END
+   END vdd
+
+   PIN vss
+      DIRECTION INOUT ;
+      USE GROUND ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 -0.016 0.21 0.016 ;
+      END
+   END vss
+
+   OBS
+      LAYER M0 ;
+         RECT 0.147 0.018 0.2015 0.03 ;
+         RECT 0.0085 0.042 0.2015 0.054 ;
+         RECT 0.0085 0.066 0.0545 0.078 ;
+         RECT 0.0715 0.066 0.0965 0.078 ;
+         RECT 0.1135 0.066 0.1385 0.078 ;
+         RECT 0.1555 0.066 0.2015 0.078 ;
+         RECT 0.0085 0.09 0.2015 0.102 ;
+         RECT 0.147 0.114 0.2015 0.126 ;
       LAYER M1 ;
-        RECT 0.014 0.014 0.028 0.13 ;
-    END
-  END A
-  PIN B
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.077 0.014 0.091 0.13 ;
-    END
-  END B
-  PIN vdd
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER BPR ;
-        RECT 0 0.128 0.21 0.16 ;
-    END
-  END vdd
-  PIN vss
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER BPR ;
-        RECT 0 -0.016 0.21 0.016 ;
-    END
-  END vss
-  PIN Y
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.154 0.014 0.168 0.13 ;
-    END
-  END Y
-  PIN C
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.119 0.014 0.133 0.13 ;
-    END
-  END C
-  OBS
-    LAYER M1 ;
-      RECT 0.182 0.038 0.196 0.106 ;
-  END
+         RECT 0.183 0.038 0.197 0.106 ;
+   END
 END gt3_6t_and3_x1_rvt
 
 MACRO gt3_6t_ao211_x1_rvt
-  CLASS CORE  ;
-  ORIGIN 0 0 ;
-  SYMMETRY X Y ;
-  SITE gt3v1 ;
-  FOREIGN gt3_6t_ao211_x1_rvt 0 0 ;
-  SIZE 0.294 BY 0.144 ;
-  PIN B
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    PORT
+   CLASS CORE ;
+   ORIGIN 0 0 ;
+   FOREIGN gt3_6t_ao211_x1_rvt ;
+   SIZE 0.294 BY 0.144 ;
+   SYMMETRY X Y ;
+   SITE gt3v1 ;
+   PIN A1
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.077 0.014 0.091 0.13 ;
+      END
+   END A1
+
+   PIN A2
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.035 0.014 0.049 0.13 ;
+      END
+   END A2
+
+   PIN B
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.119 0.014 0.133 0.13 ;
+      END
+   END B
+
+   PIN C
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.161 0.014 0.175 0.13 ;
+      END
+   END C
+
+   PIN Y
+      DIRECTION OUTPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.266 0.014 0.28 0.13 ;
+      END
+   END Y
+
+   PIN vdd
+      DIRECTION INOUT ;
+      USE POWER ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 0.128 0.294 0.16 ;
+      END
+   END vdd
+
+   PIN vss
+      DIRECTION INOUT ;
+      USE GROUND ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 -0.016 0.294 0.016 ;
+      END
+   END vss
+
+   OBS
+      LAYER M0 ;
+         RECT 0.2605 0.018 0.2855 0.03 ;
+         RECT 0.0925 0.042 0.2425 0.054 ;
+         RECT 0.0085 0.066 0.0545 0.078 ;
+         RECT 0.0715 0.066 0.0965 0.078 ;
+         RECT 0.1135 0.066 0.1385 0.078 ;
+         RECT 0.1555 0.066 0.1805 0.078 ;
+         RECT 0.2205 0.066 0.264 0.078 ;
+         RECT 0.1705 0.09 0.2425 0.102 ;
+         RECT 0.0085 0.114 0.1175 0.126 ;
+         RECT 0.2605 0.114 0.2855 0.126 ;
       LAYER M1 ;
-        RECT 0.119 0.014 0.133 0.13 ;
-    END
-  END B
-  PIN Y
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.266 0.014 0.28 0.13 ;
-    END
-  END Y
-  PIN vdd
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER BPR ;
-        RECT 0 0.128 0.294 0.16 ;
-    END
-  END vdd
-  PIN vss
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER BPR ;
-        RECT 0 -0.016 0.294 0.016 ;
-    END
-  END vss
-  PIN A2
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.035 0.014 0.049 0.13 ;
-    END
-  END A2
-  PIN A1
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.077 0.014 0.091 0.13 ;
-    END
-  END A1
-  PIN C
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.161 0.014 0.175 0.13 ;
-    END
-  END C
-  OBS
-    LAYER M1 ;
-      RECT 0.224 0.014 0.238 0.13 ;
-  END
+         RECT 0.2245 0.014 0.2385 0.13 ;
+   END
 END gt3_6t_ao211_x1_rvt
 
 MACRO gt3_6t_ao21_x1_rvt
-  CLASS CORE  ;
-  ORIGIN 0 0 ;
-  SYMMETRY X Y ;
-  SITE gt3v1 ;
-  FOREIGN gt3_6t_ao21_x1_rvt 0 0 ;
-  SIZE 0.21 BY 0.144 ;
-  PIN B
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
+   CLASS CORE ;
+   ORIGIN 0 0 ;
+   FOREIGN gt3_6t_ao21_x1_rvt ;
+   SIZE 0.21 BY 0.144 ;
+   SYMMETRY X Y ;
+   SITE gt3v1 ;
+   PIN A1
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.077 0.014 0.091 0.13 ;
+      END
+   END A1
+
+   PIN A2
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.014 0.014 0.028 0.13 ;
+      END
+   END A2
+
+   PIN B
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.119 0.014 0.133 0.13 ;
+      END
+   END B
+
+   PIN Y
+      DIRECTION OUTPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.1505 0.014 0.1645 0.13 ;
+      END
+   END Y
+
+   PIN vdd
+      DIRECTION INOUT ;
+      USE POWER ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 0.128 0.21 0.16 ;
+      END
+   END vdd
+
+   PIN vss
+      DIRECTION INOUT ;
+      USE GROUND ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 -0.016 0.21 0.016 ;
+      END
+   END vss
+
+   OBS
+      LAYER M0 ;
+         RECT 0.134 0.018 0.2015 0.03 ;
+         RECT 0.0925 0.042 0.2015 0.054 ;
+         RECT 0.0085 0.066 0.0545 0.078 ;
+         RECT 0.0715 0.066 0.0965 0.078 ;
+         RECT 0.1135 0.066 0.1385 0.078 ;
+         RECT 0.1555 0.066 0.2015 0.078 ;
+         RECT 0.0085 0.09 0.1385 0.102 ;
+         RECT 0.0505 0.114 0.2015 0.126 ;
       LAYER M1 ;
-        RECT 0.119 0.014 0.133 0.13 ;
-    END
-  END B
-  PIN Y
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.154 0.014 0.168 0.13 ;
-    END
-  END Y
-  PIN vdd
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER BPR ;
-        RECT 0 0.128 0.21 0.16 ;
-    END
-  END vdd
-  PIN vss
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER BPR ;
-        RECT 0 -0.016 0.21 0.016 ;
-    END
-  END vss
-  PIN A2
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.014 0.014 0.028 0.13 ;
-    END
-  END A2
-  PIN A1
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.077 0.014 0.091 0.13 ;
-    END
-  END A1
-  OBS
-    LAYER M1 ;
-      RECT 0.182 0.014 0.196 0.13 ;
-  END
+         RECT 0.182 0.014 0.196 0.13 ;
+   END
 END gt3_6t_ao21_x1_rvt
 
 MACRO gt3_6t_ao22_x1_rvt
-  CLASS CORE  ;
-  ORIGIN 0 0 ;
-  SYMMETRY X Y ;
-  SITE gt3v1 ;
-  FOREIGN gt3_6t_ao22_x1_rvt 0 0 ;
-  SIZE 0.294 BY 0.144 ;
-  PIN B1
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
+   CLASS CORE ;
+   ORIGIN 0 0 ;
+   FOREIGN gt3_6t_ao22_x1_rvt ;
+   SIZE 0.294 BY 0.144 ;
+   SYMMETRY X Y ;
+   SITE gt3v1 ;
+   PIN A1
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.035 0.014 0.049 0.13 ;
+      END
+   END A1
+
+   PIN A2
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.077 0.014 0.091 0.13 ;
+      END
+   END A2
+
+   PIN B1
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.161 0.014 0.175 0.13 ;
+      END
+   END B1
+
+   PIN B2
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.119 0.014 0.133 0.13 ;
+      END
+   END B2
+
+   PIN Y
+      DIRECTION OUTPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.266 0.014 0.28 0.13 ;
+      END
+   END Y
+
+   PIN vdd
+      DIRECTION INOUT ;
+      USE POWER ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 0.128 0.294 0.16 ;
+      END
+   END vdd
+
+   PIN vss
+      DIRECTION INOUT ;
+      USE GROUND ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 -0.016 0.294 0.016 ;
+      END
+   END vss
+
+   OBS
+      LAYER M0 ;
+         RECT 0.2605 0.018 0.2855 0.03 ;
+         RECT 0.0925 0.042 0.2425 0.054 ;
+         RECT 0.0085 0.066 0.0545 0.078 ;
+         RECT 0.0715 0.066 0.0965 0.078 ;
+         RECT 0.1135 0.066 0.1385 0.078 ;
+         RECT 0.1555 0.066 0.1805 0.078 ;
+         RECT 0.2205 0.066 0.264 0.078 ;
+         RECT 0.1345 0.09 0.2425 0.102 ;
+         RECT 0.0085 0.114 0.2015 0.126 ;
+         RECT 0.2605 0.114 0.2855 0.126 ;
       LAYER M1 ;
-        RECT 0.161 0.014 0.175 0.13 ;
-    END
-  END B1
-  PIN Y
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.266 0.014 0.28 0.13 ;
-    END
-  END Y
-  PIN vdd
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER BPR ;
-        RECT 0 0.128 0.294 0.16 ;
-    END
-  END vdd
-  PIN vss
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER BPR ;
-        RECT 0 -0.016 0.294 0.016 ;
-    END
-  END vss
-  PIN A2
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.077 0.014 0.091 0.13 ;
-    END
-  END A2
-  PIN A1
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.035 0.014 0.049 0.13 ;
-    END
-  END A1
-  PIN B2
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.119 0.014 0.133 0.13 ;
-    END
-  END B2
-  OBS
-    LAYER M1 ;
-      RECT 0.2245 0.014 0.2385 0.13 ;
-  END
+         RECT 0.2245 0.014 0.2385 0.13 ;
+   END
 END gt3_6t_ao22_x1_rvt
 
 MACRO gt3_6t_ao31_x1_rvt
-  CLASS CORE  ;
-  ORIGIN 0 0 ;
-  SYMMETRY X Y ;
-  SITE gt3v1 ;
-  FOREIGN gt3_6t_ao31_x1_rvt 0 0 ;
-  SIZE 0.294 BY 0.144 ;
-  PIN B
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    PORT
+   CLASS CORE ;
+   ORIGIN 0 0 ;
+   FOREIGN gt3_6t_ao31_x1_rvt ;
+   SIZE 0.294 BY 0.144 ;
+   SYMMETRY X Y ;
+   SITE gt3v1 ;
+   PIN A1
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.035 0.014 0.049 0.13 ;
+      END
+   END A1
+
+   PIN A2
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.077 0.014 0.091 0.13 ;
+      END
+   END A2
+
+   PIN A3
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.119 0.014 0.133 0.13 ;
+      END
+   END A3
+
+   PIN B
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.161 0.014 0.175 0.13 ;
+      END
+   END B
+
+   PIN Y
+      DIRECTION OUTPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.266 0.014 0.28 0.13 ;
+      END
+   END Y
+
+   PIN vdd
+      DIRECTION INOUT ;
+      USE POWER ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 0.128 0.294 0.16 ;
+      END
+   END vdd
+
+   PIN vss
+      DIRECTION INOUT ;
+      USE GROUND ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 -0.016 0.294 0.016 ;
+      END
+   END vss
+
+   OBS
+      LAYER M0 ;
+         RECT 0.2605 0.018 0.2855 0.03 ;
+         RECT 0.0085 0.042 0.2425 0.054 ;
+         RECT 0.0085 0.066 0.0545 0.078 ;
+         RECT 0.0715 0.066 0.0965 0.078 ;
+         RECT 0.1135 0.066 0.1385 0.078 ;
+         RECT 0.1555 0.066 0.1805 0.078 ;
+         RECT 0.2205 0.066 0.264 0.078 ;
+         RECT 0.1765 0.09 0.2425 0.102 ;
+         RECT 0.0505 0.114 0.1595 0.126 ;
+         RECT 0.2605 0.114 0.2855 0.126 ;
       LAYER M1 ;
-        RECT 0.161 0.014 0.175 0.13 ;
-    END
-  END B
-  PIN Y
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.266 0.014 0.28 0.13 ;
-    END
-  END Y
-  PIN vdd
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER BPR ;
-        RECT 0 0.128 0.294 0.16 ;
-    END
-  END vdd
-  PIN vss
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER BPR ;
-        RECT 0 -0.016 0.294 0.016 ;
-    END
-  END vss
-  PIN A2
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.077 0.014 0.091 0.13 ;
-    END
-  END A2
-  PIN A1
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.035 0.014 0.049 0.13 ;
-    END
-  END A1
-  PIN A3
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.119 0.014 0.133 0.13 ;
-    END
-  END A3
-  OBS
-    LAYER M1 ;
-      RECT 0.224 0.014 0.238 0.13 ;
-  END
+         RECT 0.2245 0.014 0.2385 0.13 ;
+   END
 END gt3_6t_ao31_x1_rvt
 
 MACRO gt3_6t_ao32_x1_rvt
-  CLASS CORE  ;
-  ORIGIN 0 0 ;
-  SYMMETRY X Y ;
-  SITE gt3v1 ;
-  FOREIGN gt3_6t_ao32_x1_rvt 0 0 ;
-  SIZE 0.336 BY 0.144 ;
-  PIN B2
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    PORT
+   CLASS CORE ;
+   ORIGIN 0 0 ;
+   FOREIGN gt3_6t_ao32_x1_rvt ;
+   SIZE 0.336 BY 0.144 ;
+   SYMMETRY X Y ;
+   SITE gt3v1 ;
+   PIN A1
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.035 0.014 0.049 0.13 ;
+      END
+   END A1
+
+   PIN A2
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.077 0.014 0.091 0.13 ;
+      END
+   END A2
+
+   PIN A3
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.119 0.014 0.133 0.13 ;
+      END
+   END A3
+
+   PIN B1
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.203 0.014 0.217 0.13 ;
+      END
+   END B1
+
+   PIN B2
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.161 0.014 0.175 0.13 ;
+      END
+   END B2
+
+   PIN Y
+      DIRECTION OUTPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.308 0.014 0.322 0.13 ;
+      END
+   END Y
+
+   PIN vdd
+      DIRECTION INOUT ;
+      USE POWER ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 0.128 0.336 0.16 ;
+      END
+   END vdd
+
+   PIN vss
+      DIRECTION INOUT ;
+      USE GROUND ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 -0.016 0.336 0.016 ;
+      END
+   END vss
+
+   OBS
+      LAYER M0 ;
+         RECT 0.3025 0.018 0.3275 0.03 ;
+         RECT 0.0085 0.042 0.284 0.054 ;
+         RECT 0.0085 0.066 0.0545 0.078 ;
+         RECT 0.0715 0.066 0.0965 0.078 ;
+         RECT 0.1135 0.066 0.1385 0.078 ;
+         RECT 0.1555 0.066 0.1805 0.078 ;
+         RECT 0.1975 0.066 0.2225 0.078 ;
+         RECT 0.262 0.066 0.3065 0.078 ;
+         RECT 0.1765 0.09 0.285 0.102 ;
+         RECT 0.0505 0.114 0.2435 0.126 ;
+         RECT 0.3025 0.114 0.3275 0.126 ;
       LAYER M1 ;
-        RECT 0.161 0.014 0.175 0.13 ;
-    END
-  END B2
-  PIN Y
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.308 0.014 0.322 0.13 ;
-    END
-  END Y
-  PIN vdd
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER BPR ;
-        RECT 0 0.128 0.336 0.16 ;
-    END
-  END vdd
-  PIN vss
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER BPR ;
-        RECT 0 -0.016 0.336 0.016 ;
-    END
-  END vss
-  PIN A2
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.077 0.014 0.091 0.13 ;
-    END
-  END A2
-  PIN A1
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.035 0.014 0.049 0.13 ;
-    END
-  END A1
-  PIN A3
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.119 0.014 0.133 0.13 ;
-    END
-  END A3
-  PIN B1
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.203 0.014 0.217 0.13 ;
-    END
-  END B1
-  OBS
-    LAYER M1 ;
-      RECT 0.266 0.038 0.28 0.106 ;
-  END
+         RECT 0.266 0.038 0.28 0.106 ;
+   END
 END gt3_6t_ao32_x1_rvt
 
 MACRO gt3_6t_ao33_x1_rvt
-  CLASS CORE  ;
-  ORIGIN 0 0 ;
-  SYMMETRY X Y ;
-  SITE gt3v1 ;
-  FOREIGN gt3_6t_ao33_x1_rvt 0 0 ;
-  SIZE 0.378 BY 0.144 ;
-  PIN B2
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    PORT
+   CLASS CORE ;
+   ORIGIN 0 0 ;
+   FOREIGN gt3_6t_ao33_x1_rvt ;
+   SIZE 0.378 BY 0.144 ;
+   SYMMETRY X Y ;
+   SITE gt3v1 ;
+   PIN A1
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.035 0.014 0.049 0.13 ;
+      END
+   END A1
+
+   PIN A2
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.077 0.014 0.091 0.13 ;
+      END
+   END A2
+
+   PIN A3
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.119 0.014 0.133 0.13 ;
+      END
+   END A3
+
+   PIN B1
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.245 0.014 0.259 0.13 ;
+      END
+   END B1
+
+   PIN B2
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.203 0.014 0.217 0.13 ;
+      END
+   END B2
+
+   PIN B3
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.161 0.014 0.175 0.13 ;
+      END
+   END B3
+
+   PIN Y
+      DIRECTION OUTPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.35 0.014 0.364 0.13 ;
+      END
+   END Y
+
+   PIN vdd
+      DIRECTION INOUT ;
+      USE POWER ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 0.128 0.378 0.16 ;
+      END
+   END vdd
+
+   PIN vss
+      DIRECTION INOUT ;
+      USE GROUND ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 -0.016 0.378 0.016 ;
+      END
+   END vss
+
+   OBS
+      LAYER M0 ;
+         RECT 0.3445 0.018 0.3695 0.03 ;
+         RECT 0.0085 0.042 0.326 0.054 ;
+         RECT 0.0085 0.066 0.0545 0.078 ;
+         RECT 0.0715 0.066 0.0965 0.078 ;
+         RECT 0.1135 0.066 0.1385 0.078 ;
+         RECT 0.1555 0.066 0.1805 0.078 ;
+         RECT 0.1975 0.066 0.2225 0.078 ;
+         RECT 0.2395 0.066 0.2645 0.078 ;
+         RECT 0.304 0.066 0.3485 0.078 ;
+         RECT 0.1765 0.09 0.326 0.102 ;
+         RECT 0.0505 0.114 0.2435 0.126 ;
+         RECT 0.3445 0.114 0.3695 0.126 ;
       LAYER M1 ;
-        RECT 0.203 0.014 0.217 0.13 ;
-    END
-  END B2
-  PIN Y
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.35 0.014 0.364 0.13 ;
-    END
-  END Y
-  PIN vdd
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER BPR ;
-        RECT 0 0.128 0.378 0.16 ;
-    END
-  END vdd
-  PIN vss
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER BPR ;
-        RECT 0 -0.016 0.378 0.016 ;
-    END
-  END vss
-  PIN A2
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.077 0.014 0.091 0.13 ;
-    END
-  END A2
-  PIN A1
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.035 0.014 0.049 0.13 ;
-    END
-  END A1
-  PIN A3
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.119 0.014 0.133 0.13 ;
-    END
-  END A3
-  PIN B1
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.245 0.014 0.259 0.13 ;
-    END
-  END B1
-  PIN B3
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.161 0.014 0.175 0.13 ;
-    END
-  END B3
-  OBS
-    LAYER M1 ;
-      RECT 0.308 0.038 0.322 0.106 ;
-  END
+         RECT 0.308 0.038 0.322 0.106 ;
+   END
 END gt3_6t_ao33_x1_rvt
 
 MACRO gt3_6t_aoi211_x1_rvt
-  CLASS CORE  ;
-  ORIGIN 0 0 ;
-  SYMMETRY X Y ;
-  SITE gt3v1 ;
-  FOREIGN gt3_6t_aoi211_x1_rvt 0 0 ;
-  SIZE 0.21 BY 0.144 ;
-  PIN B
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.119 0.014 0.133 0.13 ;
-    END
-  END B
-  PIN Y
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.154 0.014 0.168 0.13 ;
-    END
-  END Y
-  PIN vdd
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER BPR ;
-        RECT 0 0.128 0.21 0.16 ;
-    END
-  END vdd
-  PIN vss
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER BPR ;
-        RECT 0 -0.016 0.21 0.016 ;
-    END
-  END vss
-  PIN A2
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.035 0.014 0.049 0.13 ;
-    END
-  END A2
-  PIN A1
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.077 0.014 0.091 0.13 ;
-    END
-  END A1
-  PIN C
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.182 0.014 0.196 0.13 ;
-    END
-  END C
-  OBS
-  END
+   CLASS CORE ;
+   ORIGIN 0 0 ;
+   FOREIGN gt3_6t_aoi211_x1_rvt ;
+   SIZE 0.21 BY 0.144 ;
+   SYMMETRY X Y ;
+   SITE gt3v1 ;
+   PIN A1
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.077 0.014 0.091 0.13 ;
+      END
+   END A1
+
+   PIN A2
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.035 0.014 0.049 0.13 ;
+      END
+   END A2
+
+   PIN B
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.119 0.014 0.133 0.13 ;
+      END
+   END B
+
+   PIN C
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.183 0.014 0.197 0.13 ;
+      END
+   END C
+
+   PIN Y
+      DIRECTION OUTPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.151 0.014 0.165 0.13 ;
+      END
+   END Y
+
+   PIN vdd
+      DIRECTION INOUT ;
+      USE POWER ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 0.128 0.21 0.16 ;
+      END
+   END vdd
+
+   PIN vss
+      DIRECTION INOUT ;
+      USE GROUND ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 -0.016 0.21 0.016 ;
+      END
+   END vss
+
+   OBS
+      LAYER M0 ;
+         RECT 0.0925 0.042 0.2015 0.054 ;
+         RECT 0.0085 0.066 0.0545 0.078 ;
+         RECT 0.0715 0.066 0.0965 0.078 ;
+         RECT 0.1135 0.066 0.1385 0.078 ;
+         RECT 0.1555 0.066 0.2015 0.078 ;
+         RECT 0.1315 0.09 0.2015 0.102 ;
+         RECT 0.0085 0.114 0.1175 0.126 ;
+   END
 END gt3_6t_aoi211_x1_rvt
 
 MACRO gt3_6t_aoi21_x1_rvt
-  CLASS CORE  ;
-  ORIGIN 0 0 ;
-  SYMMETRY X Y ;
-  SITE gt3v1 ;
-  FOREIGN gt3_6t_aoi21_x1_rvt 0 0 ;
-  SIZE 0.168 BY 0.144 ;
-  PIN B
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.119 0.015 0.133 0.129 ;
-    END
-  END B
-  PIN Y
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.042 0.015 0.056 0.13 ;
-    END
-  END Y
-  PIN vdd
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER BPR ;
-        RECT 0 0.128 0.168 0.16 ;
-    END
-  END vdd
-  PIN vss
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER BPR ;
-        RECT 0 -0.016 0.168 0.016 ;
-    END
-  END vss
-  PIN A2
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.077 0.015 0.091 0.129 ;
-    END
-  END A2
-  PIN A1
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.014 0.015 0.028 0.129 ;
-    END
-  END A1
-  OBS
-    LAYER M1 ;
-      RECT 0.147 0 0.168 0.001 ;
-  END
+   CLASS CORE ;
+   ORIGIN 0 0 ;
+   FOREIGN gt3_6t_aoi21_x1_rvt ;
+   SIZE 0.168 BY 0.144 ;
+   SYMMETRY X Y ;
+   SITE gt3v1 ;
+   PIN A1
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.014 0.015 0.028 0.129 ;
+      END
+   END A1
+
+   PIN A2
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.077 0.015 0.091 0.129 ;
+      END
+   END A2
+
+   PIN B
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.119 0.015 0.133 0.129 ;
+      END
+   END B
+
+   PIN Y
+      DIRECTION OUTPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.049 0.015 0.063 0.13 ;
+      END
+   END Y
+
+   PIN vdd
+      DIRECTION INOUT ;
+      USE POWER ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 0.128 0.168 0.16 ;
+      END
+   END vdd
+
+   PIN vss
+      DIRECTION INOUT ;
+      USE GROUND ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 -0.016 0.168 0.016 ;
+      END
+   END vss
+
+   OBS
+      LAYER M0 ;
+         RECT 0.0085 0.042 0.1595 0.054 ;
+         RECT 0.0095 0.066 0.0545 0.078 ;
+         RECT 0.0715 0.066 0.0965 0.078 ;
+         RECT 0.1135 0.066 0.1385 0.078 ;
+         RECT 0.0085 0.09 0.1175 0.102 ;
+         RECT 0.039 0.114 0.0765 0.126 ;
+   END
 END gt3_6t_aoi21_x1_rvt
 
 MACRO gt3_6t_aoi22_x1_rvt
-  CLASS CORE  ;
-  ORIGIN 0 0 ;
-  SYMMETRY X Y ;
-  SITE gt3v1 ;
-  FOREIGN gt3_6t_aoi22_x1_rvt 0 0 ;
-  SIZE 0.21 BY 0.144 ;
-  PIN B1
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.182 0.014 0.196 0.13 ;
-    END
-  END B1
-  PIN Y
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.154 0.014 0.168 0.13 ;
-    END
-  END Y
-  PIN vdd
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER BPR ;
-        RECT 0 0.128 0.21 0.16 ;
-    END
-  END vdd
-  PIN vss
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER BPR ;
-        RECT 0 -0.016 0.21 0.016 ;
-    END
-  END vss
-  PIN A2
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.077 0.014 0.091 0.13 ;
-    END
-  END A2
-  PIN A1
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.035 0.014 0.049 0.13 ;
-    END
-  END A1
-  PIN B2
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.119 0.014 0.133 0.13 ;
-    END
-  END B2
-  OBS
-  END
+   CLASS CORE ;
+   ORIGIN 0 0 ;
+   FOREIGN gt3_6t_aoi22_x1_rvt ;
+   SIZE 0.21 BY 0.144 ;
+   SYMMETRY X Y ;
+   SITE gt3v1 ;
+   PIN A1
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.035 0.014 0.049 0.13 ;
+      END
+   END A1
+
+   PIN A2
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.077 0.014 0.091 0.13 ;
+      END
+   END A2
+
+   PIN B1
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.181 0.014 0.195 0.13 ;
+      END
+   END B1
+
+   PIN B2
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.119 0.014 0.133 0.13 ;
+      END
+   END B2
+
+   PIN Y
+      DIRECTION OUTPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.15 0.014 0.164 0.13 ;
+      END
+   END Y
+
+   PIN vdd
+      DIRECTION INOUT ;
+      USE POWER ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 0.128 0.21 0.16 ;
+      END
+   END vdd
+
+   PIN vss
+      DIRECTION INOUT ;
+      USE GROUND ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 -0.016 0.21 0.016 ;
+      END
+   END vss
+
+   OBS
+      LAYER M0 ;
+         RECT 0.0925 0.042 0.177 0.054 ;
+         RECT 0.0085 0.066 0.0545 0.078 ;
+         RECT 0.0715 0.066 0.0965 0.078 ;
+         RECT 0.1135 0.066 0.1385 0.078 ;
+         RECT 0.1555 0.066 0.2015 0.078 ;
+         RECT 0.129 0.09 0.177 0.102 ;
+         RECT 0.0085 0.114 0.2015 0.126 ;
+   END
 END gt3_6t_aoi22_x1_rvt
 
 MACRO gt3_6t_aoi31_x1_rvt
-  CLASS CORE  ;
-  ORIGIN 0 0 ;
-  SYMMETRY X Y ;
-  SITE gt3v1 ;
-  FOREIGN gt3_6t_aoi31_x1_rvt 0 0 ;
-  SIZE 0.21 BY 0.144 ;
-  PIN B
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.182 0.014 0.196 0.13 ;
-    END
-  END B
-  PIN Y
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.154 0.014 0.168 0.13 ;
-    END
-  END Y
-  PIN vdd
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER BPR ;
-        RECT 0 0.128 0.21 0.16 ;
-    END
-  END vdd
-  PIN vss
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER BPR ;
-        RECT 0 -0.016 0.21 0.016 ;
-    END
-  END vss
-  PIN A2
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.077 0.014 0.091 0.13 ;
-    END
-  END A2
-  PIN A1
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.035 0.014 0.049 0.13 ;
-    END
-  END A1
-  PIN A3
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.119 0.014 0.133 0.13 ;
-    END
-  END A3
-  OBS
-  END
+   CLASS CORE ;
+   ORIGIN 0 0 ;
+   FOREIGN gt3_6t_aoi31_x1_rvt ;
+   SIZE 0.21 BY 0.144 ;
+   SYMMETRY X Y ;
+   SITE gt3v1 ;
+   PIN A1
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.035 0.014 0.049 0.13 ;
+      END
+   END A1
+
+   PIN A2
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.077 0.014 0.091 0.13 ;
+      END
+   END A2
+
+   PIN A3
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.119 0.014 0.133 0.13 ;
+      END
+   END A3
+
+   PIN B
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.183 0.014 0.197 0.13 ;
+      END
+   END B
+
+   PIN Y
+      DIRECTION OUTPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.151 0.014 0.165 0.13 ;
+      END
+   END Y
+
+   PIN vdd
+      DIRECTION INOUT ;
+      USE POWER ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 0.128 0.21 0.16 ;
+      END
+   END vdd
+
+   PIN vss
+      DIRECTION INOUT ;
+      USE GROUND ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 -0.016 0.21 0.016 ;
+      END
+   END vss
+
+   OBS
+      LAYER M0 ;
+         RECT 0.0085 0.042 0.2015 0.054 ;
+         RECT 0.0085 0.066 0.0545 0.078 ;
+         RECT 0.0715 0.066 0.0965 0.078 ;
+         RECT 0.1135 0.066 0.1385 0.078 ;
+         RECT 0.1555 0.066 0.2015 0.078 ;
+         RECT 0.1315 0.09 0.2015 0.102 ;
+         RECT 0.0505 0.114 0.1595 0.126 ;
+   END
 END gt3_6t_aoi31_x1_rvt
 
 MACRO gt3_6t_aoi32_x1_rvt
-  CLASS CORE  ;
-  ORIGIN 0 0 ;
-  SYMMETRY X Y ;
-  SITE gt3v1 ;
-  FOREIGN gt3_6t_aoi32_x1_rvt 0 0 ;
-  SIZE 0.252 BY 0.144 ;
-  PIN B2
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.161 0.014 0.175 0.13 ;
-    END
-  END B2
-  PIN Y
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.196 0.014 0.21 0.13 ;
-    END
-  END Y
-  PIN vdd
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER BPR ;
-        RECT 0 0.128 0.252 0.16 ;
-    END
-  END vdd
-  PIN vss
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER BPR ;
-        RECT 0 -0.016 0.252 0.016 ;
-    END
-  END vss
-  PIN A2
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.077 0.014 0.091 0.13 ;
-    END
-  END A2
-  PIN A1
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.035 0.014 0.049 0.13 ;
-    END
-  END A1
-  PIN A3
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.119 0.014 0.133 0.13 ;
-    END
-  END A3
-  PIN B1
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.224 0.014 0.238 0.13 ;
-    END
-  END B1
-  OBS
-  END
+   CLASS CORE ;
+   ORIGIN 0 0 ;
+   FOREIGN gt3_6t_aoi32_x1_rvt ;
+   SIZE 0.252 BY 0.144 ;
+   SYMMETRY X Y ;
+   SITE gt3v1 ;
+   PIN A1
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.035 0.014 0.049 0.13 ;
+      END
+   END A1
+
+   PIN A2
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.077 0.014 0.091 0.13 ;
+      END
+   END A2
+
+   PIN A3
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.119 0.014 0.133 0.13 ;
+      END
+   END A3
+
+   PIN B1
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.225 0.014 0.239 0.13 ;
+      END
+   END B1
+
+   PIN B2
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.161 0.014 0.175 0.13 ;
+      END
+   END B2
+
+   PIN Y
+      DIRECTION OUTPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.193 0.014 0.207 0.13 ;
+      END
+   END Y
+
+   PIN vdd
+      DIRECTION INOUT ;
+      USE POWER ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 0.128 0.252 0.16 ;
+      END
+   END vdd
+
+   PIN vss
+      DIRECTION INOUT ;
+      USE GROUND ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 -0.016 0.252 0.016 ;
+      END
+   END vss
+
+   OBS
+      LAYER M0 ;
+         RECT 0.0085 0.042 0.2435 0.054 ;
+         RECT 0.0085 0.066 0.0545 0.078 ;
+         RECT 0.0715 0.066 0.0965 0.078 ;
+         RECT 0.1135 0.066 0.1385 0.078 ;
+         RECT 0.1555 0.066 0.1805 0.078 ;
+         RECT 0.1975 0.066 0.2435 0.078 ;
+         RECT 0.1765 0.09 0.2435 0.102 ;
+         RECT 0.0505 0.114 0.2435 0.126 ;
+   END
 END gt3_6t_aoi32_x1_rvt
 
 MACRO gt3_6t_aoi33_x1_rvt
-  CLASS CORE  ;
-  ORIGIN 0 0 ;
-  SYMMETRY X Y ;
-  SITE gt3v1 ;
-  FOREIGN gt3_6t_aoi33_x1_rvt 0 0 ;
-  SIZE 0.294 BY 0.144 ;
-  PIN B2
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.203 0.014 0.217 0.13 ;
-    END
-  END B2
-  PIN Y
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.238 0.014 0.252 0.13 ;
-    END
-  END Y
-  PIN vdd
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER BPR ;
-        RECT 0 0.128 0.294 0.16 ;
-    END
-  END vdd
-  PIN vss
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER BPR ;
-        RECT 0 -0.016 0.294 0.016 ;
-    END
-  END vss
-  PIN A2
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.077 0.014 0.091 0.13 ;
-    END
-  END A2
-  PIN A1
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.035 0.014 0.049 0.13 ;
-    END
-  END A1
-  PIN A3
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.119 0.014 0.133 0.13 ;
-    END
-  END A3
-  PIN B1
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.266 0.014 0.28 0.13 ;
-    END
-  END B1
-  PIN B3
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.161 0.014 0.175 0.13 ;
-    END
-  END B3
-  OBS
-  END
+   CLASS CORE ;
+   ORIGIN 0 0 ;
+   FOREIGN gt3_6t_aoi33_x1_rvt ;
+   SIZE 0.294 BY 0.144 ;
+   SYMMETRY X Y ;
+   SITE gt3v1 ;
+   PIN A1
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.035 0.014 0.049 0.13 ;
+      END
+   END A1
+
+   PIN A2
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.077 0.014 0.091 0.13 ;
+      END
+   END A2
+
+   PIN A3
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.119 0.014 0.133 0.13 ;
+      END
+   END A3
+
+   PIN B1
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.267 0.014 0.281 0.13 ;
+      END
+   END B1
+
+   PIN B2
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.203 0.014 0.217 0.13 ;
+      END
+   END B2
+
+   PIN B3
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.161 0.014 0.175 0.13 ;
+      END
+   END B3
+
+   PIN Y
+      DIRECTION OUTPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.235 0.014 0.249 0.13 ;
+      END
+   END Y
+
+   PIN vdd
+      DIRECTION INOUT ;
+      USE POWER ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 0.128 0.294 0.16 ;
+      END
+   END vdd
+
+   PIN vss
+      DIRECTION INOUT ;
+      USE GROUND ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 -0.016 0.294 0.016 ;
+      END
+   END vss
+
+   OBS
+      LAYER M0 ;
+         RECT 0.0085 0.042 0.2855 0.054 ;
+         RECT 0.0085 0.066 0.0545 0.078 ;
+         RECT 0.0715 0.066 0.0965 0.078 ;
+         RECT 0.1135 0.066 0.1385 0.078 ;
+         RECT 0.1555 0.066 0.1805 0.078 ;
+         RECT 0.1975 0.066 0.2225 0.078 ;
+         RECT 0.2395 0.066 0.2855 0.078 ;
+         RECT 0.1765 0.09 0.2855 0.102 ;
+         RECT 0.0505 0.114 0.2435 0.126 ;
+   END
 END gt3_6t_aoi33_x1_rvt
 
 MACRO gt3_6t_buf_x10_rvt
-  CLASS CORE  ;
-  ORIGIN 0 0 ;
-  SYMMETRY X Y ;
-  SITE gt3v1 ;
-  FOREIGN gt3_6t_buf_x10_rvt 0 0 ;
-  SIZE 0.588 BY 0.144 ;
-  PIN vdd
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER BPR ;
-        RECT 0 0.128 0.588 0.16 ;
-    END
-  END vdd
-  PIN vss
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER BPR ;
-        RECT 0 -0.016 0.588 0.016 ;
-    END
-  END vss
-  PIN Y
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
+   CLASS CORE ;
+   ORIGIN 0 0 ;
+   FOREIGN gt3_6t_buf_x10_rvt ;
+   SIZE 0.588 BY 0.144 ;
+   SYMMETRY X Y ;
+   SITE gt3v1 ;
+   PIN A
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.098 0.0155 0.112 0.1285 ;
+      END
+   END A
+
+   PIN Y
+      DIRECTION OUTPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.14 0.014 0.154 0.13 ;
+      END
+   END Y
+
+   PIN vdd
+      DIRECTION INOUT ;
+      USE POWER ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 0.128 0.588 0.16 ;
+      END
+   END vdd
+
+   PIN vss
+      DIRECTION INOUT ;
+      USE GROUND ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 -0.016 0.588 0.016 ;
+      END
+   END vss
+
+   OBS
+      LAYER M0 ;
+         RECT 0.1345 0.018 0.5375 0.03 ;
+         RECT 0.0085 0.042 0.2015 0.054 ;
+         RECT 0.03 0.066 0.138 0.078 ;
+         RECT 0.156 0.066 0.558 0.078 ;
+         RECT 0.0085 0.09 0.2015 0.102 ;
+         RECT 0.1345 0.114 0.5375 0.126 ;
       LAYER M1 ;
-        RECT 0.14 0.014 0.154 0.13 ;
-    END
-  END Y
-  PIN A
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.098 0.0155 0.112 0.1285 ;
-    END
-  END A
-  OBS
-    LAYER M1 ;
-      RECT 0.182 0.038 0.196 0.106 ;
-  END
+         RECT 0.182 0.038 0.196 0.106 ;
+   END
 END gt3_6t_buf_x10_rvt
 
 MACRO gt3_6t_buf_x12_rvt
-  CLASS CORE  ;
-  ORIGIN 0 0 ;
-  SYMMETRY X Y ;
-  SITE gt3v1 ;
-  FOREIGN gt3_6t_buf_x12_rvt 0 0 ;
-  SIZE 0.672 BY 0.144 ;
-  PIN vdd
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER BPR ;
-        RECT 0 0.128 0.672 0.16 ;
-    END
-  END vdd
-  PIN vss
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER BPR ;
-        RECT 0 -0.016 0.672 0.016 ;
-    END
-  END vss
-  PIN Y
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
+   CLASS CORE ;
+   ORIGIN 0 0 ;
+   FOREIGN gt3_6t_buf_x12_rvt ;
+   SIZE 0.672 BY 0.144 ;
+   SYMMETRY X Y ;
+   SITE gt3v1 ;
+   PIN A
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.098 0.0155 0.112 0.1285 ;
+      END
+   END A
+
+   PIN Y
+      DIRECTION OUTPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.14 0.014 0.154 0.13 ;
+      END
+   END Y
+
+   PIN vdd
+      DIRECTION INOUT ;
+      USE POWER ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 0.128 0.672 0.16 ;
+      END
+   END vdd
+
+   PIN vss
+      DIRECTION INOUT ;
+      USE GROUND ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 -0.016 0.672 0.016 ;
+      END
+   END vss
+
+   OBS
+      LAYER M0 ;
+         RECT 0.1345 0.018 0.6215 0.03 ;
+         RECT 0.0085 0.042 0.2015 0.054 ;
+         RECT 0.03 0.066 0.138 0.078 ;
+         RECT 0.156 0.066 0.642 0.078 ;
+         RECT 0.0085 0.09 0.2015 0.102 ;
+         RECT 0.1345 0.114 0.6215 0.126 ;
       LAYER M1 ;
-        RECT 0.14 0.014 0.154 0.13 ;
-    END
-  END Y
-  PIN A
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.098 0.0155 0.112 0.1285 ;
-    END
-  END A
-  OBS
-    LAYER M1 ;
-      RECT 0.182 0.038 0.196 0.106 ;
-  END
+         RECT 0.182 0.038 0.196 0.106 ;
+   END
 END gt3_6t_buf_x12_rvt
 
 MACRO gt3_6t_buf_x1_rvt
-  CLASS CORE  ;
-  ORIGIN 0 0 ;
-  SYMMETRY X Y ;
-  SITE gt3v1 ;
-  FOREIGN gt3_6t_buf_x1_rvt 0 0 ;
-  SIZE 0.126 BY 0.144 ;
-  PIN A
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
+   CLASS CORE ;
+   ORIGIN 0 0 ;
+   FOREIGN gt3_6t_buf_x1_rvt ;
+   SIZE 0.126 BY 0.144 ;
+   SYMMETRY X Y ;
+   SITE gt3v1 ;
+   PIN A
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.014 0.015 0.028 0.129 ;
+      END
+   END A
+
+   PIN Y
+      DIRECTION OUTPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.056 0.014 0.07 0.13 ;
+      END
+   END Y
+
+   PIN vdd
+      DIRECTION INOUT ;
+      USE POWER ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 0.128 0.126 0.16 ;
+      END
+   END vdd
+
+   PIN vss
+      DIRECTION INOUT ;
+      USE GROUND ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 -0.016 0.126 0.016 ;
+      END
+   END vss
+
+   OBS
+      LAYER M0 ;
+         RECT 0.052 0.018 0.1175 0.03 ;
+         RECT 0.0085 0.042 0.1175 0.054 ;
+         RECT 0.0085 0.066 0.054 0.078 ;
+         RECT 0.072 0.066 0.1175 0.078 ;
+         RECT 0.0085 0.09 0.1175 0.102 ;
+         RECT 0.052 0.114 0.1175 0.126 ;
       LAYER M1 ;
-        RECT 0.014 0.015 0.028 0.129 ;
-    END
-  END A
-  PIN Y
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.056 0.014 0.07 0.13 ;
-    END
-  END Y
-  PIN vdd
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER BPR ;
-        RECT 0 0.128 0.126 0.16 ;
-    END
-  END vdd
-  PIN vss
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER BPR ;
-        RECT 0 -0.016 0.126 0.016 ;
-    END
-  END vss
-  OBS
-    LAYER M1 ;
-      RECT 0.098 0.038 0.112 0.106 ;
-  END
+         RECT 0.098 0.038 0.112 0.106 ;
+   END
 END gt3_6t_buf_x1_rvt
 
 MACRO gt3_6t_buf_x2_rvt
-  CLASS CORE  ;
-  ORIGIN 0 0 ;
-  SYMMETRY X Y ;
-  SITE gt3v1 ;
-  FOREIGN gt3_6t_buf_x2_rvt 0 0 ;
-  SIZE 0.168 BY 0.144 ;
-  PIN vdd
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER BPR ;
-        RECT 0 0.128 0.168 0.16 ;
-    END
-  END vdd
-  PIN vss
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER BPR ;
-        RECT 0 -0.016 0.168 0.016 ;
-    END
-  END vss
-  PIN Y
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
+   CLASS CORE ;
+   ORIGIN 0 0 ;
+   FOREIGN gt3_6t_buf_x2_rvt ;
+   SIZE 0.168 BY 0.144 ;
+   SYMMETRY X Y ;
+   SITE gt3v1 ;
+   PIN A
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.014 0.0155 0.028 0.1285 ;
+      END
+   END A
+
+   PIN Y
+      DIRECTION OUTPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.056 0.014 0.07 0.13 ;
+      END
+   END Y
+
+   PIN vdd
+      DIRECTION INOUT ;
+      USE POWER ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 0.128 0.168 0.16 ;
+      END
+   END vdd
+
+   PIN vss
+      DIRECTION INOUT ;
+      USE GROUND ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 -0.016 0.168 0.016 ;
+      END
+   END vss
+
+   OBS
+      LAYER M0 ;
+         RECT 0.0505 0.018 0.1175 0.03 ;
+         RECT 0.0085 0.042 0.1175 0.054 ;
+         RECT 0.0085 0.066 0.054 0.078 ;
+         RECT 0.072 0.066 0.138 0.078 ;
+         RECT 0.0085 0.09 0.1175 0.102 ;
+         RECT 0.0505 0.114 0.1175 0.126 ;
       LAYER M1 ;
-        RECT 0.056 0.014 0.07 0.13 ;
-    END
-  END Y
-  PIN A
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.014 0.0155 0.028 0.1285 ;
-    END
-  END A
-  OBS
-    LAYER M1 ;
-      RECT 0.098 0.038 0.112 0.106 ;
-  END
+         RECT 0.098 0.038 0.112 0.106 ;
+   END
 END gt3_6t_buf_x2_rvt
 
 MACRO gt3_6t_buf_x3_rvt
-  CLASS CORE  ;
-  ORIGIN 0 0 ;
-  SYMMETRY X Y ;
-  SITE gt3v1 ;
-  FOREIGN gt3_6t_buf_x3_rvt 0 0 ;
-  SIZE 0.21 BY 0.144 ;
-  PIN vdd
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER BPR ;
-        RECT 0 0.128 0.21 0.16 ;
-    END
-  END vdd
-  PIN vss
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER BPR ;
-        RECT 0 -0.016 0.21 0.016 ;
-    END
-  END vss
-  PIN Y
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
+   CLASS CORE ;
+   ORIGIN 0 0 ;
+   FOREIGN gt3_6t_buf_x3_rvt ;
+   SIZE 0.21 BY 0.144 ;
+   SYMMETRY X Y ;
+   SITE gt3v1 ;
+   PIN A
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.014 0.0155 0.028 0.1285 ;
+      END
+   END A
+
+   PIN Y
+      DIRECTION OUTPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.056 0.014 0.07 0.13 ;
+      END
+   END Y
+
+   PIN vdd
+      DIRECTION INOUT ;
+      USE POWER ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 0.128 0.21 0.16 ;
+      END
+   END vdd
+
+   PIN vss
+      DIRECTION INOUT ;
+      USE GROUND ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 -0.016 0.21 0.016 ;
+      END
+   END vss
+
+   OBS
+      LAYER M0 ;
+         RECT 0.0505 0.018 0.2015 0.03 ;
+         RECT 0.0085 0.042 0.1175 0.054 ;
+         RECT 0.0085 0.066 0.054 0.078 ;
+         RECT 0.072 0.066 0.18 0.078 ;
+         RECT 0.0085 0.09 0.1175 0.102 ;
+         RECT 0.0505 0.114 0.2015 0.126 ;
       LAYER M1 ;
-        RECT 0.056 0.014 0.07 0.13 ;
-    END
-  END Y
-  PIN A
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.014 0.0155 0.028 0.1285 ;
-    END
-  END A
-  OBS
-    LAYER M1 ;
-      RECT 0.098 0.038 0.112 0.106 ;
-  END
+         RECT 0.098 0.038 0.112 0.106 ;
+   END
 END gt3_6t_buf_x3_rvt
 
 MACRO gt3_6t_buf_x4_rvt
-  CLASS CORE  ;
-  ORIGIN 0 0 ;
-  SYMMETRY X Y ;
-  SITE gt3v1 ;
-  FOREIGN gt3_6t_buf_x4_rvt 0 0 ;
-  SIZE 0.252 BY 0.144 ;
-  PIN vdd
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER BPR ;
-        RECT 0 0.128 0.252 0.16 ;
-    END
-  END vdd
-  PIN vss
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER BPR ;
-        RECT 0 -0.016 0.252 0.016 ;
-    END
-  END vss
-  PIN Y
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
+   CLASS CORE ;
+   ORIGIN 0 0 ;
+   FOREIGN gt3_6t_buf_x4_rvt ;
+   SIZE 0.252 BY 0.144 ;
+   SYMMETRY X Y ;
+   SITE gt3v1 ;
+   PIN A
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.014 0.0155 0.028 0.1285 ;
+      END
+   END A
+
+   PIN Y
+      DIRECTION OUTPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.056 0.014 0.07 0.13 ;
+      END
+   END Y
+
+   PIN vdd
+      DIRECTION INOUT ;
+      USE POWER ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 0.128 0.252 0.16 ;
+      END
+   END vdd
+
+   PIN vss
+      DIRECTION INOUT ;
+      USE GROUND ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 -0.016 0.252 0.016 ;
+      END
+   END vss
+
+   OBS
+      LAYER M0 ;
+         RECT 0.0505 0.018 0.2015 0.03 ;
+         RECT 0.0085 0.042 0.1175 0.054 ;
+         RECT 0.0085 0.066 0.054 0.078 ;
+         RECT 0.072 0.066 0.222 0.078 ;
+         RECT 0.0085 0.09 0.1175 0.102 ;
+         RECT 0.0505 0.114 0.2015 0.126 ;
       LAYER M1 ;
-        RECT 0.056 0.014 0.07 0.13 ;
-    END
-  END Y
-  PIN A
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.014 0.0155 0.028 0.1285 ;
-    END
-  END A
-  OBS
-    LAYER M1 ;
-      RECT 0.098 0.038 0.112 0.106 ;
-  END
+         RECT 0.098 0.038 0.112 0.106 ;
+   END
 END gt3_6t_buf_x4_rvt
 
 MACRO gt3_6t_buf_x6_rvt
-  CLASS CORE  ;
-  ORIGIN 0 0 ;
-  SYMMETRY X Y ;
-  SITE gt3v1 ;
-  FOREIGN gt3_6t_buf_x6_rvt 0 0 ;
-  SIZE 0.378 BY 0.144 ;
-  PIN vdd
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER BPR ;
-        RECT 0 0.128 0.378 0.16 ;
-    END
-  END vdd
-  PIN vss
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER BPR ;
-        RECT 0 -0.016 0.378 0.016 ;
-    END
-  END vss
-  PIN Y
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
+   CLASS CORE ;
+   ORIGIN 0 0 ;
+   FOREIGN gt3_6t_buf_x6_rvt ;
+   SIZE 0.378 BY 0.144 ;
+   SYMMETRY X Y ;
+   SITE gt3v1 ;
+   PIN A
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.056 0.0155 0.07 0.1285 ;
+      END
+   END A
+
+   PIN Y
+      DIRECTION OUTPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.098 0.014 0.112 0.13 ;
+      END
+   END Y
+
+   PIN vdd
+      DIRECTION INOUT ;
+      USE POWER ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 0.128 0.378 0.16 ;
+      END
+   END vdd
+
+   PIN vss
+      DIRECTION INOUT ;
+      USE GROUND ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 -0.016 0.378 0.016 ;
+      END
+   END vss
+
+   OBS
+      LAYER M0 ;
+         RECT 0.0925 0.018 0.3275 0.03 ;
+         RECT 0.0505 0.042 0.1595 0.054 ;
+         RECT 0.03 0.066 0.096 0.078 ;
+         RECT 0.114 0.066 0.348 0.078 ;
+         RECT 0.0505 0.09 0.1595 0.102 ;
+         RECT 0.0925 0.114 0.3275 0.126 ;
       LAYER M1 ;
-        RECT 0.098 0.014 0.112 0.13 ;
-    END
-  END Y
-  PIN A
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.056 0.0155 0.07 0.1285 ;
-    END
-  END A
-  OBS
-    LAYER M1 ;
-      RECT 0.14 0.038 0.154 0.106 ;
-  END
+         RECT 0.14 0.038 0.154 0.106 ;
+   END
 END gt3_6t_buf_x6_rvt
 
 MACRO gt3_6t_buf_x8_rvt
-  CLASS CORE  ;
-  ORIGIN 0 0 ;
-  SYMMETRY X Y ;
-  SITE gt3v1 ;
-  FOREIGN gt3_6t_buf_x8_rvt 0 0 ;
-  SIZE 0.462 BY 0.144 ;
-  PIN vdd
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER BPR ;
-        RECT 0 0.128 0.462 0.16 ;
-    END
-  END vdd
-  PIN vss
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER BPR ;
-        RECT 0 -0.016 0.462 0.016 ;
-    END
-  END vss
-  PIN Y
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
+   CLASS CORE ;
+   ORIGIN 0 0 ;
+   FOREIGN gt3_6t_buf_x8_rvt ;
+   SIZE 0.462 BY 0.144 ;
+   SYMMETRY X Y ;
+   SITE gt3v1 ;
+   PIN A
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.056 0.0155 0.07 0.1285 ;
+      END
+   END A
+
+   PIN Y
+      DIRECTION OUTPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.098 0.014 0.112 0.13 ;
+      END
+   END Y
+
+   PIN vdd
+      DIRECTION INOUT ;
+      USE POWER ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 0.128 0.462 0.16 ;
+      END
+   END vdd
+
+   PIN vss
+      DIRECTION INOUT ;
+      USE GROUND ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 -0.016 0.462 0.016 ;
+      END
+   END vss
+
+   OBS
+      LAYER M0 ;
+         RECT 0.0925 0.018 0.4115 0.03 ;
+         RECT 0.0505 0.042 0.1595 0.054 ;
+         RECT 0.03 0.066 0.096 0.078 ;
+         RECT 0.114 0.066 0.432 0.078 ;
+         RECT 0.0505 0.09 0.1595 0.102 ;
+         RECT 0.0925 0.114 0.4115 0.126 ;
       LAYER M1 ;
-        RECT 0.098 0.014 0.112 0.13 ;
-    END
-  END Y
-  PIN A
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.056 0.0155 0.07 0.1285 ;
-    END
-  END A
-  OBS
-    LAYER M1 ;
-      RECT 0.14 0.038 0.154 0.106 ;
-  END
+         RECT 0.14 0.038 0.154 0.106 ;
+   END
 END gt3_6t_buf_x8_rvt
 
 MACRO gt3_6t_dffasync_x1_rvt
-  CLASS CORE  ;
-  ORIGIN 0 0 ;
-  SYMMETRY X Y ;
-  SITE gt3v1 ;
-  FOREIGN gt3_6t_dffasync_x1_rvt 0 0 ;
-  SIZE 0.63 BY 0.288 ;
-  PIN CLK
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
+   CLASS CORE ;
+   ORIGIN 0 0 ;
+   FOREIGN gt3_6t_dffasync_x1_rvt ;
+   SIZE 0.63 BY 0.288 ;
+   SYMMETRY X Y ;
+   SITE gt3v1 ;
+   PIN CLK
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.245 0.015 0.259 0.129 ;
+      END
+   END CLK
+
+   PIN D
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.287 0.206 0.301 0.273 ;
+      END
+   END D
+
+   PIN Q
+      DIRECTION OUTPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.413 0.0115 0.427 0.25 ;
+      END
+   END Q
+
+   PIN RESETN
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.035 0.015 0.049 0.154 ;
+      END
+   END RESETN
+
+   PIN SETN
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.035 0.182 0.049 0.273 ;
+      END
+   END SETN
+
+   PIN vdd
+      DIRECTION INOUT ;
+      USE POWER ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 0.128 0.63 0.16 ;
+      END
+   END vdd
+
+   PIN vss
+      DIRECTION INOUT ;
+      USE GROUND ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 -0.016 0.63 0.016 ;
+            RECT 0 0.272 0.63 0.304 ;
+      END
+   END vss
+
+   OBS
+      LAYER M0 ;
+         RECT 0.113 0.018 0.347 0.03 ;
+         RECT 0.409 0.018 0.5185 0.03 ;
+         RECT 0.323 0.042 0.475 0.054 ;
+         RECT 0.5545 0.042 0.599 0.054 ;
+         RECT 0.0085 0.066 0.0545 0.078 ;
+         RECT 0.0715 0.066 0.0965 0.078 ;
+         RECT 0.1135 0.066 0.2645 0.078 ;
+         RECT 0.2815 0.066 0.3065 0.078 ;
+         RECT 0.3235 0.066 0.3695 0.078 ;
+         RECT 0.4285 0.066 0.4745 0.078 ;
+         RECT 0.4915 0.066 0.5165 0.078 ;
+         RECT 0.5335 0.066 0.5795 0.078 ;
+         RECT 0.2185 0.09 0.389 0.102 ;
+         RECT 0.4285 0.09 0.599 0.102 ;
+         RECT 0.0085 0.114 0.4755 0.126 ;
+         RECT 0.0085 0.138 0.5795 0.15 ;
+         RECT 0.0085 0.162 0.179 0.174 ;
+         RECT 0.199 0.162 0.3275 0.174 ;
+         RECT 0.409 0.162 0.5375 0.174 ;
+         RECT 0.0085 0.186 0.5155 0.198 ;
+         RECT 0.0085 0.21 0.0545 0.222 ;
+         RECT 0.0715 0.21 0.0965 0.222 ;
+         RECT 0.1135 0.21 0.1595 0.222 ;
+         RECT 0.2185 0.21 0.2645 0.222 ;
+         RECT 0.2815 0.21 0.3065 0.222 ;
+         RECT 0.3235 0.21 0.3695 0.222 ;
+         RECT 0.4285 0.21 0.4745 0.222 ;
+         RECT 0.4915 0.21 0.5165 0.222 ;
+         RECT 0.5335 0.21 0.599 0.222 ;
+         RECT 0.113 0.234 0.179 0.246 ;
+         RECT 0.2185 0.234 0.389 0.246 ;
+         RECT 0.409 0.234 0.5795 0.246 ;
+         RECT 0.071 0.258 0.3695 0.27 ;
       LAYER M1 ;
-        RECT 0.245 0.015 0.259 0.129 ;
-    END
-  END CLK
-  PIN D
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.287 0.206 0.301 0.273 ;
-    END
-  END D
-  PIN vdd
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER BPR ;
-        RECT 0 0.128 0.63 0.16 ;
-    END
-  END vdd
-  PIN Q
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.413 0.0115 0.427 0.25 ;
-    END
-  END Q
-  PIN RESETN
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.035 0.015 0.049 0.154 ;
-    END
-  END RESETN
-  PIN SETN
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.035 0.182 0.049 0.273 ;
-    END
-  END SETN
-  PIN vss
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER BPR ;
-        RECT 0 0.272 0.63 0.304 ;
-    END
-    PORT
-      LAYER BPR ;
-        RECT 0 -0.016 0.63 0.016 ;
-    END
-  END vss
-  OBS
-    LAYER M1 ;
-      POLYGON 0.161 0.014 0.161 0.11 0.091 0.11 0.091 0.06 0.077 0.06 0.077 0.287 0 0.287 0 0.288 0.231 0.288 0.231 0.287 0.091 0.287 0.091 0.226 0.161 0.226 0.161 0.287 0.231 0.287 0.231 0.25 0.259 0.25 0.259 0.206 0.217 0.206 0.217 0.158 0.175 0.158 0.175 0.014 ;
-      POLYGON 0.329 0.014 0.329 0.06 0.287 0.06 0.287 0.178 0.329 0.178 0.329 0.226 0.371 0.226 0.371 0.287 0.315 0.287 0.315 0.288 0.63 0.288 0.63 0.287 0.385 0.287 0.385 0.134 0.301 0.134 0.301 0.082 0.371 0.082 0.371 0.134 0.385 0.134 0.385 0.036 0.343 0.036 0.343 0.014 ;
-      POLYGON 0.497 0.014 0.497 0.038 0.455 0.038 0.455 0.226 0.511 0.226 0.511 0.182 0.469 0.182 0.469 0.082 0.539 0.082 0.539 0.154 0.581 0.154 0.581 0.226 0.595 0.226 0.595 0.036 0.581 0.036 0.581 0.062 0.511 0.062 0.511 0.014 ;
-  END
+         RECT 0.329 0.014 0.343 0.082 ;
+         RECT 0.455 0.038 0.469 0.082 ;
+         RECT 0.497 0.014 0.511 0.082 ;
+         RECT 0.161 0.014 0.175 0.13 ;
+         RECT 0.539 0.062 0.553 0.154 ;
+         RECT 0.077 0.06 0.091 0.178 ;
+         RECT 0.287 0.06 0.301 0.178 ;
+         RECT 0.119 0.11 0.133 0.226 ;
+         RECT 0.329 0.134 0.343 0.226 ;
+         RECT 0.455 0.11 0.469 0.226 ;
+         RECT 0.497 0.182 0.511 0.226 ;
+         RECT 0.581 0.036 0.595 0.226 ;
+         RECT 0.161 0.158 0.175 0.25 ;
+         RECT 0.245 0.206 0.259 0.25 ;
+         RECT 0.371 0.036 0.385 0.25 ;
+         RECT 0.077 0.206 0.091 0.274 ;
+         RECT 0.203 0.158 0.217 0.274 ;
+   END
 END gt3_6t_dffasync_x1_rvt
 
+MACRO gt3_6t_filler_x1
+   CLASS CORE ;
+   ORIGIN 0 0 ;
+   FOREIGN gt3_6t_filler_x1 ;
+   SIZE 0.042 BY 0.144 ;
+   SYMMETRY X Y ;
+   SITE gt3v1 ;
+   PIN vdd
+      DIRECTION INOUT ;
+      USE POWER ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 0.128 0.042 0.16 ;
+      END
+   END vdd
+
+   PIN vss
+      DIRECTION INOUT ;
+      USE GROUND ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 -0.016 0.042 0.016 ;
+      END
+   END vss
+
+END gt3_6t_filler_x1
+
 MACRO gt3_6t_ha_x1_rvt
-  CLASS CORE  ;
-  ORIGIN 0 0 ;
-  SYMMETRY X Y ;
-  SITE gt3v1 ;
-  FOREIGN gt3_6t_ha_x1_rvt 0 0 ;
-  SIZE 0.294 BY 0.144 ;
-  PIN B
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
+   CLASS CORE ;
+   ORIGIN 0 0 ;
+   FOREIGN gt3_6t_ha_x1_rvt ;
+   SIZE 0.294 BY 0.144 ;
+   SYMMETRY X Y ;
+   SITE gt3v1 ;
+   PIN A
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.014 0.015 0.028 0.13 ;
+      END
+   END A
+
+   PIN B
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.098 0.015 0.112 0.129 ;
+      END
+   END B
+
+   PIN CON
+      DIRECTION OUTPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.224 0.014 0.238 0.129 ;
+      END
+   END CON
+
+   PIN SN
+      DIRECTION OUTPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.266 0.015 0.28 0.129 ;
+      END
+   END SN
+
+   PIN vdd
+      DIRECTION INOUT ;
+      USE POWER ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 0.128 0.294 0.16 ;
+      END
+   END vdd
+
+   PIN vss
+      DIRECTION INOUT ;
+      USE GROUND ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 -0.016 0.294 0.016 ;
+      END
+   END vss
+
+   OBS
+      LAYER M0 ;
+         RECT 0.0085 0.018 0.2435 0.03 ;
+         RECT 0.1185 0.042 0.2435 0.054 ;
+         RECT 0.0085 0.066 0.0545 0.078 ;
+         RECT 0.0715 0.066 0.1385 0.078 ;
+         RECT 0.1555 0.066 0.2 0.078 ;
+         RECT 0.22 0.066 0.265 0.078 ;
+         RECT 0.0345 0.09 0.0915 0.102 ;
+         RECT 0.1605 0.09 0.2855 0.102 ;
+         RECT 0.0085 0.114 0.179 0.126 ;
       LAYER M1 ;
-        RECT 0.098 0.015 0.112 0.129 ;
-    END
-  END B
-  PIN A
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.014 0.015 0.028 0.129 ;
-    END
-  END A
-  PIN vdd
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER BPR ;
-        RECT 0 0.128 0.294 0.16 ;
-    END
-  END vdd
-  PIN vss
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER BPR ;
-        RECT 0 -0.016 0.294 0.016 ;
-    END
-  END vss
-  PIN SN
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.266 0.015 0.28 0.129 ;
-    END
-  END SN
-  PIN CON
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.224 0.014 0.238 0.129 ;
-    END
-  END CON
-  OBS
-    LAYER M1 ;
-      POLYGON 0.056 0.014 0.056 0.143 0.042 0.143 0.042 0.144 0.21 0.144 0.21 0.143 0.175 0.143 0.175 0.062 0.161 0.062 0.161 0.143 0.07 0.143 0.07 0.014 ;
-  END
+         RECT 0.056 0.014 0.07 0.106 ;
+         RECT 0.161 0.062 0.175 0.13 ;
+   END
 END gt3_6t_ha_x1_rvt
 
 MACRO gt3_6t_inv_x10_rvt
-  CLASS CORE  ;
-  ORIGIN 0 0 ;
-  SYMMETRY X Y ;
-  SITE gt3v1 ;
-  FOREIGN gt3_6t_inv_x10_rvt 0 0 ;
-  SIZE 0.462 BY 0.144 ;
-  PIN A
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.014 0.015 0.028 0.129 ;
-    END
-  END A
-  PIN Y
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.056 0.015 0.07 0.129 ;
-    END
-  END Y
-  PIN vdd
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER BPR ;
-        RECT 0 0.128 0.462 0.16 ;
-    END
-  END vdd
-  PIN vss
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER BPR ;
-        RECT 0 -0.016 0.462 0.016 ;
-    END
-  END vss
-  OBS
-    LAYER M1 ;
-      RECT 0.084 0 0.462 0.001 ;
-      RECT 0.084 0.143 0.462 0.144 ;
-  END
+   CLASS CORE ;
+   ORIGIN 0 0 ;
+   FOREIGN gt3_6t_inv_x10_rvt ;
+   SIZE 0.462 BY 0.144 ;
+   SYMMETRY X Y ;
+   SITE gt3v1 ;
+   PIN A
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.014 0.015 0.028 0.129 ;
+      END
+   END A
+
+   PIN Y
+      DIRECTION OUTPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.056 0.015 0.07 0.129 ;
+      END
+   END Y
+
+   PIN vdd
+      DIRECTION INOUT ;
+      USE POWER ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 0.128 0.462 0.16 ;
+      END
+   END vdd
+
+   PIN vss
+      DIRECTION INOUT ;
+      USE GROUND ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 -0.016 0.462 0.016 ;
+      END
+   END vss
+
+   OBS
+      LAYER M0 ;
+         RECT 0.042 0.042 0.412 0.054 ;
+         RECT 0.01 0.066 0.432 0.078 ;
+         RECT 0.042 0.09 0.412 0.102 ;
+   END
 END gt3_6t_inv_x10_rvt
 
 MACRO gt3_6t_inv_x12_rvt
-  CLASS CORE  ;
-  ORIGIN 0 0 ;
-  SYMMETRY X Y ;
-  SITE gt3v1 ;
-  FOREIGN gt3_6t_inv_x12_rvt 0 0 ;
-  SIZE 0.546 BY 0.144 ;
-  PIN A
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.014 0.015 0.028 0.129 ;
-    END
-  END A
-  PIN Y
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.056 0.015 0.07 0.129 ;
-    END
-  END Y
-  PIN vdd
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER BPR ;
-        RECT 0 0.128 0.546 0.16 ;
-    END
-  END vdd
-  PIN vss
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER BPR ;
-        RECT 0 -0.016 0.546 0.016 ;
-    END
-  END vss
-  OBS
-    LAYER M1 ;
-      RECT 0.084 0 0.546 0.001 ;
-      RECT 0.084 0.143 0.546 0.144 ;
-  END
+   CLASS CORE ;
+   ORIGIN 0 0 ;
+   FOREIGN gt3_6t_inv_x12_rvt ;
+   SIZE 0.546 BY 0.144 ;
+   SYMMETRY X Y ;
+   SITE gt3v1 ;
+   PIN A
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.014 0.015 0.028 0.129 ;
+      END
+   END A
+
+   PIN Y
+      DIRECTION OUTPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.056 0.015 0.07 0.129 ;
+      END
+   END Y
+
+   PIN vdd
+      DIRECTION INOUT ;
+      USE POWER ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 0.128 0.546 0.16 ;
+      END
+   END vdd
+
+   PIN vss
+      DIRECTION INOUT ;
+      USE GROUND ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 -0.016 0.546 0.016 ;
+      END
+   END vss
+
+   OBS
+      LAYER M0 ;
+         RECT 0.042 0.042 0.496 0.054 ;
+         RECT 0.01 0.066 0.516 0.078 ;
+         RECT 0.042 0.09 0.496 0.102 ;
+   END
 END gt3_6t_inv_x12_rvt
 
 MACRO gt3_6t_inv_x1_rvt
-  CLASS CORE  ;
-  ORIGIN 0 0 ;
-  SYMMETRY X Y ;
-  SITE gt3v1 ;
-  FOREIGN gt3_6t_inv_x1_rvt 0 0 ;
-  SIZE 0.084 BY 0.144 ;
-  PIN A
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.014 0.015 0.028 0.129 ;
-    END
-  END A
-  PIN Y
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.056 0.015 0.07 0.129 ;
-    END
-  END Y
-  PIN vdd
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER BPR ;
-        RECT 0 0.128 0.084 0.16 ;
-    END
-  END vdd
-  PIN vss
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER BPR ;
-        RECT 0 -0.016 0.084 0.016 ;
-    END
-  END vss
-  OBS
-  END
+   CLASS CORE ;
+   ORIGIN 0 0 ;
+   FOREIGN gt3_6t_inv_x1_rvt ;
+   SIZE 0.084 BY 0.144 ;
+   SYMMETRY X Y ;
+   SITE gt3v1 ;
+   PIN A
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.014 0.015 0.028 0.129 ;
+      END
+   END A
+
+   PIN Y
+      DIRECTION OUTPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.056 0.015 0.07 0.129 ;
+      END
+   END Y
+
+   PIN vdd
+      DIRECTION INOUT ;
+      USE POWER ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 0.128 0.084 0.16 ;
+      END
+   END vdd
+
+   PIN vss
+      DIRECTION INOUT ;
+      USE GROUND ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 -0.016 0.084 0.016 ;
+      END
+   END vss
+
+   OBS
+      LAYER M0 ;
+         RECT 0.042 0.042 0.0755 0.054 ;
+         RECT 0.01 0.066 0.054 0.078 ;
+         RECT 0.042 0.09 0.0755 0.102 ;
+   END
 END gt3_6t_inv_x1_rvt
 
 MACRO gt3_6t_inv_x2_rvt
-  CLASS CORE  ;
-  ORIGIN 0 0 ;
-  SYMMETRY X Y ;
-  SITE gt3v1 ;
-  FOREIGN gt3_6t_inv_x2_rvt 0 0 ;
-  SIZE 0.126 BY 0.144 ;
-  PIN A
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.014 0.015 0.028 0.129 ;
-    END
-  END A
-  PIN Y
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.056 0.015 0.07 0.129 ;
-    END
-  END Y
-  PIN vdd
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER BPR ;
-        RECT 0 0.128 0.126 0.16 ;
-    END
-  END vdd
-  PIN vss
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER BPR ;
-        RECT 0 -0.016 0.126 0.016 ;
-    END
-  END vss
-  OBS
-    LAYER M1 ;
-      RECT 0.084 0 0.126 0.001 ;
-      RECT 0.084 0.143 0.126 0.144 ;
-  END
+   CLASS CORE ;
+   ORIGIN 0 0 ;
+   FOREIGN gt3_6t_inv_x2_rvt ;
+   SIZE 0.126 BY 0.144 ;
+   SYMMETRY X Y ;
+   SITE gt3v1 ;
+   PIN A
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.014 0.015 0.028 0.129 ;
+      END
+   END A
+
+   PIN Y
+      DIRECTION OUTPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.056 0.015 0.07 0.129 ;
+      END
+   END Y
+
+   PIN vdd
+      DIRECTION INOUT ;
+      USE POWER ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 0.128 0.126 0.16 ;
+      END
+   END vdd
+
+   PIN vss
+      DIRECTION INOUT ;
+      USE GROUND ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 -0.016 0.126 0.016 ;
+      END
+   END vss
+
+   OBS
+      LAYER M0 ;
+         RECT 0.042 0.042 0.0755 0.054 ;
+         RECT 0.01 0.066 0.096 0.078 ;
+         RECT 0.042 0.09 0.0755 0.102 ;
+   END
 END gt3_6t_inv_x2_rvt
 
 MACRO gt3_6t_inv_x3_rvt
-  CLASS CORE  ;
-  ORIGIN 0 0 ;
-  SYMMETRY X Y ;
-  SITE gt3v1 ;
-  FOREIGN gt3_6t_inv_x3_rvt 0 0 ;
-  SIZE 0.168 BY 0.144 ;
-  PIN A
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.014 0.015 0.028 0.129 ;
-    END
-  END A
-  PIN Y
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.056 0.015 0.07 0.129 ;
-    END
-  END Y
-  PIN vdd
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER BPR ;
-        RECT 0 0.128 0.168 0.16 ;
-    END
-  END vdd
-  PIN vss
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER BPR ;
-        RECT 0 -0.016 0.168 0.016 ;
-    END
-  END vss
-  OBS
-    LAYER M1 ;
-      RECT 0.084 0 0.168 0.001 ;
-      RECT 0.084 0.143 0.168 0.144 ;
-  END
+   CLASS CORE ;
+   ORIGIN 0 0 ;
+   FOREIGN gt3_6t_inv_x3_rvt ;
+   SIZE 0.168 BY 0.144 ;
+   SYMMETRY X Y ;
+   SITE gt3v1 ;
+   PIN A
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.014 0.015 0.028 0.129 ;
+      END
+   END A
+
+   PIN Y
+      DIRECTION OUTPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.056 0.015 0.07 0.129 ;
+      END
+   END Y
+
+   PIN vdd
+      DIRECTION INOUT ;
+      USE POWER ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 0.128 0.168 0.16 ;
+      END
+   END vdd
+
+   PIN vss
+      DIRECTION INOUT ;
+      USE GROUND ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 -0.016 0.168 0.016 ;
+      END
+   END vss
+
+   OBS
+      LAYER M0 ;
+         RECT 0.042 0.042 0.1595 0.054 ;
+         RECT 0.01 0.066 0.138 0.078 ;
+         RECT 0.042 0.09 0.1595 0.102 ;
+   END
 END gt3_6t_inv_x3_rvt
 
 MACRO gt3_6t_inv_x4_rvt
-  CLASS CORE  ;
-  ORIGIN 0 0 ;
-  SYMMETRY X Y ;
-  SITE gt3v1 ;
-  FOREIGN gt3_6t_inv_x4_rvt 0 0 ;
-  SIZE 0.21 BY 0.144 ;
-  PIN A
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.014 0.015 0.028 0.129 ;
-    END
-  END A
-  PIN Y
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.056 0.015 0.07 0.129 ;
-    END
-  END Y
-  PIN vdd
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER BPR ;
-        RECT 0 0.128 0.21 0.16 ;
-    END
-  END vdd
-  PIN vss
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER BPR ;
-        RECT 0 -0.016 0.21 0.016 ;
-    END
-  END vss
-  OBS
-    LAYER M1 ;
-      RECT 0.084 0 0.21 0.001 ;
-      RECT 0.084 0.143 0.21 0.144 ;
-  END
+   CLASS CORE ;
+   ORIGIN 0 0 ;
+   FOREIGN gt3_6t_inv_x4_rvt ;
+   SIZE 0.21 BY 0.144 ;
+   SYMMETRY X Y ;
+   SITE gt3v1 ;
+   PIN A
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.014 0.015 0.028 0.129 ;
+      END
+   END A
+
+   PIN Y
+      DIRECTION OUTPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.056 0.015 0.07 0.129 ;
+      END
+   END Y
+
+   PIN vdd
+      DIRECTION INOUT ;
+      USE POWER ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 0.128 0.21 0.16 ;
+      END
+   END vdd
+
+   PIN vss
+      DIRECTION INOUT ;
+      USE GROUND ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 -0.016 0.21 0.016 ;
+      END
+   END vss
+
+   OBS
+      LAYER M0 ;
+         RECT 0.042 0.042 0.1595 0.054 ;
+         RECT 0.01 0.066 0.18 0.078 ;
+         RECT 0.042 0.09 0.1595 0.102 ;
+   END
 END gt3_6t_inv_x4_rvt
 
 MACRO gt3_6t_inv_x6_rvt
-  CLASS CORE  ;
-  ORIGIN 0 0 ;
-  SYMMETRY X Y ;
-  SITE gt3v1 ;
-  FOREIGN gt3_6t_inv_x6_rvt 0 0 ;
-  SIZE 0.294 BY 0.144 ;
-  PIN A
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.014 0.015 0.028 0.129 ;
-    END
-  END A
-  PIN Y
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.056 0.015 0.07 0.129 ;
-    END
-  END Y
-  PIN vdd
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER BPR ;
-        RECT 0 0.128 0.294 0.16 ;
-    END
-  END vdd
-  PIN vss
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER BPR ;
-        RECT 0 -0.016 0.294 0.016 ;
-    END
-  END vss
-  OBS
-    LAYER M1 ;
-      RECT 0.084 0 0.294 0.001 ;
-      RECT 0.084 0.143 0.294 0.144 ;
-  END
+   CLASS CORE ;
+   ORIGIN 0 0 ;
+   FOREIGN gt3_6t_inv_x6_rvt ;
+   SIZE 0.294 BY 0.144 ;
+   SYMMETRY X Y ;
+   SITE gt3v1 ;
+   PIN A
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.014 0.015 0.028 0.129 ;
+      END
+   END A
+
+   PIN Y
+      DIRECTION OUTPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.056 0.015 0.07 0.129 ;
+      END
+   END Y
+
+   PIN vdd
+      DIRECTION INOUT ;
+      USE POWER ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 0.128 0.294 0.16 ;
+      END
+   END vdd
+
+   PIN vss
+      DIRECTION INOUT ;
+      USE GROUND ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 -0.016 0.294 0.016 ;
+      END
+   END vss
+
+   OBS
+      LAYER M0 ;
+         RECT 0.042 0.042 0.244 0.054 ;
+         RECT 0.01 0.066 0.264 0.078 ;
+         RECT 0.042 0.09 0.244 0.102 ;
+   END
 END gt3_6t_inv_x6_rvt
 
 MACRO gt3_6t_inv_x8_rvt
-  CLASS CORE  ;
-  ORIGIN 0 0 ;
-  SYMMETRY X Y ;
-  SITE gt3v1 ;
-  FOREIGN gt3_6t_inv_x8_rvt 0 0 ;
-  SIZE 0.378 BY 0.144 ;
-  PIN A
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.014 0.015 0.028 0.129 ;
-    END
-  END A
-  PIN Y
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.056 0.015 0.07 0.129 ;
-    END
-  END Y
-  PIN vdd
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER BPR ;
-        RECT 0 0.128 0.378 0.16 ;
-    END
-  END vdd
-  PIN vss
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER BPR ;
-        RECT 0 -0.016 0.378 0.016 ;
-    END
-  END vss
-  OBS
-    LAYER M1 ;
-      RECT 0.084 0 0.378 0.001 ;
-      RECT 0.084 0.143 0.378 0.144 ;
-  END
+   CLASS CORE ;
+   ORIGIN 0 0 ;
+   FOREIGN gt3_6t_inv_x8_rvt ;
+   SIZE 0.378 BY 0.144 ;
+   SYMMETRY X Y ;
+   SITE gt3v1 ;
+   PIN A
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.014 0.015 0.028 0.129 ;
+      END
+   END A
+
+   PIN Y
+      DIRECTION OUTPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.056 0.015 0.07 0.129 ;
+      END
+   END Y
+
+   PIN vdd
+      DIRECTION INOUT ;
+      USE POWER ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 0.128 0.378 0.16 ;
+      END
+   END vdd
+
+   PIN vss
+      DIRECTION INOUT ;
+      USE GROUND ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 -0.016 0.378 0.016 ;
+      END
+   END vss
+
+   OBS
+      LAYER M0 ;
+         RECT 0.042 0.042 0.328 0.054 ;
+         RECT 0.01 0.066 0.348 0.078 ;
+         RECT 0.042 0.09 0.328 0.102 ;
+   END
 END gt3_6t_inv_x8_rvt
 
 MACRO gt3_6t_nand2_x1_rvt
-  CLASS CORE  ;
-  ORIGIN 0 0 ;
-  SYMMETRY X Y ;
-  SITE gt3v1 ;
-  FOREIGN gt3_6t_nand2_x1_rvt 0 0 ;
-  SIZE 0.126 BY 0.144 ;
-  PIN A
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.014 0.015 0.028 0.129 ;
-    END
-  END A
-  PIN Y
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.056 0.015 0.07 0.129 ;
-    END
-  END Y
-  PIN vdd
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER BPR ;
-        RECT 0 0.128 0.126 0.16 ;
-    END
-  END vdd
-  PIN vss
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER BPR ;
-        RECT 0 -0.016 0.126 0.016 ;
-    END
-  END vss
-  PIN B
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.098 0.015 0.112 0.129 ;
-    END
-  END B
-  OBS
-  END
+   CLASS CORE ;
+   ORIGIN 0 0 ;
+   FOREIGN gt3_6t_nand2_x1_rvt ;
+   SIZE 0.126 BY 0.144 ;
+   SYMMETRY X Y ;
+   SITE gt3v1 ;
+   PIN A
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.014 0.015 0.028 0.129 ;
+      END
+   END A
+
+   PIN B
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.098 0.015 0.112 0.129 ;
+      END
+   END B
+
+   PIN Y
+      DIRECTION OUTPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.056 0.015 0.07 0.129 ;
+      END
+   END Y
+
+   PIN vdd
+      DIRECTION INOUT ;
+      USE POWER ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 0.128 0.126 0.16 ;
+      END
+   END vdd
+
+   PIN vss
+      DIRECTION INOUT ;
+      USE GROUND ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 -0.016 0.126 0.016 ;
+      END
+   END vss
+
+   OBS
+      LAYER M0 ;
+         RECT 0.042 0.042 0.1175 0.054 ;
+         RECT 0.0085 0.066 0.054 0.078 ;
+         RECT 0.072 0.066 0.1175 0.078 ;
+         RECT 0.0085 0.09 0.1175 0.102 ;
+   END
 END gt3_6t_nand2_x1_rvt
 
 MACRO gt3_6t_nand2_x2_rvt
-  CLASS CORE  ;
-  ORIGIN 0 0 ;
-  SYMMETRY X Y ;
-  SITE gt3v1 ;
-  FOREIGN gt3_6t_nand2_x2_rvt 0 0 ;
-  SIZE 0.21 BY 0.144 ;
-  PIN A
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
+   CLASS CORE ;
+   ORIGIN 0 0 ;
+   FOREIGN gt3_6t_nand2_x2_rvt ;
+   SIZE 0.21 BY 0.144 ;
+   SYMMETRY X Y ;
+   SITE gt3v1 ;
+   PIN A
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.014 0.014 0.028 0.129 ;
+      END
+   END A
+
+   PIN B
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.098 0.015 0.112 0.129 ;
+      END
+   END B
+
+   PIN Y
+      DIRECTION OUTPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.056 0.015 0.07 0.129 ;
+      END
+   END Y
+
+   PIN vdd
+      DIRECTION INOUT ;
+      USE POWER ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 0.128 0.21 0.16 ;
+      END
+   END vdd
+
+   PIN vss
+      DIRECTION INOUT ;
+      USE GROUND ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 -0.016 0.21 0.016 ;
+      END
+   END vss
+
+   OBS
+      LAYER M0 ;
+         RECT 0.0085 0.018 0.2015 0.03 ;
+         RECT 0.042 0.042 0.1175 0.054 ;
+         RECT 0.0085 0.066 0.054 0.078 ;
+         RECT 0.072 0.066 0.1385 0.078 ;
+         RECT 0.1555 0.066 0.2015 0.078 ;
+         RECT 0.0085 0.09 0.2015 0.102 ;
       LAYER M1 ;
-        RECT 0.014 0.015 0.028 0.129 ;
-    END
-  END A
-  PIN Y
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.056 0.015 0.07 0.129 ;
-    END
-  END Y
-  PIN vdd
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER BPR ;
-        RECT 0 0.128 0.21 0.16 ;
-    END
-  END vdd
-  PIN vss
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER BPR ;
-        RECT 0 -0.016 0.21 0.016 ;
-    END
-  END vss
-  PIN B
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.098 0.015 0.112 0.129 ;
-    END
-  END B
-  OBS
-    LAYER M1 ;
-      POLYGON 0.126 0 0.126 0.001 0.182 0.001 0.182 0.083 0.196 0.083 0.196 0.001 0.21 0.001 0.21 0 ;
-      RECT 0.126 0.143 0.21 0.144 ;
-  END
+         RECT 0.182 0.014 0.196 0.083 ;
+   END
 END gt3_6t_nand2_x2_rvt
 
 MACRO gt3_6t_nand2_x3_rvt
-  CLASS CORE  ;
-  ORIGIN 0 0 ;
-  SYMMETRY X Y ;
-  SITE gt3v1 ;
-  FOREIGN gt3_6t_nand2_x3_rvt 0 0 ;
-  SIZE 0.294 BY 0.144 ;
-  PIN A
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
+   CLASS CORE ;
+   ORIGIN 0 0 ;
+   FOREIGN gt3_6t_nand2_x3_rvt ;
+   SIZE 0.294 BY 0.144 ;
+   SYMMETRY X Y ;
+   SITE gt3v1 ;
+   PIN A
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.014 0.014 0.028 0.129 ;
+      END
+   END A
+
+   PIN B
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.098 0.015 0.112 0.13 ;
+      END
+   END B
+
+   PIN Y
+      DIRECTION OUTPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.056 0.015 0.07 0.129 ;
+      END
+   END Y
+
+   PIN vdd
+      DIRECTION INOUT ;
+      USE POWER ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 0.128 0.294 0.16 ;
+      END
+   END vdd
+
+   PIN vss
+      DIRECTION INOUT ;
+      USE GROUND ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 -0.016 0.294 0.016 ;
+      END
+   END vss
+
+   OBS
+      LAYER M0 ;
+         RECT 0.0085 0.018 0.2015 0.03 ;
+         RECT 0.042 0.042 0.2855 0.054 ;
+         RECT 0.0085 0.066 0.0545 0.078 ;
+         RECT 0.0715 0.066 0.1385 0.078 ;
+         RECT 0.1555 0.066 0.2225 0.078 ;
+         RECT 0.2395 0.066 0.2855 0.078 ;
+         RECT 0.0085 0.09 0.2855 0.102 ;
+         RECT 0.094 0.114 0.2855 0.126 ;
       LAYER M1 ;
-        RECT 0.014 0.015 0.028 0.129 ;
-    END
-  END A
-  PIN Y
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.056 0.015 0.07 0.129 ;
-    END
-  END Y
-  PIN vdd
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER BPR ;
-        RECT 0 0.128 0.294 0.16 ;
-    END
-  END vdd
-  PIN vss
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER BPR ;
-        RECT 0 -0.016 0.294 0.016 ;
-    END
-  END vss
-  PIN B
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.098 0.015 0.112 0.129 ;
-    END
-  END B
-  OBS
-    LAYER M1 ;
-      POLYGON 0.126 0 0.126 0.001 0.182 0.001 0.182 0.083 0.196 0.083 0.196 0.001 0.294 0.001 0.294 0 ;
-      POLYGON 0.266 0.061 0.266 0.143 0.126 0.143 0.126 0.144 0.294 0.144 0.294 0.143 0.28 0.143 0.28 0.061 ;
-  END
+         RECT 0.182 0.014 0.196 0.083 ;
+         RECT 0.266 0.061 0.28 0.13 ;
+   END
 END gt3_6t_nand2_x3_rvt
 
 MACRO gt3_6t_nand2_x4_rvt
-  CLASS CORE  ;
-  ORIGIN 0 0 ;
-  SYMMETRY X Y ;
-  SITE gt3v1 ;
-  FOREIGN gt3_6t_nand2_x4_rvt 0 0 ;
-  SIZE 0.378 BY 0.144 ;
-  PIN A
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
+   CLASS CORE ;
+   ORIGIN 0 0 ;
+   FOREIGN gt3_6t_nand2_x4_rvt ;
+   SIZE 0.378 BY 0.144 ;
+   SYMMETRY X Y ;
+   SITE gt3v1 ;
+   PIN A
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.014 0.014 0.028 0.129 ;
+      END
+   END A
+
+   PIN B
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.098 0.015 0.112 0.13 ;
+      END
+   END B
+
+   PIN Y
+      DIRECTION OUTPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.056 0.015 0.07 0.129 ;
+      END
+   END Y
+
+   PIN vdd
+      DIRECTION INOUT ;
+      USE POWER ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 0.128 0.378 0.16 ;
+      END
+   END vdd
+
+   PIN vss
+      DIRECTION INOUT ;
+      USE GROUND ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 -0.016 0.378 0.016 ;
+      END
+   END vss
+
+   OBS
+      LAYER M0 ;
+         RECT 0.0085 0.018 0.3695 0.03 ;
+         RECT 0.042 0.042 0.2855 0.054 ;
+         RECT 0.0085 0.066 0.0545 0.078 ;
+         RECT 0.0715 0.066 0.1385 0.078 ;
+         RECT 0.1555 0.066 0.2225 0.078 ;
+         RECT 0.2395 0.066 0.3065 0.078 ;
+         RECT 0.3235 0.066 0.3695 0.078 ;
+         RECT 0.0085 0.09 0.3695 0.102 ;
+         RECT 0.094 0.114 0.2855 0.126 ;
       LAYER M1 ;
-        RECT 0.014 0.015 0.028 0.129 ;
-    END
-  END A
-  PIN Y
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.056 0.015 0.07 0.129 ;
-    END
-  END Y
-  PIN vdd
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER BPR ;
-        RECT 0 0.128 0.378 0.16 ;
-    END
-  END vdd
-  PIN vss
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER BPR ;
-        RECT 0 -0.016 0.378 0.016 ;
-    END
-  END vss
-  PIN B
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.098 0.015 0.112 0.129 ;
-    END
-  END B
-  OBS
-    LAYER M1 ;
-      POLYGON 0.126 0 0.126 0.001 0.182 0.001 0.182 0.083 0.196 0.083 0.196 0.001 0.35 0.001 0.35 0.083 0.364 0.083 0.364 0.001 0.378 0.001 0.378 0 ;
-      POLYGON 0.266 0.061 0.266 0.143 0.126 0.143 0.126 0.144 0.378 0.144 0.378 0.143 0.28 0.143 0.28 0.061 ;
-  END
+         RECT 0.182 0.014 0.196 0.083 ;
+         RECT 0.35 0.014 0.364 0.083 ;
+         RECT 0.266 0.061 0.28 0.13 ;
+   END
 END gt3_6t_nand2_x4_rvt
 
 MACRO gt3_6t_nand3_x1_rvt
-  CLASS CORE  ;
-  ORIGIN 0 0 ;
-  SYMMETRY X Y ;
-  SITE gt3v1 ;
-  FOREIGN gt3_6t_nand3_x1_rvt 0 0 ;
-  SIZE 0.168 BY 0.144 ;
-  PIN A
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.014 0.015 0.028 0.129 ;
-    END
-  END A
-  PIN Y
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.042 0.015 0.056 0.129 ;
-    END
-  END Y
-  PIN vdd
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER BPR ;
-        RECT 0 0.128 0.168 0.16 ;
-    END
-  END vdd
-  PIN vss
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER BPR ;
-        RECT 0 -0.016 0.168 0.016 ;
-    END
-  END vss
-  PIN B
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.077 0.015 0.091 0.129 ;
-    END
-  END B
-  PIN C
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.14 0.015 0.154 0.129 ;
-    END
-  END C
-  OBS
-    LAYER M1 ;
-      RECT 0.105 0 0.126 0.001 ;
-      RECT 0.105 0.143 0.126 0.144 ;
-  END
+   CLASS CORE ;
+   ORIGIN 0 0 ;
+   FOREIGN gt3_6t_nand3_x1_rvt ;
+   SIZE 0.168 BY 0.144 ;
+   SYMMETRY X Y ;
+   SITE gt3v1 ;
+   PIN A
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.014 0.015 0.028 0.129 ;
+      END
+   END A
+
+   PIN B
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.077 0.015 0.091 0.129 ;
+      END
+   END B
+
+   PIN C
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.14 0.015 0.154 0.129 ;
+      END
+   END C
+
+   PIN Y
+      DIRECTION OUTPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.0455 0.015 0.0595 0.129 ;
+      END
+   END Y
+
+   PIN vdd
+      DIRECTION INOUT ;
+      USE POWER ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 0.128 0.168 0.16 ;
+      END
+   END vdd
+
+   PIN vss
+      DIRECTION INOUT ;
+      USE GROUND ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 -0.016 0.168 0.016 ;
+      END
+   END vss
+
+   OBS
+      LAYER M0 ;
+         RECT 0.0415 0.042 0.1595 0.054 ;
+         RECT 0.0085 0.066 0.0545 0.078 ;
+         RECT 0.0715 0.066 0.0965 0.078 ;
+         RECT 0.1135 0.066 0.1595 0.078 ;
+         RECT 0.0085 0.09 0.1175 0.102 ;
+   END
 END gt3_6t_nand3_x1_rvt
 
 MACRO gt3_6t_nor2_x1_rvt
-  CLASS CORE  ;
-  ORIGIN 0 0 ;
-  SYMMETRY X Y ;
-  SITE gt3v1 ;
-  FOREIGN gt3_6t_nor2_x1_rvt 0 0 ;
-  SIZE 0.126 BY 0.144 ;
-  PIN A
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.014 0.015 0.028 0.129 ;
-    END
-  END A
-  PIN Y
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.056 0.015 0.07 0.129 ;
-    END
-  END Y
-  PIN vdd
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER BPR ;
-        RECT 0 0.128 0.126 0.16 ;
-    END
-  END vdd
-  PIN vss
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER BPR ;
-        RECT 0 -0.016 0.126 0.016 ;
-    END
-  END vss
-  PIN B
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.098 0.015 0.112 0.129 ;
-    END
-  END B
-  OBS
-  END
+   CLASS CORE ;
+   ORIGIN 0 0 ;
+   FOREIGN gt3_6t_nor2_x1_rvt ;
+   SIZE 0.126 BY 0.144 ;
+   SYMMETRY X Y ;
+   SITE gt3v1 ;
+   PIN A
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.014 0.015 0.028 0.129 ;
+      END
+   END A
+
+   PIN B
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.098 0.015 0.112 0.129 ;
+      END
+   END B
+
+   PIN Y
+      DIRECTION OUTPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.056 0.015 0.07 0.129 ;
+      END
+   END Y
+
+   PIN vdd
+      DIRECTION INOUT ;
+      USE POWER ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 0.128 0.126 0.16 ;
+      END
+   END vdd
+
+   PIN vss
+      DIRECTION INOUT ;
+      USE GROUND ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 -0.016 0.126 0.016 ;
+      END
+   END vss
+
+   OBS
+      LAYER M0 ;
+         RECT 0.0085 0.042 0.1175 0.054 ;
+         RECT 0.0085 0.066 0.054 0.078 ;
+         RECT 0.072 0.066 0.1175 0.078 ;
+         RECT 0.042 0.09 0.1175 0.102 ;
+   END
 END gt3_6t_nor2_x1_rvt
 
 MACRO gt3_6t_nor2_x2_rvt
-  CLASS CORE  ;
-  ORIGIN 0 0 ;
-  SYMMETRY X Y ;
-  SITE gt3v1 ;
-  FOREIGN gt3_6t_nor2_x2_rvt 0 0 ;
-  SIZE 0.21 BY 0.144 ;
-  PIN A
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
+   CLASS CORE ;
+   ORIGIN 0 0 ;
+   FOREIGN gt3_6t_nor2_x2_rvt ;
+   SIZE 0.21 BY 0.144 ;
+   SYMMETRY X Y ;
+   SITE gt3v1 ;
+   PIN A
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.014 0.014 0.028 0.129 ;
+      END
+   END A
+
+   PIN B
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.098 0.015 0.112 0.129 ;
+      END
+   END B
+
+   PIN Y
+      DIRECTION OUTPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.056 0.015 0.07 0.129 ;
+      END
+   END Y
+
+   PIN vdd
+      DIRECTION INOUT ;
+      USE POWER ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 0.128 0.21 0.16 ;
+      END
+   END vdd
+
+   PIN vss
+      DIRECTION INOUT ;
+      USE GROUND ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 -0.016 0.21 0.016 ;
+      END
+   END vss
+
+   OBS
+      LAYER M0 ;
+         RECT 0.0085 0.018 0.2015 0.03 ;
+         RECT 0.0085 0.042 0.2015 0.054 ;
+         RECT 0.0085 0.066 0.0545 0.078 ;
+         RECT 0.0715 0.066 0.1385 0.078 ;
+         RECT 0.1555 0.066 0.2015 0.078 ;
+         RECT 0.042 0.09 0.1175 0.102 ;
       LAYER M1 ;
-        RECT 0.014 0.015 0.028 0.129 ;
-    END
-  END A
-  PIN Y
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.056 0.015 0.07 0.129 ;
-    END
-  END Y
-  PIN vdd
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER BPR ;
-        RECT 0 0.128 0.21 0.16 ;
-    END
-  END vdd
-  PIN vss
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER BPR ;
-        RECT 0 -0.016 0.21 0.016 ;
-    END
-  END vss
-  PIN B
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.098 0.015 0.112 0.129 ;
-    END
-  END B
-  OBS
-    LAYER M1 ;
-      POLYGON 0.126 0 0.126 0.001 0.182 0.001 0.182 0.082 0.196 0.082 0.196 0.001 0.21 0.001 0.21 0 ;
-      RECT 0.126 0.143 0.21 0.144 ;
-  END
+         RECT 0.182 0.014 0.196 0.082 ;
+   END
 END gt3_6t_nor2_x2_rvt
 
 MACRO gt3_6t_nor2_x3_rvt
-  CLASS CORE  ;
-  ORIGIN 0 0 ;
-  SYMMETRY X Y ;
-  SITE gt3v1 ;
-  FOREIGN gt3_6t_nor2_x3_rvt 0 0 ;
-  SIZE 0.294 BY 0.144 ;
-  PIN A
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
+   CLASS CORE ;
+   ORIGIN 0 0 ;
+   FOREIGN gt3_6t_nor2_x3_rvt ;
+   SIZE 0.294 BY 0.144 ;
+   SYMMETRY X Y ;
+   SITE gt3v1 ;
+   PIN A
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.014 0.014 0.028 0.129 ;
+      END
+   END A
+
+   PIN B
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.098 0.015 0.112 0.13 ;
+      END
+   END B
+
+   PIN Y
+      DIRECTION OUTPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.056 0.015 0.07 0.129 ;
+      END
+   END Y
+
+   PIN vdd
+      DIRECTION INOUT ;
+      USE POWER ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 0.128 0.294 0.16 ;
+      END
+   END vdd
+
+   PIN vss
+      DIRECTION INOUT ;
+      USE GROUND ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 -0.016 0.294 0.016 ;
+      END
+   END vss
+
+   OBS
+      LAYER M0 ;
+         RECT 0.0085 0.018 0.2015 0.03 ;
+         RECT 0.0085 0.042 0.2855 0.054 ;
+         RECT 0.0085 0.066 0.0545 0.078 ;
+         RECT 0.0715 0.066 0.1385 0.078 ;
+         RECT 0.1555 0.066 0.2225 0.078 ;
+         RECT 0.2395 0.066 0.2855 0.078 ;
+         RECT 0.042 0.09 0.2855 0.102 ;
+         RECT 0.0925 0.114 0.2855 0.126 ;
       LAYER M1 ;
-        RECT 0.014 0.015 0.028 0.129 ;
-    END
-  END A
-  PIN Y
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.056 0.015 0.07 0.129 ;
-    END
-  END Y
-  PIN vdd
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER BPR ;
-        RECT 0 0.128 0.294 0.16 ;
-    END
-  END vdd
-  PIN vss
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER BPR ;
-        RECT 0 -0.016 0.294 0.016 ;
-    END
-  END vss
-  PIN B
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.098 0.015 0.112 0.129 ;
-    END
-  END B
-  OBS
-    LAYER M1 ;
-      POLYGON 0.126 0 0.126 0.001 0.182 0.001 0.182 0.082 0.196 0.082 0.196 0.001 0.294 0.001 0.294 0 ;
-      POLYGON 0.266 0.062 0.266 0.143 0.126 0.143 0.126 0.144 0.294 0.144 0.294 0.143 0.28 0.143 0.28 0.062 ;
-  END
+         RECT 0.182 0.014 0.196 0.082 ;
+         RECT 0.266 0.062 0.28 0.13 ;
+   END
 END gt3_6t_nor2_x3_rvt
 
 MACRO gt3_6t_nor2_x4_rvt
-  CLASS CORE  ;
-  ORIGIN 0 0 ;
-  SYMMETRY X Y ;
-  SITE gt3v1 ;
-  FOREIGN gt3_6t_nor2_x4_rvt 0 0 ;
-  SIZE 0.378 BY 0.144 ;
-  PIN A
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
+   CLASS CORE ;
+   ORIGIN 0 0 ;
+   FOREIGN gt3_6t_nor2_x4_rvt ;
+   SIZE 0.378 BY 0.144 ;
+   SYMMETRY X Y ;
+   SITE gt3v1 ;
+   PIN A
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.014 0.014 0.028 0.129 ;
+      END
+   END A
+
+   PIN B
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.098 0.015 0.112 0.13 ;
+      END
+   END B
+
+   PIN Y
+      DIRECTION OUTPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.056 0.015 0.07 0.129 ;
+      END
+   END Y
+
+   PIN vdd
+      DIRECTION INOUT ;
+      USE POWER ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 0.128 0.378 0.16 ;
+      END
+   END vdd
+
+   PIN vss
+      DIRECTION INOUT ;
+      USE GROUND ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 -0.016 0.378 0.016 ;
+      END
+   END vss
+
+   OBS
+      LAYER M0 ;
+         RECT 0.0085 0.018 0.3695 0.03 ;
+         RECT 0.0085 0.042 0.3695 0.054 ;
+         RECT 0.0085 0.066 0.0545 0.078 ;
+         RECT 0.0715 0.066 0.1385 0.078 ;
+         RECT 0.1555 0.066 0.2225 0.078 ;
+         RECT 0.2395 0.066 0.3065 0.078 ;
+         RECT 0.3235 0.066 0.3695 0.078 ;
+         RECT 0.042 0.09 0.2855 0.102 ;
+         RECT 0.0925 0.114 0.2855 0.126 ;
       LAYER M1 ;
-        RECT 0.014 0.015 0.028 0.129 ;
-    END
-  END A
-  PIN Y
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.056 0.015 0.07 0.129 ;
-    END
-  END Y
-  PIN vdd
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER BPR ;
-        RECT 0 0.128 0.378 0.16 ;
-    END
-  END vdd
-  PIN vss
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER BPR ;
-        RECT 0 -0.016 0.378 0.016 ;
-    END
-  END vss
-  PIN B
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.098 0.015 0.112 0.129 ;
-    END
-  END B
-  OBS
-    LAYER M1 ;
-      POLYGON 0.126 0 0.126 0.001 0.182 0.001 0.182 0.082 0.196 0.082 0.196 0.001 0.35 0.001 0.35 0.082 0.364 0.082 0.364 0.001 0.378 0.001 0.378 0 ;
-      POLYGON 0.266 0.062 0.266 0.143 0.126 0.143 0.126 0.144 0.378 0.144 0.378 0.143 0.28 0.143 0.28 0.062 ;
-  END
+         RECT 0.182 0.014 0.196 0.082 ;
+         RECT 0.35 0.014 0.364 0.082 ;
+         RECT 0.266 0.062 0.28 0.13 ;
+   END
 END gt3_6t_nor2_x4_rvt
 
 MACRO gt3_6t_nor3_x1_rvt
-  CLASS CORE  ;
-  ORIGIN 0 0 ;
-  SYMMETRY X Y ;
-  SITE gt3v1 ;
-  FOREIGN gt3_6t_nor3_x1_rvt 0 0 ;
-  SIZE 0.168 BY 0.144 ;
-  PIN A
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.014 0.014 0.028 0.13 ;
-    END
-  END A
-  PIN Y
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.112 0.014 0.126 0.13 ;
-    END
-  END Y
-  PIN vdd
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER BPR ;
-        RECT 0 0.128 0.168 0.16 ;
-    END
-  END vdd
-  PIN vss
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER BPR ;
-        RECT 0 -0.016 0.168 0.016 ;
-    END
-  END vss
-  PIN B
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.077 0.014 0.091 0.13 ;
-    END
-  END B
-  PIN C
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.14 0.014 0.154 0.13 ;
-    END
-  END C
-  OBS
-  END
+   CLASS CORE ;
+   ORIGIN 0 0 ;
+   FOREIGN gt3_6t_nor3_x1_rvt ;
+   SIZE 0.168 BY 0.144 ;
+   SYMMETRY X Y ;
+   SITE gt3v1 ;
+   PIN A
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.014 0.014 0.028 0.13 ;
+      END
+   END A
+
+   PIN B
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.077 0.014 0.091 0.13 ;
+      END
+   END B
+
+   PIN C
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.141 0.014 0.155 0.13 ;
+      END
+   END C
+
+   PIN Y
+      DIRECTION OUTPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.109 0.014 0.123 0.13 ;
+      END
+   END Y
+
+   PIN vdd
+      DIRECTION INOUT ;
+      USE POWER ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 0.128 0.168 0.16 ;
+      END
+   END vdd
+
+   PIN vss
+      DIRECTION INOUT ;
+      USE GROUND ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 -0.016 0.168 0.016 ;
+      END
+   END vss
+
+   OBS
+      LAYER M0 ;
+         RECT 0.0085 0.042 0.127 0.054 ;
+         RECT 0.0085 0.066 0.0545 0.078 ;
+         RECT 0.0715 0.066 0.0965 0.078 ;
+         RECT 0.1135 0.066 0.1595 0.078 ;
+         RECT 0.0825 0.09 0.1595 0.102 ;
+   END
 END gt3_6t_nor3_x1_rvt
 
 MACRO gt3_6t_nor3_x2_rvt
-  CLASS CORE  ;
-  ORIGIN 0 0 ;
-  SYMMETRY X Y ;
-  SITE gt3v1 ;
-  FOREIGN gt3_6t_nor3_x2_rvt 0 0 ;
-  SIZE 0.294 BY 0.144 ;
-  PIN A
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
+   CLASS CORE ;
+   ORIGIN 0 0 ;
+   FOREIGN gt3_6t_nor3_x2_rvt ;
+   SIZE 0.294 BY 0.144 ;
+   SYMMETRY X Y ;
+   SITE gt3v1 ;
+   PIN A
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.098 0.014 0.112 0.13 ;
+      END
+   END A
+
+   PIN B
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.161 0.014 0.175 0.13 ;
+      END
+   END B
+
+   PIN C
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.225 0.014 0.239 0.13 ;
+      END
+   END C
+
+   PIN Y
+      DIRECTION OUTPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.193 0.014 0.207 0.13 ;
+      END
+   END Y
+
+   PIN vdd
+      DIRECTION INOUT ;
+      USE POWER ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 0.128 0.294 0.16 ;
+      END
+   END vdd
+
+   PIN vss
+      DIRECTION INOUT ;
+      USE GROUND ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 -0.016 0.294 0.016 ;
+      END
+   END vss
+
+   OBS
+      LAYER M0 ;
+         RECT 0.03 0.018 0.1815 0.03 ;
+         RECT 0.008 0.042 0.2865 0.054 ;
+         RECT 0.029 0.066 0.054 0.078 ;
+         RECT 0.072 0.066 0.1385 0.078 ;
+         RECT 0.1555 0.066 0.1805 0.078 ;
+         RECT 0.1975 0.066 0.2655 0.078 ;
+         RECT 0.0495 0.09 0.1595 0.102 ;
+         RECT 0.177 0.09 0.2445 0.102 ;
+         RECT 0.0085 0.1145 0.286 0.1265 ;
       LAYER M1 ;
-        RECT 0.098 0.014 0.112 0.13 ;
-    END
-  END A
-  PIN Y
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.224 0.014 0.238 0.13 ;
-    END
-  END Y
-  PIN vdd
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER BPR ;
-        RECT 0 0.128 0.294 0.16 ;
-    END
-  END vdd
-  PIN vss
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER BPR ;
-        RECT 0 -0.016 0.294 0.016 ;
-    END
-  END vss
-  PIN B
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.161 0.014 0.175 0.13 ;
-    END
-  END B
-  PIN C
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.266 0.014 0.28 0.13 ;
-    END
-  END C
-  OBS
-    LAYER M1 ;
-      RECT 0.035 0.014 0.049 0.0845 ;
-  END
+         RECT 0.035 0.014 0.049 0.0845 ;
+   END
 END gt3_6t_nor3_x2_rvt
 
 MACRO gt3_6t_oa211_x1_rvt
-  CLASS CORE  ;
-  ORIGIN 0 0 ;
-  SYMMETRY X Y ;
-  SITE gt3v1 ;
-  FOREIGN gt3_6t_oa211_x1_rvt 0 0 ;
-  SIZE 0.252 BY 0.144 ;
-  PIN A2
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
+   CLASS CORE ;
+   ORIGIN 0 0 ;
+   FOREIGN gt3_6t_oa211_x1_rvt ;
+   SIZE 0.252 BY 0.144 ;
+   SYMMETRY X Y ;
+   SITE gt3v1 ;
+   PIN A1
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.077 0.014 0.091 0.13 ;
+      END
+   END A1
+
+   PIN A2
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.014 0.014 0.028 0.13 ;
+      END
+   END A2
+
+   PIN B
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.119 0.014 0.133 0.13 ;
+      END
+   END B
+
+   PIN C
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.161 0.014 0.175 0.13 ;
+      END
+   END C
+
+   PIN Y
+      DIRECTION OUTPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.193 0.014 0.207 0.13 ;
+      END
+   END Y
+
+   PIN vdd
+      DIRECTION INOUT ;
+      USE POWER ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 0.128 0.252 0.16 ;
+      END
+   END vdd
+
+   PIN vss
+      DIRECTION INOUT ;
+      USE GROUND ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 -0.016 0.252 0.016 ;
+      END
+   END vss
+
+   OBS
+      LAYER M0 ;
+         RECT 0.0085 0.018 0.1175 0.03 ;
+         RECT 0.189 0.018 0.2435 0.03 ;
+         RECT 0.0345 0.042 0.2435 0.054 ;
+         RECT 0.0085 0.066 0.0545 0.078 ;
+         RECT 0.0715 0.066 0.0965 0.078 ;
+         RECT 0.1135 0.066 0.1385 0.078 ;
+         RECT 0.1555 0.066 0.1805 0.078 ;
+         RECT 0.1975 0.066 0.2435 0.078 ;
+         RECT 0.1555 0.09 0.2435 0.102 ;
+         RECT 0.0085 0.114 0.2435 0.126 ;
       LAYER M1 ;
-        RECT 0.014 0.014 0.028 0.13 ;
-    END
-  END A2
-  PIN A1
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.077 0.014 0.091 0.13 ;
-    END
-  END A1
-  PIN vdd
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER BPR ;
-        RECT 0 0.128 0.252 0.16 ;
-    END
-  END vdd
-  PIN vss
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER BPR ;
-        RECT 0 -0.016 0.252 0.016 ;
-    END
-  END vss
-  PIN B
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.119 0.014 0.133 0.13 ;
-    END
-  END B
-  PIN Y
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.196 0.014 0.21 0.13 ;
-    END
-  END Y
-  PIN C
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.161 0.014 0.175 0.13 ;
-    END
-  END C
-  OBS
-    LAYER M1 ;
-      RECT 0.224 0.038 0.238 0.13 ;
-  END
+         RECT 0.225 0.038 0.239 0.13 ;
+   END
 END gt3_6t_oa211_x1_rvt
 
 MACRO gt3_6t_oa21_x1_rvt
-  CLASS CORE  ;
-  ORIGIN 0 0 ;
-  SYMMETRY X Y ;
-  SITE gt3v1 ;
-  FOREIGN gt3_6t_oa21_x1_rvt 0 0 ;
-  SIZE 0.21 BY 0.144 ;
-  PIN A2
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
+   CLASS CORE ;
+   ORIGIN 0 0 ;
+   FOREIGN gt3_6t_oa21_x1_rvt ;
+   SIZE 0.21 BY 0.144 ;
+   SYMMETRY X Y ;
+   SITE gt3v1 ;
+   PIN A1
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.077 0.015 0.091 0.129 ;
+      END
+   END A1
+
+   PIN A2
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.014 0.015 0.028 0.129 ;
+      END
+   END A2
+
+   PIN B
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.119 0.015 0.133 0.129 ;
+      END
+   END B
+
+   PIN Y
+      DIRECTION OUTPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.1505 0.015 0.1645 0.13 ;
+      END
+   END Y
+
+   PIN vdd
+      DIRECTION INOUT ;
+      USE POWER ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 0.128 0.21 0.16 ;
+      END
+   END vdd
+
+   PIN vss
+      DIRECTION INOUT ;
+      USE GROUND ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 -0.016 0.21 0.016 ;
+      END
+   END vss
+
+   OBS
+      LAYER M0 ;
+         RECT 0.0085 0.018 0.1175 0.03 ;
+         RECT 0.0345 0.042 0.2015 0.054 ;
+         RECT 0.0085 0.066 0.0545 0.078 ;
+         RECT 0.0715 0.066 0.0965 0.078 ;
+         RECT 0.1135 0.066 0.1385 0.078 ;
+         RECT 0.1555 0.066 0.2015 0.078 ;
+         RECT 0.0925 0.09 0.2015 0.102 ;
+         RECT 0.1465 0.114 0.2015 0.126 ;
       LAYER M1 ;
-        RECT 0.014 0.015 0.028 0.129 ;
-    END
-  END A2
-  PIN A1
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.077 0.015 0.091 0.129 ;
-    END
-  END A1
-  PIN vdd
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER BPR ;
-        RECT 0 0.128 0.21 0.16 ;
-    END
-  END vdd
-  PIN vss
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER BPR ;
-        RECT 0 -0.016 0.21 0.016 ;
-    END
-  END vss
-  PIN B
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.119 0.015 0.133 0.129 ;
-    END
-  END B
-  PIN Y
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.154 0.015 0.168 0.13 ;
-    END
-  END Y
-  OBS
-    LAYER M1 ;
-      RECT 0.042 0 0.063 0.001 ;
-      POLYGON 0.182 0 0.182 0.129 0.196 0.129 0.196 0.001 0.21 0.001 0.21 0 ;
-  END
+         RECT 0.182 0.015 0.196 0.129 ;
+   END
 END gt3_6t_oa21_x1_rvt
 
 MACRO gt3_6t_oa22_x1_rvt
-  CLASS CORE  ;
-  ORIGIN 0 0 ;
-  SYMMETRY X Y ;
-  SITE gt3v1 ;
-  FOREIGN gt3_6t_oa22_x1_rvt 0 0 ;
-  SIZE 0.294 BY 0.144 ;
-  PIN A2
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
+   CLASS CORE ;
+   ORIGIN 0 0 ;
+   FOREIGN gt3_6t_oa22_x1_rvt ;
+   SIZE 0.294 BY 0.144 ;
+   SYMMETRY X Y ;
+   SITE gt3v1 ;
+   PIN A1
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.077 0.014 0.091 0.13 ;
+      END
+   END A1
+
+   PIN A2
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.014 0.014 0.028 0.13 ;
+      END
+   END A2
+
+   PIN B1
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.119 0.014 0.133 0.13 ;
+      END
+   END B1
+
+   PIN B2
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.161 0.014 0.175 0.13 ;
+      END
+   END B2
+
+   PIN Y
+      DIRECTION OUTPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.2655 0.014 0.2795 0.13 ;
+      END
+   END Y
+
+   PIN vdd
+      DIRECTION INOUT ;
+      USE POWER ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 0.128 0.294 0.16 ;
+      END
+   END vdd
+
+   PIN vss
+      DIRECTION INOUT ;
+      USE GROUND ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 -0.016 0.294 0.016 ;
+      END
+   END vss
+
+   OBS
+      LAYER M0 ;
+         RECT 0.0085 0.018 0.2015 0.03 ;
+         RECT 0.2605 0.018 0.2855 0.03 ;
+         RECT 0.0345 0.042 0.242 0.054 ;
+         RECT 0.0085 0.066 0.0545 0.078 ;
+         RECT 0.0715 0.066 0.0965 0.078 ;
+         RECT 0.1135 0.066 0.1385 0.078 ;
+         RECT 0.1555 0.066 0.1805 0.078 ;
+         RECT 0.22 0.066 0.2645 0.078 ;
+         RECT 0.0085 0.114 0.242 0.126 ;
+         RECT 0.2605 0.114 0.2855 0.126 ;
       LAYER M1 ;
-        RECT 0.014 0.014 0.028 0.13 ;
-    END
-  END A2
-  PIN A1
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.077 0.014 0.091 0.13 ;
-    END
-  END A1
-  PIN vdd
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER BPR ;
-        RECT 0 0.128 0.294 0.16 ;
-    END
-  END vdd
-  PIN vss
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER BPR ;
-        RECT 0 -0.016 0.294 0.016 ;
-    END
-  END vss
-  PIN B1
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.119 0.014 0.133 0.13 ;
-    END
-  END B1
-  PIN Y
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.266 0.014 0.28 0.13 ;
-    END
-  END Y
-  PIN B2
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.161 0.014 0.175 0.13 ;
-    END
-  END B2
-  OBS
-    LAYER M1 ;
-      RECT 0.224 0.038 0.238 0.13 ;
-  END
+         RECT 0.224 0.038 0.238 0.13 ;
+   END
 END gt3_6t_oa22_x1_rvt
 
 MACRO gt3_6t_oa31_x1_rvt
-  CLASS CORE  ;
-  ORIGIN 0 0 ;
-  SYMMETRY X Y ;
-  SITE gt3v1 ;
-  FOREIGN gt3_6t_oa31_x1_rvt 0 0 ;
-  SIZE 0.294 BY 0.144 ;
-  PIN A2
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
+   CLASS CORE ;
+   ORIGIN 0 0 ;
+   FOREIGN gt3_6t_oa31_x1_rvt ;
+   SIZE 0.294 BY 0.144 ;
+   SYMMETRY X Y ;
+   SITE gt3v1 ;
+   PIN A1
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.119 0.014 0.133 0.13 ;
+      END
+   END A1
+
+   PIN A2
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.077 0.014 0.091 0.13 ;
+      END
+   END A2
+
+   PIN A3
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.014 0.014 0.028 0.13 ;
+      END
+   END A3
+
+   PIN B
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.161 0.014 0.175 0.13 ;
+      END
+   END B
+
+   PIN Y
+      DIRECTION OUTPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.2655 0.014 0.2795 0.13 ;
+      END
+   END Y
+
+   PIN vdd
+      DIRECTION INOUT ;
+      USE POWER ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 0.128 0.294 0.16 ;
+      END
+   END vdd
+
+   PIN vss
+      DIRECTION INOUT ;
+      USE GROUND ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 -0.016 0.294 0.016 ;
+      END
+   END vss
+
+   OBS
+      LAYER M0 ;
+         RECT 0.0505 0.018 0.1595 0.03 ;
+         RECT 0.2605 0.018 0.2855 0.03 ;
+         RECT 0.0085 0.042 0.242 0.054 ;
+         RECT 0.0085 0.066 0.0545 0.078 ;
+         RECT 0.0715 0.066 0.0965 0.078 ;
+         RECT 0.1135 0.066 0.1385 0.078 ;
+         RECT 0.1555 0.066 0.1805 0.078 ;
+         RECT 0.22 0.066 0.2645 0.078 ;
+         RECT 0.0085 0.114 0.242 0.126 ;
+         RECT 0.2605 0.114 0.2855 0.126 ;
       LAYER M1 ;
-        RECT 0.077 0.014 0.091 0.13 ;
-    END
-  END A2
-  PIN A1
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.119 0.014 0.133 0.13 ;
-    END
-  END A1
-  PIN vdd
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER BPR ;
-        RECT 0 0.128 0.294 0.16 ;
-    END
-  END vdd
-  PIN vss
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER BPR ;
-        RECT 0 -0.016 0.294 0.016 ;
-    END
-  END vss
-  PIN A3
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.014 0.014 0.028 0.13 ;
-    END
-  END A3
-  PIN Y
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.266 0.014 0.28 0.13 ;
-    END
-  END Y
-  PIN B
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.161 0.014 0.175 0.13 ;
-    END
-  END B
-  OBS
-    LAYER M1 ;
-      RECT 0.224 0.038 0.238 0.13 ;
-  END
+         RECT 0.224 0.038 0.238 0.13 ;
+   END
 END gt3_6t_oa31_x1_rvt
 
 MACRO gt3_6t_oa32_x1_rvt
-  CLASS CORE  ;
-  ORIGIN 0 0 ;
-  SYMMETRY X Y ;
-  SITE gt3v1 ;
-  FOREIGN gt3_6t_oa32_x1_rvt 0 0 ;
-  SIZE 0.336 BY 0.144 ;
-  PIN A2
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
+   CLASS CORE ;
+   ORIGIN 0 0 ;
+   FOREIGN gt3_6t_oa32_x1_rvt ;
+   SIZE 0.336 BY 0.144 ;
+   SYMMETRY X Y ;
+   SITE gt3v1 ;
+   PIN A1
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.119 0.014 0.133 0.13 ;
+      END
+   END A1
+
+   PIN A2
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.077 0.014 0.091 0.13 ;
+      END
+   END A2
+
+   PIN A3
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.014 0.014 0.028 0.13 ;
+      END
+   END A3
+
+   PIN B1
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.161 0.014 0.175 0.13 ;
+      END
+   END B1
+
+   PIN B2
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.203 0.014 0.217 0.13 ;
+      END
+   END B2
+
+   PIN Y
+      DIRECTION OUTPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.308 0.014 0.322 0.13 ;
+      END
+   END Y
+
+   PIN vdd
+      DIRECTION INOUT ;
+      USE POWER ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 0.128 0.336 0.16 ;
+      END
+   END vdd
+
+   PIN vss
+      DIRECTION INOUT ;
+      USE GROUND ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 -0.016 0.336 0.016 ;
+      END
+   END vss
+
+   OBS
+      LAYER M0 ;
+         RECT 0.0505 0.018 0.2435 0.03 ;
+         RECT 0.3025 0.018 0.3275 0.03 ;
+         RECT 0.0085 0.042 0.284 0.054 ;
+         RECT 0.0085 0.066 0.0545 0.078 ;
+         RECT 0.0715 0.066 0.0965 0.078 ;
+         RECT 0.1135 0.066 0.1385 0.078 ;
+         RECT 0.1555 0.066 0.1805 0.078 ;
+         RECT 0.1975 0.066 0.2225 0.078 ;
+         RECT 0.262 0.066 0.3065 0.078 ;
+         RECT 0.0085 0.114 0.284 0.126 ;
+         RECT 0.3025 0.114 0.3275 0.126 ;
       LAYER M1 ;
-        RECT 0.077 0.014 0.091 0.13 ;
-    END
-  END A2
-  PIN A1
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.119 0.014 0.133 0.13 ;
-    END
-  END A1
-  PIN vdd
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER BPR ;
-        RECT 0 0.128 0.336 0.16 ;
-    END
-  END vdd
-  PIN vss
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER BPR ;
-        RECT 0 -0.016 0.336 0.016 ;
-    END
-  END vss
-  PIN A3
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.014 0.014 0.028 0.13 ;
-    END
-  END A3
-  PIN Y
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.308 0.014 0.322 0.13 ;
-    END
-  END Y
-  PIN B1
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.161 0.014 0.175 0.13 ;
-    END
-  END B1
-  PIN B2
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.203 0.014 0.217 0.13 ;
-    END
-  END B2
-  OBS
-    LAYER M1 ;
-      RECT 0.266 0.038 0.28 0.13 ;
-  END
+         RECT 0.266 0.038 0.28 0.13 ;
+   END
 END gt3_6t_oa32_x1_rvt
 
 MACRO gt3_6t_oa33_x1_rvt
-  CLASS CORE  ;
-  ORIGIN 0 0 ;
-  SYMMETRY X Y ;
-  SITE gt3v1 ;
-  FOREIGN gt3_6t_oa33_x1_rvt 0 0 ;
-  SIZE 0.378 BY 0.144 ;
-  PIN A2
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
+   CLASS CORE ;
+   ORIGIN 0 0 ;
+   FOREIGN gt3_6t_oa33_x1_rvt ;
+   SIZE 0.378 BY 0.144 ;
+   SYMMETRY X Y ;
+   SITE gt3v1 ;
+   PIN A1
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.119 0.014 0.133 0.13 ;
+      END
+   END A1
+
+   PIN A2
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.077 0.014 0.091 0.13 ;
+      END
+   END A2
+
+   PIN A3
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.014 0.014 0.028 0.13 ;
+      END
+   END A3
+
+   PIN B1
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.161 0.014 0.175 0.13 ;
+      END
+   END B1
+
+   PIN B2
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.203 0.014 0.217 0.13 ;
+      END
+   END B2
+
+   PIN B3
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.245 0.014 0.259 0.13 ;
+      END
+   END B3
+
+   PIN Y
+      DIRECTION OUTPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.35 0.014 0.364 0.13 ;
+      END
+   END Y
+
+   PIN vdd
+      DIRECTION INOUT ;
+      USE POWER ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 0.128 0.378 0.16 ;
+      END
+   END vdd
+
+   PIN vss
+      DIRECTION INOUT ;
+      USE GROUND ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 -0.016 0.378 0.016 ;
+      END
+   END vss
+
+   OBS
+      LAYER M0 ;
+         RECT 0.0505 0.018 0.2435 0.03 ;
+         RECT 0.3445 0.018 0.3695 0.03 ;
+         RECT 0.0085 0.042 0.326 0.054 ;
+         RECT 0.0085 0.066 0.0545 0.078 ;
+         RECT 0.0715 0.066 0.0965 0.078 ;
+         RECT 0.1135 0.066 0.1385 0.078 ;
+         RECT 0.1555 0.066 0.1805 0.078 ;
+         RECT 0.1975 0.066 0.2225 0.078 ;
+         RECT 0.2395 0.066 0.2645 0.078 ;
+         RECT 0.304 0.066 0.3485 0.078 ;
+         RECT 0.0085 0.114 0.326 0.126 ;
+         RECT 0.3445 0.114 0.3695 0.126 ;
       LAYER M1 ;
-        RECT 0.077 0.014 0.091 0.13 ;
-    END
-  END A2
-  PIN A1
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.119 0.014 0.133 0.13 ;
-    END
-  END A1
-  PIN vdd
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER BPR ;
-        RECT 0 0.128 0.378 0.16 ;
-    END
-  END vdd
-  PIN vss
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER BPR ;
-        RECT 0 -0.016 0.378 0.016 ;
-    END
-  END vss
-  PIN A3
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.014 0.014 0.028 0.13 ;
-    END
-  END A3
-  PIN Y
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.35 0.014 0.364 0.13 ;
-    END
-  END Y
-  PIN B1
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.161 0.014 0.175 0.13 ;
-    END
-  END B1
-  PIN B2
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.203 0.014 0.217 0.13 ;
-    END
-  END B2
-  PIN B3
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.245 0.014 0.259 0.13 ;
-    END
-  END B3
-  OBS
-    LAYER M1 ;
-      RECT 0.308 0.038 0.322 0.13 ;
-  END
+         RECT 0.308 0.038 0.322 0.13 ;
+   END
 END gt3_6t_oa33_x1_rvt
 
 MACRO gt3_6t_oai211_x1_rvt
-  CLASS CORE  ;
-  ORIGIN 0 0 ;
-  SYMMETRY X Y ;
-  SITE gt3v1 ;
-  FOREIGN gt3_6t_oai211_x1_rvt 0 0 ;
-  SIZE 0.21 BY 0.144 ;
-  PIN A2
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.014 0.014 0.028 0.13 ;
-    END
-  END A2
-  PIN A1
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.077 0.014 0.091 0.13 ;
-    END
-  END A1
-  PIN vdd
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER BPR ;
-        RECT 0 0.128 0.21 0.16 ;
-    END
-  END vdd
-  PIN vss
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER BPR ;
-        RECT 0 -0.016 0.21 0.016 ;
-    END
-  END vss
-  PIN B
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.119 0.014 0.133 0.13 ;
-    END
-  END B
-  PIN Y
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.154 0.014 0.168 0.13 ;
-    END
-  END Y
-  PIN C
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.182 0.014 0.196 0.13 ;
-    END
-  END C
-  OBS
-  END
+   CLASS CORE ;
+   ORIGIN 0 0 ;
+   FOREIGN gt3_6t_oai211_x1_rvt ;
+   SIZE 0.21 BY 0.144 ;
+   SYMMETRY X Y ;
+   SITE gt3v1 ;
+   PIN A1
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.077 0.014 0.091 0.13 ;
+      END
+   END A1
+
+   PIN A2
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.014 0.014 0.028 0.13 ;
+      END
+   END A2
+
+   PIN B
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.119 0.014 0.133 0.13 ;
+      END
+   END B
+
+   PIN C
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.183 0.014 0.197 0.13 ;
+      END
+   END C
+
+   PIN Y
+      DIRECTION OUTPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.151 0.014 0.165 0.13 ;
+      END
+   END Y
+
+   PIN vdd
+      DIRECTION INOUT ;
+      USE POWER ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 0.128 0.21 0.16 ;
+      END
+   END vdd
+
+   PIN vss
+      DIRECTION INOUT ;
+      USE GROUND ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 -0.016 0.21 0.016 ;
+      END
+   END vss
+
+   OBS
+      LAYER M0 ;
+         RECT 0.0085 0.018 0.1175 0.03 ;
+         RECT 0.0345 0.042 0.169 0.054 ;
+         RECT 0.0085 0.066 0.0545 0.078 ;
+         RECT 0.0715 0.066 0.0965 0.078 ;
+         RECT 0.1135 0.066 0.1385 0.078 ;
+         RECT 0.1555 0.066 0.2015 0.078 ;
+         RECT 0.0085 0.114 0.169 0.126 ;
+   END
 END gt3_6t_oai211_x1_rvt
 
 MACRO gt3_6t_oai21_x1_rvt
-  CLASS CORE  ;
-  ORIGIN 0 0 ;
-  SYMMETRY X Y ;
-  SITE gt3v1 ;
-  FOREIGN gt3_6t_oai21_x1_rvt 0 0 ;
-  SIZE 0.168 BY 0.144 ;
-  PIN A2
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.014 0.015 0.028 0.129 ;
-    END
-  END A2
-  PIN A1
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.077 0.015 0.091 0.129 ;
-    END
-  END A1
-  PIN vdd
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER BPR ;
-        RECT 0 0.128 0.168 0.16 ;
-    END
-  END vdd
-  PIN vss
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER BPR ;
-        RECT 0 -0.016 0.168 0.016 ;
-    END
-  END vss
-  PIN B
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.119 0.015 0.133 0.129 ;
-    END
-  END B
-  PIN Y
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.042 0.015 0.056 0.129 ;
-    END
-  END Y
-  OBS
-    LAYER M1 ;
-      RECT 0.147 0 0.168 0.001 ;
-      RECT 0.147 0.143 0.168 0.144 ;
-  END
+   CLASS CORE ;
+   ORIGIN 0 0 ;
+   FOREIGN gt3_6t_oai21_x1_rvt ;
+   SIZE 0.168 BY 0.144 ;
+   SYMMETRY X Y ;
+   SITE gt3v1 ;
+   PIN A1
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.077 0.015 0.091 0.129 ;
+      END
+   END A1
+
+   PIN A2
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.014 0.015 0.028 0.129 ;
+      END
+   END A2
+
+   PIN B
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.119 0.015 0.133 0.129 ;
+      END
+   END B
+
+   PIN Y
+      DIRECTION OUTPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.0455 0.015 0.0595 0.129 ;
+      END
+   END Y
+
+   PIN vdd
+      DIRECTION INOUT ;
+      USE POWER ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 0.128 0.168 0.16 ;
+      END
+   END vdd
+
+   PIN vss
+      DIRECTION INOUT ;
+      USE GROUND ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 -0.016 0.168 0.016 ;
+      END
+   END vss
+
+   OBS
+      LAYER M0 ;
+         RECT 0.0085 0.018 0.1175 0.03 ;
+         RECT 0.0415 0.042 0.0785 0.054 ;
+         RECT 0.0085 0.066 0.0545 0.078 ;
+         RECT 0.0715 0.066 0.0965 0.078 ;
+         RECT 0.1135 0.066 0.1385 0.078 ;
+         RECT 0.0415 0.09 0.1225 0.102 ;
+   END
 END gt3_6t_oai21_x1_rvt
 
 MACRO gt3_6t_oai22_x1_rvt
-  CLASS CORE  ;
-  ORIGIN 0 0 ;
-  SYMMETRY X Y ;
-  SITE gt3v1 ;
-  FOREIGN gt3_6t_oai22_x1_rvt 0 0 ;
-  SIZE 0.21 BY 0.144 ;
-  PIN A2
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.014 0.014 0.028 0.13 ;
-    END
-  END A2
-  PIN A1
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.077 0.014 0.091 0.13 ;
-    END
-  END A1
-  PIN vdd
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER BPR ;
-        RECT 0 0.128 0.21 0.16 ;
-    END
-  END vdd
-  PIN vss
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER BPR ;
-        RECT 0 -0.016 0.21 0.016 ;
-    END
-  END vss
-  PIN B1
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.119 0.014 0.133 0.13 ;
-    END
-  END B1
-  PIN Y
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.154 0.014 0.168 0.13 ;
-    END
-  END Y
-  PIN B2
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.182 0.014 0.196 0.13 ;
-    END
-  END B2
-  OBS
-  END
+   CLASS CORE ;
+   ORIGIN 0 0 ;
+   FOREIGN gt3_6t_oai22_x1_rvt ;
+   SIZE 0.21 BY 0.144 ;
+   SYMMETRY X Y ;
+   SITE gt3v1 ;
+   PIN A1
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.077 0.014 0.091 0.13 ;
+      END
+   END A1
+
+   PIN A2
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.014 0.014 0.028 0.13 ;
+      END
+   END A2
+
+   PIN B1
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.119 0.014 0.133 0.13 ;
+      END
+   END B1
+
+   PIN B2
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.183 0.014 0.197 0.13 ;
+      END
+   END B2
+
+   PIN Y
+      DIRECTION OUTPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.151 0.014 0.165 0.13 ;
+      END
+   END Y
+
+   PIN vdd
+      DIRECTION INOUT ;
+      USE POWER ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 0.128 0.21 0.16 ;
+      END
+   END vdd
+
+   PIN vss
+      DIRECTION INOUT ;
+      USE GROUND ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 -0.016 0.21 0.016 ;
+      END
+   END vss
+
+   OBS
+      LAYER M0 ;
+         RECT 0.0085 0.018 0.2015 0.03 ;
+         RECT 0.0345 0.042 0.2015 0.054 ;
+         RECT 0.0085 0.066 0.0545 0.078 ;
+         RECT 0.0715 0.066 0.0965 0.078 ;
+         RECT 0.1135 0.066 0.1385 0.078 ;
+         RECT 0.1555 0.066 0.2015 0.078 ;
+         RECT 0.0085 0.114 0.2015 0.126 ;
+   END
 END gt3_6t_oai22_x1_rvt
 
 MACRO gt3_6t_oai31_x1_rvt
-  CLASS CORE  ;
-  ORIGIN 0 0 ;
-  SYMMETRY X Y ;
-  SITE gt3v1 ;
-  FOREIGN gt3_6t_oai31_x1_rvt 0 0 ;
-  SIZE 0.21 BY 0.144 ;
-  PIN A2
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.077 0.014 0.091 0.13 ;
-    END
-  END A2
-  PIN A1
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.119 0.014 0.133 0.13 ;
-    END
-  END A1
-  PIN vdd
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER BPR ;
-        RECT 0 0.128 0.21 0.16 ;
-    END
-  END vdd
-  PIN vss
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER BPR ;
-        RECT 0 -0.016 0.21 0.016 ;
-    END
-  END vss
-  PIN A3
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.014 0.014 0.028 0.13 ;
-    END
-  END A3
-  PIN Y
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.154 0.014 0.168 0.13 ;
-    END
-  END Y
-  PIN B
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.182 0.014 0.196 0.13 ;
-    END
-  END B
-  OBS
-  END
+   CLASS CORE ;
+   ORIGIN 0 0 ;
+   FOREIGN gt3_6t_oai31_x1_rvt ;
+   SIZE 0.21 BY 0.144 ;
+   SYMMETRY X Y ;
+   SITE gt3v1 ;
+   PIN A1
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.119 0.014 0.133 0.13 ;
+      END
+   END A1
+
+   PIN A2
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.077 0.014 0.091 0.13 ;
+      END
+   END A2
+
+   PIN A3
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.014 0.014 0.028 0.13 ;
+      END
+   END A3
+
+   PIN B
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.183 0.014 0.197 0.13 ;
+      END
+   END B
+
+   PIN Y
+      DIRECTION OUTPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.151 0.014 0.165 0.13 ;
+      END
+   END Y
+
+   PIN vdd
+      DIRECTION INOUT ;
+      USE POWER ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 0.128 0.21 0.16 ;
+      END
+   END vdd
+
+   PIN vss
+      DIRECTION INOUT ;
+      USE GROUND ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 -0.016 0.21 0.016 ;
+      END
+   END vss
+
+   OBS
+      LAYER M0 ;
+         RECT 0.0505 0.018 0.1595 0.03 ;
+         RECT 0.0085 0.042 0.1735 0.054 ;
+         RECT 0.0085 0.066 0.0545 0.078 ;
+         RECT 0.0715 0.066 0.0965 0.078 ;
+         RECT 0.1135 0.066 0.1385 0.078 ;
+         RECT 0.1555 0.066 0.2015 0.078 ;
+         RECT 0.0085 0.114 0.2015 0.126 ;
+   END
 END gt3_6t_oai31_x1_rvt
 
 MACRO gt3_6t_oai32_x1_rvt
-  CLASS CORE  ;
-  ORIGIN 0 0 ;
-  SYMMETRY X Y ;
-  SITE gt3v1 ;
-  FOREIGN gt3_6t_oai32_x1_rvt 0 0 ;
-  SIZE 0.252 BY 0.144 ;
-  PIN A2
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.077 0.014 0.091 0.13 ;
-    END
-  END A2
-  PIN A1
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.119 0.014 0.133 0.13 ;
-    END
-  END A1
-  PIN vdd
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER BPR ;
-        RECT 0 0.128 0.252 0.16 ;
-    END
-  END vdd
-  PIN vss
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER BPR ;
-        RECT 0 -0.016 0.252 0.016 ;
-    END
-  END vss
-  PIN A3
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.014 0.014 0.028 0.13 ;
-    END
-  END A3
-  PIN Y
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.196 0.014 0.21 0.13 ;
-    END
-  END Y
-  PIN B1
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.161 0.014 0.175 0.13 ;
-    END
-  END B1
-  PIN B2
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.224 0.014 0.238 0.13 ;
-    END
-  END B2
-  OBS
-  END
+   CLASS CORE ;
+   ORIGIN 0 0 ;
+   FOREIGN gt3_6t_oai32_x1_rvt ;
+   SIZE 0.252 BY 0.144 ;
+   SYMMETRY X Y ;
+   SITE gt3v1 ;
+   PIN A1
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.119 0.014 0.133 0.13 ;
+      END
+   END A1
+
+   PIN A2
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.077 0.014 0.091 0.13 ;
+      END
+   END A2
+
+   PIN A3
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.014 0.014 0.028 0.13 ;
+      END
+   END A3
+
+   PIN B1
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.161 0.014 0.175 0.13 ;
+      END
+   END B1
+
+   PIN B2
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.225 0.014 0.239 0.13 ;
+      END
+   END B2
+
+   PIN Y
+      DIRECTION OUTPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.193 0.014 0.207 0.13 ;
+      END
+   END Y
+
+   PIN vdd
+      DIRECTION INOUT ;
+      USE POWER ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 0.128 0.252 0.16 ;
+      END
+   END vdd
+
+   PIN vss
+      DIRECTION INOUT ;
+      USE GROUND ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 -0.016 0.252 0.016 ;
+      END
+   END vss
+
+   OBS
+      LAYER M0 ;
+         RECT 0.0505 0.018 0.2435 0.03 ;
+         RECT 0.0085 0.042 0.2155 0.054 ;
+         RECT 0.0085 0.066 0.0545 0.078 ;
+         RECT 0.0715 0.066 0.0965 0.078 ;
+         RECT 0.1135 0.066 0.1385 0.078 ;
+         RECT 0.1555 0.066 0.1805 0.078 ;
+         RECT 0.1975 0.066 0.2435 0.078 ;
+         RECT 0.0085 0.114 0.2435 0.126 ;
+   END
 END gt3_6t_oai32_x1_rvt
 
 MACRO gt3_6t_oai33_x1_rvt
-  CLASS CORE  ;
-  ORIGIN 0 0 ;
-  SYMMETRY X Y ;
-  SITE gt3v1 ;
-  FOREIGN gt3_6t_oai33_x1_rvt 0 0 ;
-  SIZE 0.294 BY 0.144 ;
-  PIN A2
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.077 0.014 0.091 0.13 ;
-    END
-  END A2
-  PIN A1
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.119 0.014 0.133 0.13 ;
-    END
-  END A1
-  PIN vdd
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER BPR ;
-        RECT 0 0.128 0.294 0.16 ;
-    END
-  END vdd
-  PIN vss
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER BPR ;
-        RECT 0 -0.016 0.294 0.016 ;
-    END
-  END vss
-  PIN A3
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.014 0.014 0.028 0.13 ;
-    END
-  END A3
-  PIN Y
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.238 0.014 0.252 0.13 ;
-    END
-  END Y
-  PIN B1
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.161 0.014 0.175 0.13 ;
-    END
-  END B1
-  PIN B2
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.203 0.014 0.217 0.13 ;
-    END
-  END B2
-  PIN B3
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.266 0.014 0.28 0.13 ;
-    END
-  END B3
-  OBS
-  END
+   CLASS CORE ;
+   ORIGIN 0 0 ;
+   FOREIGN gt3_6t_oai33_x1_rvt ;
+   SIZE 0.294 BY 0.144 ;
+   SYMMETRY X Y ;
+   SITE gt3v1 ;
+   PIN A1
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.119 0.014 0.133 0.13 ;
+      END
+   END A1
+
+   PIN A2
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.077 0.014 0.091 0.13 ;
+      END
+   END A2
+
+   PIN A3
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.014 0.014 0.028 0.13 ;
+      END
+   END A3
+
+   PIN B1
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.161 0.014 0.175 0.13 ;
+      END
+   END B1
+
+   PIN B2
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.203 0.014 0.217 0.13 ;
+      END
+   END B2
+
+   PIN B3
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.267 0.014 0.281 0.13 ;
+      END
+   END B3
+
+   PIN Y
+      DIRECTION OUTPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.235 0.014 0.249 0.13 ;
+      END
+   END Y
+
+   PIN vdd
+      DIRECTION INOUT ;
+      USE POWER ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 0.128 0.294 0.16 ;
+      END
+   END vdd
+
+   PIN vss
+      DIRECTION INOUT ;
+      USE GROUND ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 -0.016 0.294 0.016 ;
+      END
+   END vss
+
+   OBS
+      LAYER M0 ;
+         RECT 0.0505 0.018 0.2435 0.03 ;
+         RECT 0.0085 0.042 0.2545 0.054 ;
+         RECT 0.0085 0.066 0.0545 0.078 ;
+         RECT 0.0715 0.066 0.0965 0.078 ;
+         RECT 0.1135 0.066 0.1385 0.078 ;
+         RECT 0.1555 0.066 0.1805 0.078 ;
+         RECT 0.1975 0.066 0.2225 0.078 ;
+         RECT 0.2395 0.066 0.2855 0.078 ;
+         RECT 0.0085 0.114 0.2855 0.126 ;
+   END
 END gt3_6t_oai33_x1_rvt
 
 MACRO gt3_6t_or2_x1_rvt
-  CLASS CORE  ;
-  ORIGIN 0 0 ;
-  SYMMETRY X Y ;
-  SITE gt3v1 ;
-  FOREIGN gt3_6t_or2_x1_rvt 0 0 ;
-  SIZE 0.168 BY 0.144 ;
-  PIN A
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
+   CLASS CORE ;
+   ORIGIN 0 0 ;
+   FOREIGN gt3_6t_or2_x1_rvt ;
+   SIZE 0.168 BY 0.144 ;
+   SYMMETRY X Y ;
+   SITE gt3v1 ;
+   PIN A
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.014 0.015 0.028 0.129 ;
+      END
+   END A
+
+   PIN B
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.077 0.015 0.091 0.129 ;
+      END
+   END B
+
+   PIN Y
+      DIRECTION OUTPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.0455 0.014 0.0595 0.13 ;
+      END
+   END Y
+
+   PIN vdd
+      DIRECTION INOUT ;
+      USE POWER ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 0.128 0.168 0.16 ;
+      END
+   END vdd
+
+   PIN vss
+      DIRECTION INOUT ;
+      USE GROUND ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 -0.016 0.168 0.016 ;
+      END
+   END vss
+
+   OBS
+      LAYER M0 ;
+         RECT 0.0415 0.018 0.1595 0.03 ;
+         RECT 0.0415 0.042 0.1595 0.054 ;
+         RECT 0.0085 0.066 0.0545 0.078 ;
+         RECT 0.0715 0.066 0.0965 0.078 ;
+         RECT 0.1135 0.066 0.1595 0.078 ;
+         RECT 0.0085 0.09 0.1595 0.102 ;
+         RECT 0.0415 0.114 0.1595 0.126 ;
       LAYER M1 ;
-        RECT 0.014 0.015 0.028 0.129 ;
-    END
-  END A
-  PIN B
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.077 0.015 0.091 0.129 ;
-    END
-  END B
-  PIN vdd
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER BPR ;
-        RECT 0 0.128 0.168 0.16 ;
-    END
-  END vdd
-  PIN vss
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER BPR ;
-        RECT 0 -0.016 0.168 0.016 ;
-    END
-  END vss
-  PIN Y
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.042 0.014 0.056 0.13 ;
-    END
-  END Y
-  OBS
-    LAYER M1 ;
-      RECT 0.14 0.038 0.154 0.106 ;
-  END
+         RECT 0.14 0.038 0.154 0.106 ;
+   END
 END gt3_6t_or2_x1_rvt
 
 MACRO gt3_6t_or2_x2_rvt
-  CLASS CORE  ;
-  ORIGIN 0 0 ;
-  SYMMETRY X Y ;
-  SITE gt3v1 ;
-  FOREIGN gt3_6t_or2_x2_rvt 0 0 ;
-  SIZE 0.21 BY 0.144 ;
-  PIN A
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
+   CLASS CORE ;
+   ORIGIN 0 0 ;
+   FOREIGN gt3_6t_or2_x2_rvt ;
+   SIZE 0.21 BY 0.144 ;
+   SYMMETRY X Y ;
+   SITE gt3v1 ;
+   PIN A
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.014 0.015 0.028 0.129 ;
+      END
+   END A
+
+   PIN B
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.077 0.015 0.091 0.129 ;
+      END
+   END B
+
+   PIN Y
+      DIRECTION OUTPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.0455 0.014 0.0595 0.13 ;
+      END
+   END Y
+
+   PIN vdd
+      DIRECTION INOUT ;
+      USE POWER ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 0.128 0.21 0.16 ;
+      END
+   END vdd
+
+   PIN vss
+      DIRECTION INOUT ;
+      USE GROUND ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 -0.016 0.21 0.016 ;
+      END
+   END vss
+
+   OBS
+      LAYER M0 ;
+         RECT 0.0415 0.018 0.1595 0.03 ;
+         RECT 0.0415 0.042 0.1595 0.054 ;
+         RECT 0.0085 0.066 0.0545 0.078 ;
+         RECT 0.0715 0.066 0.0965 0.078 ;
+         RECT 0.1135 0.066 0.181 0.078 ;
+         RECT 0.0085 0.09 0.1595 0.102 ;
+         RECT 0.0415 0.114 0.1595 0.126 ;
       LAYER M1 ;
-        RECT 0.014 0.015 0.028 0.129 ;
-    END
-  END A
-  PIN B
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.077 0.015 0.091 0.129 ;
-    END
-  END B
-  PIN vdd
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER BPR ;
-        RECT 0 0.128 0.21 0.16 ;
-    END
-  END vdd
-  PIN vss
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER BPR ;
-        RECT 0 -0.016 0.21 0.016 ;
-    END
-  END vss
-  PIN Y
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.042 0.014 0.056 0.13 ;
-    END
-  END Y
-  OBS
-    LAYER M1 ;
-      RECT 0.14 0.038 0.154 0.106 ;
-  END
+         RECT 0.14 0.038 0.154 0.106 ;
+   END
 END gt3_6t_or2_x2_rvt
 
 MACRO gt3_6t_or2_x3_rvt
-  CLASS CORE  ;
-  ORIGIN 0 0 ;
-  SYMMETRY X Y ;
-  SITE gt3v1 ;
-  FOREIGN gt3_6t_or2_x3_rvt 0 0 ;
-  SIZE 0.252 BY 0.144 ;
-  PIN A
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
+   CLASS CORE ;
+   ORIGIN 0 0 ;
+   FOREIGN gt3_6t_or2_x3_rvt ;
+   SIZE 0.252 BY 0.144 ;
+   SYMMETRY X Y ;
+   SITE gt3v1 ;
+   PIN A
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.014 0.015 0.028 0.129 ;
+      END
+   END A
+
+   PIN B
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.077 0.015 0.091 0.129 ;
+      END
+   END B
+
+   PIN Y
+      DIRECTION OUTPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.0455 0.014 0.0595 0.13 ;
+      END
+   END Y
+
+   PIN vdd
+      DIRECTION INOUT ;
+      USE POWER ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 0.128 0.252 0.16 ;
+      END
+   END vdd
+
+   PIN vss
+      DIRECTION INOUT ;
+      USE GROUND ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 -0.016 0.252 0.016 ;
+      END
+   END vss
+
+   OBS
+      LAYER M0 ;
+         RECT 0.0415 0.018 0.2435 0.03 ;
+         RECT 0.0415 0.042 0.1595 0.054 ;
+         RECT 0.0085 0.066 0.0545 0.078 ;
+         RECT 0.0715 0.066 0.0965 0.078 ;
+         RECT 0.1135 0.066 0.223 0.078 ;
+         RECT 0.0085 0.09 0.1595 0.102 ;
+         RECT 0.0415 0.114 0.2435 0.126 ;
       LAYER M1 ;
-        RECT 0.014 0.015 0.028 0.129 ;
-    END
-  END A
-  PIN B
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.077 0.015 0.091 0.129 ;
-    END
-  END B
-  PIN vdd
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER BPR ;
-        RECT 0 0.128 0.252 0.16 ;
-    END
-  END vdd
-  PIN vss
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER BPR ;
-        RECT 0 -0.016 0.252 0.016 ;
-    END
-  END vss
-  PIN Y
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.042 0.014 0.056 0.13 ;
-    END
-  END Y
-  OBS
-    LAYER M1 ;
-      RECT 0.14 0.038 0.154 0.106 ;
-  END
+         RECT 0.14 0.038 0.154 0.106 ;
+   END
 END gt3_6t_or2_x3_rvt
 
 MACRO gt3_6t_or2_x4_rvt
-  CLASS CORE  ;
-  ORIGIN 0 0 ;
-  SYMMETRY X Y ;
-  SITE gt3v1 ;
-  FOREIGN gt3_6t_or2_x4_rvt 0 0 ;
-  SIZE 0.294 BY 0.144 ;
-  PIN A
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
+   CLASS CORE ;
+   ORIGIN 0 0 ;
+   FOREIGN gt3_6t_or2_x4_rvt ;
+   SIZE 0.294 BY 0.144 ;
+   SYMMETRY X Y ;
+   SITE gt3v1 ;
+   PIN A
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.014 0.015 0.028 0.129 ;
+      END
+   END A
+
+   PIN B
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.077 0.015 0.091 0.129 ;
+      END
+   END B
+
+   PIN Y
+      DIRECTION OUTPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.0455 0.014 0.0595 0.13 ;
+      END
+   END Y
+
+   PIN vdd
+      DIRECTION INOUT ;
+      USE POWER ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 0.128 0.294 0.16 ;
+      END
+   END vdd
+
+   PIN vss
+      DIRECTION INOUT ;
+      USE GROUND ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 -0.016 0.294 0.016 ;
+      END
+   END vss
+
+   OBS
+      LAYER M0 ;
+         RECT 0.0415 0.018 0.2435 0.03 ;
+         RECT 0.0415 0.042 0.1595 0.054 ;
+         RECT 0.0085 0.066 0.0545 0.078 ;
+         RECT 0.0715 0.066 0.0965 0.078 ;
+         RECT 0.1135 0.066 0.265 0.078 ;
+         RECT 0.0085 0.09 0.1595 0.102 ;
+         RECT 0.0415 0.114 0.2435 0.126 ;
       LAYER M1 ;
-        RECT 0.014 0.015 0.028 0.129 ;
-    END
-  END A
-  PIN B
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.077 0.015 0.091 0.129 ;
-    END
-  END B
-  PIN vdd
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER BPR ;
-        RECT 0 0.128 0.294 0.16 ;
-    END
-  END vdd
-  PIN vss
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER BPR ;
-        RECT 0 -0.016 0.294 0.016 ;
-    END
-  END vss
-  PIN Y
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.042 0.014 0.056 0.13 ;
-    END
-  END Y
-  OBS
-    LAYER M1 ;
-      RECT 0.14 0.038 0.154 0.106 ;
-  END
+         RECT 0.14 0.038 0.154 0.106 ;
+   END
 END gt3_6t_or2_x4_rvt
 
 MACRO gt3_6t_or3_x1_rvt
-  CLASS CORE  ;
-  ORIGIN 0 0 ;
-  SYMMETRY X Y ;
-  SITE gt3v1 ;
-  FOREIGN gt3_6t_or3_x1_rvt 0 0 ;
-  SIZE 0.21 BY 0.144 ;
-  PIN A
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
+   CLASS CORE ;
+   ORIGIN 0 0 ;
+   FOREIGN gt3_6t_or3_x1_rvt ;
+   SIZE 0.21 BY 0.144 ;
+   SYMMETRY X Y ;
+   SITE gt3v1 ;
+   PIN A
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.119 0.014 0.133 0.13 ;
+      END
+   END A
+
+   PIN B
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.077 0.014 0.091 0.13 ;
+      END
+   END B
+
+   PIN C
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.014 0.014 0.028 0.13 ;
+      END
+   END C
+
+   PIN Y
+      DIRECTION OUTPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.151 0.014 0.165 0.13 ;
+      END
+   END Y
+
+   PIN vdd
+      DIRECTION INOUT ;
+      USE POWER ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 0.128 0.21 0.16 ;
+      END
+   END vdd
+
+   PIN vss
+      DIRECTION INOUT ;
+      USE GROUND ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 -0.016 0.21 0.016 ;
+      END
+   END vss
+
+   OBS
+      LAYER M0 ;
+         RECT 0.147 0.018 0.2015 0.03 ;
+         RECT 0.0085 0.042 0.2015 0.054 ;
+         RECT 0.0085 0.066 0.0545 0.078 ;
+         RECT 0.0715 0.066 0.0965 0.078 ;
+         RECT 0.1135 0.066 0.1385 0.078 ;
+         RECT 0.1555 0.066 0.2015 0.078 ;
+         RECT 0.0085 0.09 0.2015 0.102 ;
+         RECT 0.147 0.114 0.2015 0.126 ;
       LAYER M1 ;
-        RECT 0.119 0.014 0.133 0.13 ;
-    END
-  END A
-  PIN B
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.077 0.014 0.091 0.13 ;
-    END
-  END B
-  PIN vdd
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER BPR ;
-        RECT 0 0.128 0.21 0.16 ;
-    END
-  END vdd
-  PIN vss
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER BPR ;
-        RECT 0 -0.016 0.21 0.016 ;
-    END
-  END vss
-  PIN Y
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.154 0.014 0.168 0.13 ;
-    END
-  END Y
-  PIN C
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.014 0.014 0.028 0.13 ;
-    END
-  END C
-  OBS
-    LAYER M1 ;
-      RECT 0.182 0.038 0.196 0.106 ;
-  END
+         RECT 0.183 0.038 0.197 0.106 ;
+   END
 END gt3_6t_or3_x1_rvt
 
 MACRO gt3_6t_xnor2_x1_rvt
-  CLASS CORE  ;
-  ORIGIN 0 0 ;
-  SYMMETRY X Y ;
-  SITE gt3v1 ;
-  FOREIGN gt3_6t_xnor2_x1_rvt 0 0 ;
-  SIZE 0.294 BY 0.144 ;
-  PIN B
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
+   CLASS CORE ;
+   ORIGIN 0 0 ;
+   FOREIGN gt3_6t_xnor2_x1_rvt ;
+   SIZE 0.294 BY 0.144 ;
+   SYMMETRY X Y ;
+   SITE gt3v1 ;
+   PIN A
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.014 0.015 0.028 0.13 ;
+      END
+   END A
+
+   PIN B
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.098 0.014 0.112 0.13 ;
+      END
+   END B
+
+   PIN Y
+      DIRECTION OUTPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.266 0.015 0.28 0.129 ;
+      END
+   END Y
+
+   PIN vdd
+      DIRECTION INOUT ;
+      USE POWER ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 0.128 0.294 0.16 ;
+      END
+   END vdd
+
+   PIN vss
+      DIRECTION INOUT ;
+      USE GROUND ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 -0.016 0.294 0.016 ;
+      END
+   END vss
+
+   OBS
+      LAYER M0 ;
+         RECT 0.0085 0.018 0.2435 0.03 ;
+         RECT 0.1185 0.042 0.2435 0.054 ;
+         RECT 0.0085 0.066 0.0545 0.078 ;
+         RECT 0.0715 0.066 0.1385 0.078 ;
+         RECT 0.1555 0.066 0.2 0.078 ;
+         RECT 0.22 0.066 0.265 0.078 ;
+         RECT 0.0345 0.09 0.0915 0.102 ;
+         RECT 0.1605 0.09 0.2855 0.102 ;
+         RECT 0.0085 0.114 0.179 0.126 ;
       LAYER M1 ;
-        RECT 0.098 0.014 0.112 0.13 ;
-    END
-  END B
-  PIN A
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.014 0.015 0.028 0.13 ;
-    END
-  END A
-  PIN vdd
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER BPR ;
-        RECT 0 0.128 0.294 0.16 ;
-    END
-  END vdd
-  PIN vss
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER BPR ;
-        RECT 0 -0.016 0.294 0.016 ;
-    END
-  END vss
-  PIN Y
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.266 0.015 0.28 0.129 ;
-    END
-  END Y
-  OBS
-    LAYER M1 ;
-      RECT 0.056 0.014 0.07 0.106 ;
-      RECT 0.224 0.014 0.238 0.082 ;
-      RECT 0.161 0.062 0.175 0.13 ;
-  END
+         RECT 0.224 0.014 0.238 0.082 ;
+         RECT 0.056 0.014 0.07 0.106 ;
+         RECT 0.161 0.062 0.175 0.13 ;
+   END
 END gt3_6t_xnor2_x1_rvt
 
 MACRO gt3_6t_xor2_x1_rvt
-  CLASS CORE  ;
-  ORIGIN 0 0 ;
-  SYMMETRY X Y ;
-  SITE gt3v1 ;
-  FOREIGN gt3_6t_xor2_x1_rvt 0 0 ;
-  SIZE 0.294 BY 0.144 ;
-  PIN B
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.098 0.014 0.112 0.13 ;
-    END
-  END B
-  PIN A
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.014 0.014 0.028 0.13 ;
-    END
-  END A
-  PIN vdd
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER BPR ;
-        RECT 0 0.128 0.294 0.16 ;
-    END
-  END vdd
-  PIN vss
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER BPR ;
-        RECT 0 -0.016 0.294 0.016 ;
-    END
-  END vss
-  PIN Y
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER M1 ;
-        RECT 0.266 0.015 0.28 0.129 ;
-    END
-  END Y
-  OBS
-    LAYER M1 ;
-      RECT 0.161 0.014 0.175 0.082 ;
-      RECT 0.056 0.038 0.07 0.13 ;
-      RECT 0.224 0.062 0.238 0.13 ;
-  END
-END gt3_6t_xor2_x1_rvt
+   CLASS CORE ;
+   ORIGIN 0 0 ;
+   FOREIGN gt3_6t_xor2_x1_rvt ;
+   SIZE 0.294 BY 0.144 ;
+   SYMMETRY X Y ;
+   SITE gt3v1 ;
+   PIN A
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.014 0.014 0.028 0.13 ;
+      END
+   END A
 
-MACRO gt3_6t_ptc
-  CLASS CORE  ;
-  ORIGIN 0 0 ;
-  SYMMETRY X Y ;
-  SITE gt3v1 ;
-  FOREIGN gt3_6t_ptc 0 0 ;
-  SIZE 0.084 BY 0.144 ;
-  PIN vss
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
+   PIN B
+      DIRECTION INPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.098 0.014 0.112 0.13 ;
+      END
+   END B
+
+   PIN Y
+      DIRECTION OUTPUT ;
+      USE SIGNAL ;
+      PORT 
+         LAYER M1 ;
+             RECT 0.266 0.015 0.28 0.129 ;
+      END
+   END Y
+
+   PIN vdd
+      DIRECTION INOUT ;
+      USE POWER ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 0.128 0.294 0.16 ;
+      END
+   END vdd
+
+   PIN vss
+      DIRECTION INOUT ;
+      USE GROUND ;
+      PORT 
+         LAYER BPR ;
+             RECT 0 -0.016 0.294 0.016 ;
+      END
+   END vss
+
+   OBS
+      LAYER M0 ;
+         RECT 0.0085 0.018 0.1965 0.03 ;
+         RECT 0.0345 0.042 0.0915 0.054 ;
+         RECT 0.1765 0.042 0.2855 0.054 ;
+         RECT 0.0085 0.066 0.0545 0.078 ;
+         RECT 0.0715 0.066 0.1385 0.078 ;
+         RECT 0.1555 0.066 0.2 0.078 ;
+         RECT 0.22 0.066 0.265 0.078 ;
+         RECT 0.1185 0.09 0.2435 0.102 ;
+         RECT 0.0085 0.114 0.2435 0.126 ;
       LAYER M1 ;
-        RECT 0.056 0.015 0.07 0.129 ;
-    END
-  END vss
-  PIN vdd
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER M1 ;
-        RECT 0.014 0.015 0.028 0.129 ;
-    END
-  END vdd
-  OBS
-    LAYER M1 SPACING 0 ;
-      RECT 0 0 0.014 0.015 ;
-      RECT 0.028 0 0.056 0.015 ;
-      RECT 0.07 0 0.084 0.015 ;
-      RECT 0 0.129 0.014 0.144 ;
-      RECT 0.028 0.129 0.056 0.144 ;
-      RECT 0.07 0.129 0.084 0.144 ;
-  END
-END gt3_6t_ptc
+         RECT 0.161 0.014 0.175 0.082 ;
+         RECT 0.056 0.038 0.07 0.13 ;
+         RECT 0.224 0.062 0.238 0.13 ;
+   END
+END gt3_6t_xor2_x1_rvt
 
 END LIBRARY
