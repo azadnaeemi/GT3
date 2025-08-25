@@ -1,6 +1,6 @@
 // BSD 3-Clause License
 //
-// Copyright 2024 Piyush Kumar, Da Eun Shim, Azad Naeemi, or Georgia Institute of Technology
+// Copyright 2024 Piyush Kumar, Da Eun Shim, Dongwon Jang, Azad Naeemi, or Georgia Institute of Technology
 //
 // Redistribution and use in source and binary forms, with or without 
 // modification, are permitted provided that the following conditions are met:
@@ -28,8 +28,8 @@
 // SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 
-rACT_1 @= { @ "ACT.1 : Minimum vertical width of ACT >= 21 nm";
-        internal1(aACT, <0.021, extension = NONE, direction = VERTICAL);
+rACT_1 @= { @ "ACT.1 : Minimum vertical width of ACT >= 10 nm";
+        internal1(aACT, <0.010, extension = NONE, direction = VERTICAL);
 }
 
 rACT_2 @= { @ "ACT.2 : Minimum horizontal width of ACT >= 84 nm";
