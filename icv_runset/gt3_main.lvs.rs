@@ -208,6 +208,8 @@ CONNECT_DB = incremental_connect( CONNECT_DB, {{{ gN_GATE_cont}, NGATE1}});
 CONNECT_DB = incremental_connect( CONNECT_DB, {{{ gN_GATE_cont}, aVG}});
 CONNECT_DB = incremental_connect( CONNECT_DB, {{{ gP_GATE_cont}, PGATE1}});
 CONNECT_DB = incremental_connect( CONNECT_DB, {{{ gP_GATE_cont}, aVG}});
+CONNECT_DB = incremental_connect( CONNECT_DB, {{{ PGATE1, NGATE1}, gN_GATE_cont}});
+CONNECT_DB = incremental_connect( CONNECT_DB, {{{ PGATE1, NGATE1}, gP_GATE_cont}});
 
 aBPR_mark = text_origin(tBPR, cells = {"*"}, text = {"*"}, shape_size = 0.005);
 aBPR_pin = and(aBPR_mark, aBPR, processing_mode = CELL_LEVEL);
@@ -229,7 +231,47 @@ aM3_mark = text_origin(tM3, cells = {"*"}, text = {"*"}, shape_size = 0.005);
 aM3_pin = and(aM3_mark, aM3, processing_mode = CELL_LEVEL);
 CONNECT_DB = incremental_connect( CONNECT_DB, {{{ aM3}, aM3_pin}} );
 
-CONNECT_DB = create_ports(CONNECT_DB, { {aBPR_pin, aBPR_mark}, {aM0_pin, aM0_mark}, {aM1_pin, aM1_mark}, {aM2_pin, aM2_mark}, {aM3_pin, aM3_mark}, {aM4, aM4}, {aM5, aM5}, {aM6, aM6}, {aM7, aM7}, {aM8, aM8}, {aM9, aM9}, {aM10, aM10}, {aM11, aM11}, {aM12, aM12}, {aM13, aM13}, {aRDL, aRDL} }, report = {UNUSED_MARKERS});
+aM4_mark = text_origin(tM4, cells = {"*"}, text = {"*"}, shape_size = 0.005);
+aM4_pin = and(aM4_mark, aM4, processing_mode = CELL_LEVEL);
+CONNECT_DB = incremental_connect( CONNECT_DB, {{{ aM4}, aM4_pin}} );
+
+aM5_mark = text_origin(tM5, cells = {"*"}, text = {"*"}, shape_size = 0.005);
+aM5_pin = and(aM5_mark, aM5, processing_mode = CELL_LEVEL);
+CONNECT_DB = incremental_connect( CONNECT_DB, {{{ aM5}, aM5_pin}} );
+
+aM6_mark = text_origin(tM6, cells = {"*"}, text = {"*"}, shape_size = 0.005);
+aM6_pin = and(aM6_mark, aM6, processing_mode = CELL_LEVEL);
+CONNECT_DB = incremental_connect( CONNECT_DB, {{{ aM6}, aM6_pin}} );
+
+aM7_mark = text_origin(tM7, cells = {"*"}, text = {"*"}, shape_size = 0.005);
+aM7_pin = and(aM7_mark, aM7, processing_mode = CELL_LEVEL);
+CONNECT_DB = incremental_connect( CONNECT_DB, {{{ aM7}, aM7_pin}} );
+
+aM8_mark = text_origin(tM8, cells = {"*"}, text = {"*"}, shape_size = 0.005);
+aM8_pin = and(aM8_mark, aM8, processing_mode = CELL_LEVEL);
+CONNECT_DB = incremental_connect( CONNECT_DB, {{{ aM8}, aM8_pin}} );
+
+aM9_mark = text_origin(tM9, cells = {"*"}, text = {"*"}, shape_size = 0.005);
+aM9_pin = and(aM9_mark, aM9, processing_mode = CELL_LEVEL);
+CONNECT_DB = incremental_connect( CONNECT_DB, {{{ aM9}, aM9_pin}} );
+
+aM10_mark = text_origin(tM10, cells = {"*"}, text = {"*"}, shape_size = 0.005);
+aM10_pin = and(aM10_mark, aM10, processing_mode = CELL_LEVEL);
+CONNECT_DB = incremental_connect( CONNECT_DB, {{{ aM10}, aM10_pin}} );
+
+aM11_mark = text_origin(tM11, cells = {"*"}, text = {"*"}, shape_size = 0.005);
+aM11_pin = and(aM11_mark, aM11, processing_mode = CELL_LEVEL);
+CONNECT_DB = incremental_connect( CONNECT_DB, {{{ aM11}, aM11_pin}} );
+
+aM12_mark = text_origin(tM12, cells = {"*"}, text = {"*"}, shape_size = 0.005);
+aM12_pin = and(aM12_mark, aM12, processing_mode = CELL_LEVEL);
+CONNECT_DB = incremental_connect( CONNECT_DB, {{{ aM12}, aM12_pin}} );
+
+aM13_mark = text_origin(tM13, cells = {"*"}, text = {"*"}, shape_size = 0.005);
+aM13_pin = and(aM13_mark, aM13, processing_mode = CELL_LEVEL);
+CONNECT_DB = incremental_connect( CONNECT_DB, {{{ aM13}, aM13_pin}} );
+
+CONNECT_DB = create_ports(CONNECT_DB, { {aBPR_pin, aBPR_mark}, {aM0_pin, aM0_mark}, {aM1_pin, aM1_mark}, {aM2_pin, aM2_mark}, {aM3_pin, aM3_mark}, {aM4_pin, aM4_mark}, {aM5_pin, aM5_mark}, {aM6_pin, aM6_mark}, {aM7_pin, aM7_mark}, {aM8_pin, aM8_mark}, {aM9_pin, aM9_mark}, {aM10_pin, aM10_mark}, {aM11_pin, aM11_mark}, {aM12_pin, aM12_mark}, {aM13_pin, aM13_mark}, {aRDL, aRDL} }, report = {UNUSED_MARKERS});
 
 //report = {CREATED_PORTS, UNUSED_MARKERS}
 
@@ -318,15 +360,25 @@ pex_conducting_layer_map(pex_matrix, aM2_pin, "M2", tagname="M2_pin");
 pex_conducting_layer_map(pex_matrix, aM3, "M3", tagname="M3");
 pex_conducting_layer_map(pex_matrix, aM3_pin, "M3", tagname="M3_pin");
 pex_conducting_layer_map(pex_matrix, aM4, "M4", tagname="M4");
+pex_conducting_layer_map(pex_matrix, aM4_pin, "M4", tagname="M4_pin");
 pex_conducting_layer_map(pex_matrix, aM5, "M5", tagname="M5");
+pex_conducting_layer_map(pex_matrix, aM5_pin, "M5", tagname="M5_pin");
 pex_conducting_layer_map(pex_matrix, aM6, "M6", tagname="M6");
+pex_conducting_layer_map(pex_matrix, aM6_pin, "M6", tagname="M6_pin");
 pex_conducting_layer_map(pex_matrix, aM7, "M7", tagname="M7");
+pex_conducting_layer_map(pex_matrix, aM7_pin, "M7", tagname="M7_pin");
 pex_conducting_layer_map(pex_matrix, aM8, "M8", tagname="M8");
+pex_conducting_layer_map(pex_matrix, aM8_pin, "M8", tagname="M8_pin");
 pex_conducting_layer_map(pex_matrix, aM9, "M9", tagname="M9");
+pex_conducting_layer_map(pex_matrix, aM9_pin, "M9", tagname="M9_pin");
 pex_conducting_layer_map(pex_matrix, aM10, "M10", tagname="M10");
+pex_conducting_layer_map(pex_matrix, aM10_pin, "M10", tagname="M10_pin");
 pex_conducting_layer_map(pex_matrix, aM11, "M11", tagname="M11");
+pex_conducting_layer_map(pex_matrix, aM11_pin, "M11", tagname="M11_pin");
 pex_conducting_layer_map(pex_matrix, aM12, "M12", tagname="M12");
+pex_conducting_layer_map(pex_matrix, aM12_pin, "M12", tagname="M12_pin");
 pex_conducting_layer_map(pex_matrix, aM13, "M13", tagname="M13");
+pex_conducting_layer_map(pex_matrix, aM13_pin, "M13", tagname="M13_pin");
 pex_conducting_layer_map(pex_matrix, aRDL, "RDL", tagname="RDL");
 pex_conducting_layer_map(pex_matrix, aBPR, "BPR", tagname="BPR");
 pex_conducting_layer_map(pex_matrix, aBPR_pin, "BPR", tagname="BPR_pin");
