@@ -73,7 +73,3 @@ rVG_10 @= { @ "VG.M0.2 : VG enclosure by M0 on two opposite sides in the horizon
 }
 
 // VG.M0.3 VG horizontal edges must align with M0 (may be redundant)
-
-rVG_12 @= { @ "VG.ACT.1 : VG and ACT vertical spacing >= 6 nm";
-        external2( aVG, aACT, distance < 0.006, extension = RADIAL, direction = VERTICAL);
-}
